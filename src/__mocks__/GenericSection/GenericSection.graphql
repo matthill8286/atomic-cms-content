@@ -1,0 +1,37 @@
+
+query GenericSection($id: ID!) {
+  values: genericSection(where: {id: $id}) {
+    id
+    description
+    __typename
+    image {
+      id
+      url
+      handle
+      fileName
+      mimeType
+      width
+      height
+      size
+    }
+    backgroundColour {
+      hex
+    }
+    multiColumnTexts(first: 6) {
+      id
+      columnOneTitle
+      columnOneDescription
+      columnTwoTitle
+      columnTwoDescription
+      columnThreeTitle
+      columnThreeDescription
+      columnFourTitle
+      columnFourDescription
+      numberOfColumns
+    }
+    topTitle
+    midTitle
+    updatedAt
+    videoUrl
+  }
+}
