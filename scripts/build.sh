@@ -13,7 +13,7 @@ else
     echo "**********************************************************"
     echo "Dependencies could not be installed!" >&2
     echo "**********************************************************"
-    cat ../yarn-error.log
+    cat ./yarn-error.log
     exit 1
 fi
 
@@ -28,7 +28,7 @@ else
     echo "**********************************************************"
     echo "Component build failed!" >&2
     echo "**********************************************************"
-    cat ../yarn-error.log
+    cat ./yarn-error.log
     exit 1
 fi
 
