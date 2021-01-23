@@ -5,10 +5,6 @@ import { addDecorator, addParameters, configure } from '@storybook/react'
 import { create } from '@storybook/theming'
 import * as React from 'react'
 import StoryRouter from 'storybook-react-router'
-import { withThemesProvider } from 'themeprovider-storybook'
-import { GlobalStyle } from '../../src/styles/sc-global'
-import { mmTheme as mmStyles } from '../../src/styles/sc-vars-mm'
-import { seTheme as seStyles } from '../../src/styles/sc-vars-se'
 
 const newViewports = {
   forPreview: {
@@ -55,24 +51,7 @@ const newViewports = {
   },
 }
 
-const mmTheme = {
-  name: 'MediaMarkt',
-  ...mmStyles,
-}
-
-const seTheme = {
-  name: 'Saturn',
-  ...seStyles,
-}
-
-const themes = [mmTheme, seTheme]
-
-const withGlobal = content => (
-  <React.Fragment>
-    <GlobalStyle />
-    {content()}
-  </React.Fragment>
-)
+const withGlobal = content => <React.Fragment>{content()}</React.Fragment>
 
 function loadStories() {
   const req = require.context('../../src', true, /\.story\.tsx$/)
@@ -96,11 +75,10 @@ addParameters({
 
 addDecorator(withKnobs)
 addDecorator(StoryRouter())
-addDecorator(withThemesProvider(themes))
 addDecorator(withGlobal)
 
 configureViewport({
-  defaultViewport: 'iphonex',
+  defaultViewport: 'LG View',
 })
 
 configure(loadStories, module)
