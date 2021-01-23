@@ -1,5 +1,5 @@
 {
-  "name": "webmobile-cms-content",
+  "name": "@excelwithbusiness/webmobile-cms-content",
   "version": "0.0.4",
   "description": "Shared CMS React components for GraphCms, used in Filtered products",
   "repository": {

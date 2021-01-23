@@ -17,18 +17,3 @@ branch_name=${branch_name##refs/heads/}
 
 # push branch to origin
 git push --follow-tags origin $branch_name
-
-# build the app
-yarn build
-if [ $? -eq 0 ]
-then
-    echo "**********************************************************"
-    echo "DEV Project has been released"
-    echo "**********************************************************"
-else
-    echo "**********************************************************"
-    echo "DEV Yarn release failed!" >&2
-    echo "**********************************************************"
-    cat ../yarn-error.log
-    exit 1
-fi
