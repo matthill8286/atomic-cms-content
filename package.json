@@ -1,6 +1,6 @@
 {
-  "name": "webmobile-cms-content",
-  "version": "0.0.3",
+  "name": "@excelwithbusiness/webmobile-cms-content",
+  "version": "0.0.4",
   "description": "Shared CMS React components for GraphCms, used in Filtered products",
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
     "build-storybook": "cross-env build-storybook -c config/storybook -o static",
     "build:babel": "babel src --out-dir dist --config-file ./babel.config.js --source-maps --extensions .ts,.tsx,.js --no-comments",
     "build:noPreBuild": "yarn clean && cross-env BABEL_ENV=build NODE_ENV=production run-p generate:dts build:babel",
-    "build:svg": "rimraf -rf ./src/svgs/components/* && BABEL_ENV=build babel src/svgs/raw --out-dir src/svgs/components --config-file ./babel.config.js --extensions .svg",
+    "automate:build": "./scripts/build.sh",
     "bump": "npm version patch",
     "clean": "rimraf -rf ./dist/* && rimraf tsconfig.build.tsbuildinfo",
     "dev": "cross-env BABEL_ENV=build NODE_ENV=development run-p dev:declarations dev:babel",
