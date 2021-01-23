@@ -16,7 +16,10 @@
   ],
   "dependencies": {
     "@excelwithbusiness/webmobile-sc-components": "^1.32.0",
+    "@excelwithbusiness/webmobile-svg-library": "https://github.com/excelWithBusiness/webmobile-svg-library.git", 
     "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
     "styled-components": "^5.1.1"
   },
   "scripts": {
@@ -132,9 +135,6 @@
     "postinstall-postinstall": "^2.1.0",
     "prettier": "^1.19.1",
     "raf": "^3.4.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-router-dom": "^5.1.2",
     "react-test-renderer": "16.13.1",
     "regenerator-runtime": "^0.13.1",
     "standard-version": "^9.1.0",

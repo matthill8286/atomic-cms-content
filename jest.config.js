@@ -31,6 +31,10 @@ module.exports = {
       '<rootDir>/node_modules/@excelwithbusiness/webmobile-sc-components/dist/index.js',
     '^@excelwithbusiness/webmobile-sc-components$':
       '<rootDir>/node_modules/@excelwithbusiness/webmobile-sc-components/dist/index.js',
+    '^webmobile-svg-library$':
+      '<rootDir>/node_modules/@excelwithbusiness/webmobile-svg-library/dist/index.js',
+    '^@excelwithbusiness/webmobile-svg-library$':
+      '<rootDir>/node_modules/@excelwithbusiness/webmobile-svg-library/dist/index.js',
   },
   coverageThreshold: {
     global: {
