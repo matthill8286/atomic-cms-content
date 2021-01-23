@@ -1,0 +1,15 @@
+query MultiColumnText($id: ID!) {
+  multiColumnText(where: {id: $id}, stage: DRAFT) {
+    __typename
+    columnFourDescription
+    columnFourTitle
+    columnOneDescription
+    columnOneTitle
+    columnThreeDescription
+    columnThreeTitle
+    columnTwoDescription
+    columnTwoTitle
+    id
+    numberOfColumns
+  }
+}

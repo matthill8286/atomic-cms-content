@@ -1,0 +1,25 @@
+# {
+ #  "first": 1,
+ #  "skip": 0,
+ #  "stage": "PUBLISHED",
+ #  "orderBy": null
+# }
+
+query StaticPagesConnection($first: Int, $skip: Int, $stage: Stage!, $where: StaticPageWhereInput, $orderBy: StaticPageOrderByInput) {
+  staticPagesConnection(first: $first, skip: $skip, stage: $stage, where: $where, orderBy: $orderBy) {
+    edges {
+      node {
+        id
+        name
+        routeName: type
+        zones(first: $first) {
+          entryId: id
+          type
+        }
+      }
+    }
+    aggregate {
+      count
+    }
+  }
+}

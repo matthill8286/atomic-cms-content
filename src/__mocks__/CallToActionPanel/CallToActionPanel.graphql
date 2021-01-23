@@ -1,0 +1,26 @@
+query CallToActionPanel($id: ID!) {
+  callToActionPanel(where: {id: $id}, stage: DRAFT) {
+    __typename
+    id
+    button {
+      id
+      text
+      link
+      type
+    }
+    description
+    heading
+    image {
+      id
+      url
+      handle
+      fileName
+      mimeType
+      width
+      height
+      size
+    }
+    rightOrientation
+    title
+  }
+}
