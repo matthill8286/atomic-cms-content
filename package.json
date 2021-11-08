@@ -1,10 +1,10 @@
 {
-  "name": "@excelwithbusiness/webmobile-cms-content",
+  "name": "@matthill8286/webmobile-cms-content",
   "version": "0.0.4",
   "description": "Shared CMS React components for GraphCms, used in Filtered products",
   "repository": {
     "type": "git",
-    "url": "https://github.com/excelWithBusiness/webmobile-cms-content.git"
+    "url": "https://github.com/matthill8286/webmobile-cms-content.git"
   },
   "main": "build/index.js",
   "sideEffects": false,
@@ -15,8 +15,8 @@
     "/public"
   ],
   "dependencies": {
-    "@excelwithbusiness/webmobile-sc-components": "^1.32.0",
-    "@excelwithbusiness/webmobile-svg-library": "https://github.com/excelWithBusiness/webmobile-svg-library.git", 
+    "@matthill8286/atomic-ui": "*",
+    "@matthill8286/atomic-icon-library": "*",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
