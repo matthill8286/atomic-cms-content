@@ -1,6 +1,6 @@
 {
-  "name": "@mh.development/webmobile-cms-content",
-  "version": "0.0.7",
+  "name": "@matthill8286/webmobile-cms-content",
+  "version": "0.0.9",
   "description": "Shared CMS React components for GraphCms, used in Filtered products",
   "repository": {
     "type": "git",
@@ -15,8 +15,8 @@
     "/public"
   ],
   "dependencies": {
-    "@matthill8286/atomic-ui": "*",
     "@matthill8286/atomic-icon-library": "*",
+    "@matthill8286/atomic-ui": "*",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
