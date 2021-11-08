@@ -1,7 +1,7 @@
 {
   "name": "@matthill8286/webmobile-cms-content",
   "version": "0.0.10",
-  "description": "Shared CMS React components for GraphCms, used in Filtered products",
+  "description": "Shared CMS React components for GraphCms Pages",
   "repository": {
     "type": "git",
     "url": "https://github.com/matthill8286/webmobile-cms-content.git"
