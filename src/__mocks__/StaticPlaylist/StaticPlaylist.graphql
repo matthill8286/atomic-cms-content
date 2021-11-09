@@ -1,0 +1,23 @@
+query StaticPlaylist($id: ID!) {
+  staticPlaylist(where: {id: $id}, stage: PUBLISHED) {
+    type: __typename
+    id
+    name
+    size
+    assetTiles: staticAssetTiles(first: 500) {
+      type: __typename
+      instanceId: id
+      title
+      assetType
+      providerLabel
+      competencyLabel
+      locked
+      id: assetID
+      image {
+        id
+        fileName
+        url
+      }
+    }
+  }
+}

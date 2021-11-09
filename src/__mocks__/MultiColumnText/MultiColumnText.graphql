@@ -1,6 +1,6 @@
 query MultiColumnText($id: ID!) {
   multiColumnText(where: {id: $id}, stage: DRAFT) {
-    __typename
+    type: __typename
     columnFourDescription
     columnFourTitle
     columnOneDescription

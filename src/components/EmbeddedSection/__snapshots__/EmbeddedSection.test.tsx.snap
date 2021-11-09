@@ -1,0 +1,305 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmbeddedSection shows an embedded section 1`] = `
+.c5 {
+  margin: 64px 0 16px 0;
+  font-size: 30px;
+  line-height: 28px;
+  font-family: Montserrat,Arial,sans-serif;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.4px;
+  -moz-letter-spacing: 0.4px;
+  -ms-letter-spacing: 0.4px;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+.c10 {
+  margin: 32px 0;
+  font-size: 34px;
+  line-height: 40px;
+  font-family: Montserrat,Arial,sans-serif;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.4px;
+  -moz-letter-spacing: 0.4px;
+  -ms-letter-spacing: 0.4px;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+.c0 {
+  width: 100%;
+  left: 0;
+  right: 0;
+  background: #00C8DC no-repeat center center;
+  background-size: cover;
+}
+
+.c6 {
+  width: 100%;
+  left: 0;
+  right: 0;
+  background: no-repeat center center;
+  background-size: cover;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  box-sizing: border-box;
+  margin: calc(16px / 2);
+  width: calc(100% - 16px);
+  width: calc(100% - 16px);
+}
+
+.c2 {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1472px;
+  padding: 0 16px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.c1 {
+  background-color: #00C8DC;
+}
+
+.c1 ul a,
+.c1 ol a,
+.c1 p a {
+  border-bottom: 1px solid;
+  border-color: #00C8DC;
+  color: #00C8DC;
+}
+
+.c7 {
+  overflow: unset !important;
+}
+
+.c7 ul a,
+.c7 ol a,
+.c7 p a {
+  border-bottom: 1px solid;
+  border-color: #00C8DC;
+  color: #00C8DC;
+}
+
+.c9 {
+  padding: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c8 {
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  margin-bottom: calc(40px* 2);
+}
+
+@media (min-width:752px) {
+
+}
+
+@media (min-width:1008px) {
+
+}
+
+@media (min-width:752px) {
+
+}
+
+@media (min-width:1008px) {
+
+}
+
+@media (min-width:752px) {
+
+}
+
+@media (min-width:1008px) {
+
+}
+
+@media (min-width:752px) {
+
+}
+
+@media (min-width:1008px) {
+
+}
+
+@supports (display:grid) {
+  .c4 {
+    margin: 0;
+    width: auto;
+    grid-column-end: span 4;
+  }
+}
+
+@supports (display:grid) {
+  .c4 {
+    width: auto;
+    grid-column-end: span 4;
+  }
+}
+
+@media (min-width:512px) {
+  .c4 {
+    display: block;
+    margin: calc(16px / 2);
+    width: calc(50% - 16px);
+    width: calc(100% - 16px);
+  }
+}
+
+@media (min-width:752px) {
+  .c4 {
+    display: block;
+    margin: calc(24px / 2);
+    width: calc(50% - 24px);
+    width: calc(100% - 24px);
+  }
+}
+
+@media (min-width:1008px) {
+  .c4 {
+    display: block;
+    margin: calc(24px / 2);
+    width: calc(33.33333% - 24px);
+    width: calc(100% - 24px);
+  }
+}
+
+@media (min-width:1232px) {
+  .c4 {
+    display: block;
+    margin: calc(24px / 2);
+    width: calc(33.33333% - 24px);
+    width: calc(100% - 24px);
+  }
+}
+
+@media screen and (-ms-high-contrast:active),screen and (-ms-high-contrast:none) {
+
+}
+
+@media (min-width:512px) {
+  .c2 {
+    padding: 0 24px;
+  }
+}
+
+@media (min-width:752px) {
+  .c2 {
+    padding: 0 32px;
+  }
+}
+
+@media (min-width:1008px) {
+  .c2 {
+    padding: 0 48px;
+  }
+}
+
+@media (min-width:1232px) {
+  .c2 {
+    padding: 0 64px;
+  }
+}
+
+@supports (display:grid) {
+  .c3 {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+  }
+}
+
+@media (min-width:512px) {
+
+}
+
+@media (min-width:752px) {
+
+}
+
+@media (min-width:1008px) {
+
+}
+
+@media (min-width:1232px) {
+
+}
+
+<section
+  className="c0 c1"
+  color="primary"
+>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <h2
+          className="c5"
+          fontFamily="default"
+          fontSize="xxl"
+          spacing="base"
+        />
+      </div>
+    </div>
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <section
+          className="c6 c7 c8"
+          color="transparent"
+        >
+          <div
+            className="c9"
+          >
+            <h1
+              className="c10"
+              fontFamily="default"
+              fontSize="xxxl"
+              spacing="base"
+            />
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+`;

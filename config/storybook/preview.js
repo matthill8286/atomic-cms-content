@@ -1,10 +1,10 @@
-import { withInfo } from '@storybook/addon-info'
-import { withKnobs } from '@storybook/addon-knobs'
-import { configureViewport, INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
-import { addDecorator, addParameters, configure } from '@storybook/react'
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 import { create } from '@storybook/theming'
 import * as React from 'react'
 import StoryRouter from 'storybook-react-router'
+import { withThemesProvider } from 'themeprovider-storybook'
+
+import { GlobalStyle, atomicTheme as atomicStyles, alternateTheme as alternateStyles } from '@matthill8286/atomic-ui'
 
 const newViewports = {
   forPreview: {
@@ -51,34 +51,36 @@ const newViewports = {
   },
 }
 
-const withGlobal = content => <React.Fragment>{content()}</React.Fragment>
-
-function loadStories() {
-  const req = require.context('../../src', true, /\.story\.tsx$/)
-  req.keys().forEach(filename => req(filename))
+const atomicTheme = {
+  name: 'Filtered',
+  ...atomicStyles,
 }
 
-addDecorator(
-  withInfo({
-    header: false,
-    inline: true,
-  })
+const alternateTheme = {
+  name: 'Alternate',
+  ...alternateStyles,
+}
+
+const themes = [atomicTheme, alternateTheme]
+
+const withGlobal = content => (
+  <React.Fragment>
+    <GlobalStyle />
+    {content()}
+  </React.Fragment>
 )
 
-addParameters({
-  options: {
+export const parameters = {
+  docs: {
     panelPosition: 'right',
-    theme: create({ base: 'dark' }),
+    theme: create({ base: 'light' }),
+  },
+  options: {
+    storySort: {
+      method: 'alphabetical',
+    },
   },
   viewport: { viewports: { ...INITIAL_VIEWPORTS, ...newViewports } },
-})
+}
 
-addDecorator(withKnobs)
-addDecorator(StoryRouter())
-addDecorator(withGlobal)
-
-configureViewport({
-  defaultViewport: 'LG View',
-})
-
-configure(loadStories, module)
+export const decorators = [StoryRouter(), withThemesProvider(themes), withGlobal]

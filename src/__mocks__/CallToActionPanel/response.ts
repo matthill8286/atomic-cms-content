@@ -1,12 +1,12 @@
-export const callToActionPanel = {
+export const callToActionPanelMock = {
   data: {
     callToActionPanel: {
-      __typename: 'CallToActionPanel',
+      type: 'CallToActionPanel',
       id: 'ckju3p1o80q7m0b1238aztvs1',
       button: {
         id: 'ckju3ons821e90948yojzjn0w',
         text: 'Register or login',
-        link: 'dev.sec.filtered.com',
+        link: 'dev.sec.atomic.com',
         type: null,
       },
       description: 'Describing what we could offer you health care professionals ',
