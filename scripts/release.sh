@@ -4,7 +4,7 @@
 
 # fetch latest main
 git fetch origin
-git merge origin/main
+git merge origin/master
 
 # fetch tags, bump version, update changelog and create tag
 git fetch --tags -f
