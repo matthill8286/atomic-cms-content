@@ -6,6 +6,7 @@
     "type": "git",
     "url": "https://github.com/matthill8286/atomic-cms-content.git"
   },
+  "license": "UNLICENCED",
   "main": "dist/index.js",
   "sideEffects": false,
   "module": "dist/index",
