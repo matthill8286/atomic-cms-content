@@ -1,6 +1,6 @@
 {
   "name": "@matthill8286/atomic-cms-content",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Shared CMS React components for GraphCms Pages",
   "repository": {
     "type": "git",
