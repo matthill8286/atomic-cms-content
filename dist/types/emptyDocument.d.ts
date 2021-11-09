@@ -1,0 +1,8 @@
+import { Document } from './types';
+/**
+ * A rich text document considered to be empty.
+ * Any other document structure than this is not considered empty.
+ */
+declare const EMPTY_DOCUMENT: Document;
+export default EMPTY_DOCUMENT;
+//# sourceMappingURL=emptyDocument.d.ts.map

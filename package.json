@@ -1,15 +1,15 @@
 {
-  "name": "@matthill8286/webmobile-cms-content",
+  "name": "@matthill8286/atomic-cms-content",
   "version": "0.0.10",
   "description": "Shared CMS React components for GraphCms Pages",
   "repository": {
     "type": "git",
-    "url": "https://github.com/matthill8286/webmobile-cms-content.git"
+    "url": "https://github.com/matthill8286/atomic-cms-content.git"
   },
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "sideEffects": false,
   "module": "dist/index",
-  "types": "build/index",
+  "types": "dist/types",
   "files": [
     "/build/**/*",
     "/public"

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/__mocks__/StaticPageConnection/index.tsx"],"names":[],"mappings":"AAAA","sourcesContent":["export * from './response'\n"],"file":"index.js"}

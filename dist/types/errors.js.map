@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/types/errors.ts"],"names":["ErrorPageType"],"mappings":"AAAA,WAAYA,aAAZ;;WAAYA,a;AAAAA,EAAAA,a;AAAAA,EAAAA,a;AAAAA,EAAAA,a;GAAAA,a,KAAAA,a","sourcesContent":["export enum ErrorPageType {\n  TECHNICAL_ERROR = 'technical-error',\n  NOT_FOUND = 'not-found',\n  OFFLINE_ERROR = 'offline-error',\n}\n"],"file":"errors.js"}

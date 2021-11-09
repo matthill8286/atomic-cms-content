@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../src/components/Modals/ConfirmationModal/index.ts"],"names":["ConfirmationModal","ConfirmationModalWrapper"],"mappings":"AAAA,SAAQA,iBAAR;AACA,SAAQC,wBAAR","sourcesContent":["export {ConfirmationModal} from './ConfirmationModal';\nexport {ConfirmationModalWrapper} from './ConfirmationModalWrapper';\n"],"file":"index.js"}
