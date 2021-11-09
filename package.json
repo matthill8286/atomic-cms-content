@@ -156,7 +156,7 @@
     "url-loader": "^3.0.0"
   },
   "peerDependencies": {
-    "@matthill8286/atomic-ui": "^1.32.0",
+    "@matthill8286/atomic-ui": "*",
     "react": "^16.13.1",
     "styled-components": "^5.1.1"
   },
@@ -180,6 +180,7 @@
     "@babel/preset-typescript": "^7.7.2",
     "@babel/types": "^7.9.6",
     "@types/react": "16.9.47",
+    "@matthill8286/atomic-ui": "*",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "typescript": "^3.9.6"
