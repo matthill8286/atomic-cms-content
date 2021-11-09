@@ -27,14 +27,14 @@ module.exports = {
   moduleNameMapper: {
     '\\.svg$': '<rootDir>/config/jest-svg-mock.js',
     '@/(.*)': '<rootDir>/src/$1',
-    '^webmobile-sc-components$':
+    '^atomic-ui$':
       '<rootDir>/node_modules/@matthill8286/atomic-ui/dist/index.js',
-    '^@excelwithbusiness/webmobile-sc-components$':
+    '^@matthill8286/atomic-ui$':
       '<rootDir>/node_modules/@matthill8286/atomic-ui/dist/index.js',
-    '^webmobile-svg-library$':
-      '<rootDir>/node_modules/@excelwithbusiness/webmobile-svg-library/dist/index.js',
-    '^@excelwithbusiness/webmobile-svg-library$':
-      '<rootDir>/node_modules/@excelwithbusiness/webmobile-svg-library/dist/index.js',
+    '^atomic-icon-library$':
+      '<rootDir>/node_modules/@matthill8286/atomic-icon-library/dist/index.js',
+    '^@matthill8286/atomic-icon-library$':
+      '<rootDir>/node_modules/@matthill8286/atomic-icon-library/dist/index.js',
   },
   coverageThreshold: {
     global: {

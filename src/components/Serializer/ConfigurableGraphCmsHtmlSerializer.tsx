@@ -15,7 +15,7 @@ import {
 import {BLOCKS, INLINES, NodeChild} from '../../types';
 import {CommonNode, documentToReactComponents} from '../../types/richtext';
 import {EmbeddedPlayer} from '../EmbeddedPlayer';
-import {StyleguideArrow} from '@lxp/webmobile-svg-library';
+import {StyleguideArrow} from '@lxp/atomic-icon-library';
 
 interface SerializerCustomProps {
   bold?: boolean;
