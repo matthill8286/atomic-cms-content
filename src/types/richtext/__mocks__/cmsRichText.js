@@ -5,7 +5,7 @@ export const rawMockBulletedListWithChildren = {
       children: [
         {
           text:
-            'At Danone we are committed to protecting your right to privacy. We aim to protect any personal data we hold, to manage your personal data in a responsible way and to be transparent in our practices. Your trust is important to us. We have therefore committed ourselves to the following basic principles',
+            'At Alternate we are committed to protecting your right to privacy. We aim to protect any personal data we hold, to manage your personal data in a responsible way and to be transparent in our practices. Your trust is important to us. We have therefore committed ourselves to the following basic principles',
         },
       ],
     },
@@ -55,8 +55,7 @@ export const rawMockBulletedListWithChildren = {
               type: 'list-item-child',
               children: [
                 {
-                  text:
-                    'We aim to collect, process and use as little personal data as possible',
+                  text: 'We aim to collect, process and use as little personal data as possible',
                 },
               ],
             },
@@ -107,7 +106,7 @@ export const rawMockBulletedListWithChildren = {
       ],
     },
   ],
-};
+}
 
 export const mockRawWithBoldAndUnderline = {
   raw: {
@@ -120,7 +119,7 @@ export const mockRawWithBoldAndUnderline = {
           },
           {
             bold: true,
-            text: 'Danone',
+            text: 'Alternate',
           },
           {
             text: ' we are committed to protecting your right to privacy. ',
@@ -134,8 +133,7 @@ export const mockRawWithBoldAndUnderline = {
               ' data we hold, to manage your personal data in a responsible way and to be transparent in our practices. Your trust is important to us.',
           },
           {
-            text:
-              'We have therefore committed ourselves to the following basic principles',
+            text: 'We have therefore committed ourselves to the following basic principles',
             underline: true,
           },
         ],
@@ -186,8 +184,7 @@ export const mockRawWithBoldAndUnderline = {
                 type: 'list-item-child',
                 children: [
                   {
-                    text:
-                      'We aim to collect, process and use as little personal data as possible;',
+                    text: 'We aim to collect, process and use as little personal data as possible;',
                   },
                 ],
               },
@@ -239,7 +236,7 @@ export const mockRawWithBoldAndUnderline = {
       },
     ],
   },
-};
+}
 
 export const rawMockWithHeadingsCodeQuotesAssetIframes = {
   raw: {
@@ -338,7 +335,7 @@ export const rawMockWithHeadingsCodeQuotesAssetIframes = {
             id: 'atomic-link',
             href: 'https://atomic.com',
             type: 'link',
-            title: 'Filtered',
+            title: 'Atomic',
             children: [
               {
                 text: 'atomic.com',
@@ -362,7 +359,7 @@ export const rawMockWithHeadingsCodeQuotesAssetIframes = {
             id: 'atomic-link',
             href: 'https://atomic.com',
             type: 'link',
-            title: 'Filtered',
+            title: 'Atomic',
             children: [
               {
                 text: '',
@@ -386,7 +383,7 @@ export const rawMockWithHeadingsCodeQuotesAssetIframes = {
             id: 'atomic-link',
             href: 'https://atomic.com',
             type: 'link',
-            title: 'Filtered',
+            title: 'Atomic',
             children: [
               {
                 text: '',
@@ -465,7 +462,7 @@ export const rawMockWithHeadingsCodeQuotesAssetIframes = {
       },
     ],
   },
-};
+}
 
 // Simple Mocks
 export const fullResponse = {
@@ -477,7 +474,7 @@ export const fullResponse = {
           children: [
             {
               text:
-                'At Danone we are committed to protecting your right to privacy. We aim to protect any personal data we hold, to manage your personal data in a responsible way and to be transparent in our practices. Your trust is important to us. We have therefore committed ourselves to the following basic principle',
+                'At Alternate we are committed to protecting your right to privacy. We aim to protect any personal data we hold, to manage your personal data in a responsible way and to be transparent in our practices. Your trust is important to us. We have therefore committed ourselves to the following basic principle',
             },
           ],
         },
@@ -581,7 +578,7 @@ export const fullResponse = {
       ],
     },
   },
-};
+}
 
 export const embeddedMedia = {
   id: 'ckl95fb7ceuli0a58g6uf2fb5',
@@ -625,4 +622,4 @@ export const embeddedMedia = {
       ],
     },
   },
-};
+}

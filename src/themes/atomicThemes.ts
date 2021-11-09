@@ -1,7 +1,7 @@
-import {atomicTheme} from '@matthill8286/atomic-ui';
-import {ExtendedThemeType} from './types';
+import { atomicTheme } from '@matthill8286/atomic-ui'
+import { ExtendedThemeType } from './types'
 
-export const lightFilteredTheme: ExtendedThemeType = {
+export const lightAtomicTheme: ExtendedThemeType = {
   ...atomicTheme,
   color: {
     ...atomicTheme.color,
@@ -23,9 +23,9 @@ export const lightFilteredTheme: ExtendedThemeType = {
       backgroundColor: 'grey1',
     },
   },
-};
+}
 
-export const greyFilteredTheme: ExtendedThemeType = {
+export const greyAtomicTheme: ExtendedThemeType = {
   ...atomicTheme,
   color: {
     ...atomicTheme.color,
@@ -50,9 +50,9 @@ export const greyFilteredTheme: ExtendedThemeType = {
       backgroundColor: 'grey1',
     },
   },
-};
+}
 
-export const darkFilteredTheme: ExtendedThemeType = {
+export const darkAtomicTheme: ExtendedThemeType = {
   ...atomicTheme,
   color: {
     ...atomicTheme.color,
@@ -77,4 +77,4 @@ export const darkFilteredTheme: ExtendedThemeType = {
       backgroundColor: 'grey1',
     },
   },
-};
+}

@@ -1,7 +1,7 @@
-import React from 'react';
-import {ErrorPage} from '@/components/Error';
-import {ErrorPageType, PageTemplateProps} from '../../types';
-import {AppMeta, PageHead, AppMetaProps} from '../../components';
+import React from 'react'
+import { ErrorPageType, PageTemplateProps } from '../../types'
+import { AppMeta, PageHead, AppMetaProps } from '../../components'
+import ErrorPage from '../Error'
 
 export const Page: React.FC<PageTemplateProps> = ({
   landingPageContent,
@@ -19,7 +19,7 @@ export const Page: React.FC<PageTemplateProps> = ({
     routeContext,
     modalLocked,
     modalBlock,
-  } = landingPageContent;
+  } = landingPageContent
 
   if (!Array.isArray(slices) || !slices.length) {
     return (
@@ -28,23 +28,25 @@ export const Page: React.FC<PageTemplateProps> = ({
         errorType={ErrorPageType.NOT_FOUND}
         product="Landing"
       />
-    );
+    )
   }
 
   const appMetaProps: AppMetaProps = {
-    key: `${metaTitle}--${generator}`,
     title: metaTitle,
     description: metaDescription,
     canonical: window.location.href,
     generator,
-    additionalMetas: [{name: 'robots', content: 'follow'}],
-  };
+    additionalMetas: [{ name: 'robots', content: 'follow' }],
+  }
 
   return (
     <>
+      {/*// @ts-ignore*/}
       <AppMeta {...appMetaProps} />
-      {withPageHead && <PageHead slices={slices} />}
-      {/* @ts-ignore */}
+
+      {/* Add static header */}
+
+      {/*// @ts-ignore */}
       <PageContent
         modalLocked={modalLocked}
         modalBlock={modalBlock}
@@ -52,6 +54,8 @@ export const Page: React.FC<PageTemplateProps> = ({
         slices={slices}
         {...props}
       />
+
+      {/*  Add static footer */}
     </>
-  );
-};
+  )
+}

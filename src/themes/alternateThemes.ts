@@ -1,7 +1,7 @@
-import {danoneTheme} from '@matthill8286/atomic-ui';
-import {ExtendedThemeType} from './types';
+import { danoneTheme } from '@matthill8286/atomic-ui'
+import { ExtendedThemeType } from './types'
 
-export const lightDanoneTheme: ExtendedThemeType = {
+export const lightAlternateTheme: ExtendedThemeType = {
   ...danoneTheme,
   color: {
     ...danoneTheme.color,
@@ -22,9 +22,9 @@ export const lightDanoneTheme: ExtendedThemeType = {
       backgroundColor: 'grey2',
     },
   },
-};
+}
 
-export const greyDanoneTheme: ExtendedThemeType = {
+export const greyAlternateTheme: ExtendedThemeType = {
   ...danoneTheme,
   color: {
     ...danoneTheme.color,
@@ -49,9 +49,9 @@ export const greyDanoneTheme: ExtendedThemeType = {
       backgroundColor: 'grey2',
     },
   },
-};
+}
 
-export const darkDanoneTheme: ExtendedThemeType = {
+export const darkAlternateTheme: ExtendedThemeType = {
   ...danoneTheme,
   color: {
     ...danoneTheme.color,
@@ -75,4 +75,4 @@ export const darkDanoneTheme: ExtendedThemeType = {
       backgroundColor: 'grey2',
     },
   },
-};
+}

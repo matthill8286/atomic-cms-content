@@ -1,23 +1,15 @@
-import React from 'react';
-import {
-  Cell,
-  Grid,
-  Row,
-  Spacer,
-  MultiViewModalProvider,
-} from '@matthill8286/atomic-ui';
-import {ErrorPage} from '@/components/Error';
-import {AppMeta, CustomSection, AppMetaProps} from '../../components';
-import {ErrorPageType, PageTemplateProps} from '../../types';
-import {PrivacyContent} from '../PrivacyPage/PrivacyContent';
+import React from 'react'
+import { Cell, Grid, Row, Spacer, MultiViewModalProvider } from '@matthill8286/atomic-ui'
+import { AppMeta, CustomSection, AppMetaProps } from '../../components'
+import { ErrorPageType, PageTemplateProps } from '../../types'
+import { PrivacyContent } from '../PrivacyPage/PrivacyContent'
+import ErrorPage from '../../components/Error'
 
-export const PolicyPage: React.FC<PageTemplateProps> = ({
-  landingPageContent,
-}) => {
-  const {slices, metaTitle, metaDescription, type} = landingPageContent;
+export const PolicyPage: React.FC<PageTemplateProps> = ({ landingPageContent }) => {
+  const { slices, metaTitle, metaDescription, type } = landingPageContent
 
   if (!Array.isArray(slices) || !slices.length) {
-    return <ErrorPage errorType={ErrorPageType.TECHNICAL_ERROR} />;
+    return <ErrorPage errorType={ErrorPageType.TECHNICAL_ERROR} />
   }
 
   const appMetaProps: AppMetaProps = {
@@ -25,8 +17,8 @@ export const PolicyPage: React.FC<PageTemplateProps> = ({
     description: metaDescription,
     canonical: '',
     generator: 'POLICY_PAGE',
-    additionalMetas: [{name: 'robots', content: 'follow'}],
-  };
+    additionalMetas: [{ name: 'robots', content: 'follow' }],
+  }
 
   return (
     <CustomSection>
@@ -42,5 +34,5 @@ export const PolicyPage: React.FC<PageTemplateProps> = ({
         </Row>
       </Grid>
     </CustomSection>
-  );
-};
+  )
+}

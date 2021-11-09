@@ -1,7 +1,7 @@
-import React, {ReactNode} from 'react';
-import {nodeToReactComponent} from './nodeListToReactComponents';
-import {Block, Inline, INLINES, MARKS, BLOCKS, Text} from '../index';
-import {RichTextBlock, RichTextSpan} from './graphcms-richtext';
+import React, { ReactNode } from 'react'
+import { nodeToReactComponent } from './nodeListToReactComponents'
+import { RichTextBlock, RichTextSpan } from './graphcms-richtext'
+import { BLOCKS, MARKS } from '../index'
 
 const defaultNodeRenderers: RenderNode = {
   [BLOCKS.PARAGRAPH]: (node, children) => <p>{children}</p>,
@@ -16,52 +16,53 @@ const defaultNodeRenderers: RenderNode = {
   [BLOCKS.LIST_ITEM]: (node, children) => <li>{children}</li>,
   [BLOCKS.QUOTE]: (node, children) => <blockquote>{children}</blockquote>,
   [BLOCKS.HR]: () => <hr />,
-  [INLINES.EMBEDDED_ENTRY]: node =>
-    defaultInlineUpdated(INLINES.EMBEDDED_ENTRY, node as Inline),
-};
+}
 
 const defaultModifierRenderers: RenderModifier = {
   [MARKS.BOLD]: text => <b>{text}</b>,
   [MARKS.ITALIC]: text => <i>{text}</i>,
   [MARKS.UNDERLINE]: text => <u>{text}</u>,
   [MARKS.CODE]: text => <code>{text}</code>,
-};
-
-export function defaultInlineUpdated(type: string, node): ReactNode {
-  return <span key={node.key}>{node.type}</span>;
 }
 
-export type CommonNode = Text | Block | Inline | RichTextBlock | RichTextSpan;
+export function defaultInlineUpdated(
+  type: string,
+  node: { key: string | number | undefined; type: React.ReactNode }
+): ReactNode {
+  return <span key={node.key}>{node.type}</span>
+}
+
+export type CommonNode = Text | RichTextBlock | RichTextSpan
 
 export interface NodeRenderer {
-  (node: Block | Inline, children: ReactNode): ReactNode;
+  (node: any, children: ReactNode): ReactNode
 }
 
 export interface RenderNode {
-  [k: string]: NodeRenderer;
+  [k: string]: NodeRenderer
 }
 
 export interface RenderModifier {
-  [k: string]: (text: ReactNode) => ReactNode;
+  [k: string]: (text: ReactNode) => ReactNode
 }
 
 export interface RenderText {
-  (text: string): ReactNode;
+  (text: string): ReactNode
 }
 
 export interface Options {
   /**
    * Node renderers
    */
-  renderNode?: RenderNode;
+  renderNode?: RenderNode
   /**
    * Modifier renderers
    */
-  renderModifier?: RenderModifier;
+  renderModifier?: RenderModifier
   /**
    * Text renderer
    */
-  renderText?: RenderText;
+  renderText?: RenderText
 }
 
 /**
@@ -72,7 +73,7 @@ export function documentToReactComponents(
   options: Options = {}
 ): ReactNode {
   if (!richTextDocument) {
-    return null;
+    return null
   }
 
   return nodeToReactComponent(richTextDocument, {
@@ -85,5 +86,5 @@ export function documentToReactComponents(
       ...options.renderModifier,
     },
     renderText: options.renderText,
-  });
+  })
 }

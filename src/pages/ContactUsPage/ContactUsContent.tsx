@@ -1,21 +1,18 @@
-import React, {FC} from 'react';
-import {isEmptyString} from '@/utils/stringHelper/stringHelper';
+import React, { FC } from 'react'
 import {
   CmsCallToActionPanel,
-  CustomSection,
-  TextSection,
-} from '../../components';
-import {ContactSection} from '../../components/ContactSection';
-import {
   ConfigurableGraphCmsHtmlSerializer,
+  CustomSection,
   Serializer,
-} from '#/src/staticPages/components';
+  TextSection,
+} from '../../components'
+import { ContactSection } from '../../components/ContactSection'
 
-export const ContactUsContent: FC<{slices: any[]}> = ({slices}) => {
+export const ContactUsContent: FC<{ slices: any[] }> = ({ slices }) => {
   return (
     <CustomSection>
-      {slices?.map(({pageComponents}, index: number) => {
-        const keyProp = `${pageComponents?.__typename}_${index}`;
+      {slices?.map(({ pageComponents }, index: number) => {
+        const keyProp = `${pageComponents?.__typename}_${index}`
         switch (pageComponents.__typename) {
           case 'CallToActionPanel':
             return (
@@ -33,7 +30,7 @@ export const ContactUsContent: FC<{slices: any[]}> = ({slices}) => {
                   })
                 )}
               />
-            );
+            )
           case 'RichTextSection':
             return (
               pageComponents.document.raw && (
@@ -46,7 +43,7 @@ export const ContactUsContent: FC<{slices: any[]}> = ({slices}) => {
                   headingsBold
                 />
               )
-            );
+            )
           case 'ContactSection':
             return (
               pageComponents.contactInformation && (
@@ -60,11 +57,11 @@ export const ContactUsContent: FC<{slices: any[]}> = ({slices}) => {
                   richTextContactSection={pageComponents.contactInformation}
                 />
               )
-            );
+            )
           default:
-            return null;
+            return null
         }
       })}
     </CustomSection>
-  );
-};
+  )
+}

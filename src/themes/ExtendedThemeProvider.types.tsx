@@ -1,8 +1,8 @@
-import React from 'react';
-import {ExtendedThemeType} from './types';
+import React from 'react'
+import { ExtendedThemeType } from './types'
 
 export type ExtendedThemeProviderProps = {
-  children: React.ReactNode;
-  extendedFilteredTheme: ExtendedThemeType;
-  extendedDanoneTheme: ExtendedThemeType;
-};
+  children: React.ReactNode
+  extendedAtomicTheme: ExtendedThemeType
+  extendedAlternateTheme: ExtendedThemeType
+}

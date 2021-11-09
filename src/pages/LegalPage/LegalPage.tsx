@@ -1,15 +1,15 @@
-import React from 'react';
-import {Cell, Grid, Row, Spacer} from '@matthill8286/atomic-ui';
-import {ErrorPage} from '@/components/Error';
-import {AppMeta, AppMetaProps} from '../../components';
-import {LegalContent} from './LegalContent';
-import {PageConfigType, ErrorPageType} from '../../types';
+import React from 'react'
+import { Cell, Grid, Row, Spacer } from '@matthill8286/atomic-ui'
+import { AppMeta, AppMetaProps } from '../../components'
+import { LegalContent } from './LegalContent'
+import { PageConfigType, ErrorPageType } from '../../types'
+import ErrorPage from '../../components/Error'
 
-export const LegalPage: React.FC<PageConfigType> = ({landingPageContent}) => {
-  const {slices, metaTitle, metaDescription} = landingPageContent;
+export const LegalPage: React.FC<PageConfigType> = ({ landingPageContent }) => {
+  const { slices, metaTitle, metaDescription } = landingPageContent
 
   if (!Array.isArray(slices) || !slices.length) {
-    return <ErrorPage errorType={ErrorPageType.TECHNICAL_ERROR} />;
+    return <ErrorPage errorType={ErrorPageType.TECHNICAL_ERROR} />
   }
 
   const appMetaProps: AppMetaProps = {
@@ -17,10 +17,10 @@ export const LegalPage: React.FC<PageConfigType> = ({landingPageContent}) => {
     description: metaDescription,
     canonical: '',
     generator: 'LEGAL_PAGE',
-    additionalMetas: [{name: 'robots', content: 'follow'}],
+    additionalMetas: [{ name: 'robots', content: 'follow' }],
     keywords: [],
     includeProductInTitle: true,
-  };
+  }
 
   return (
     <>
@@ -34,5 +34,5 @@ export const LegalPage: React.FC<PageConfigType> = ({landingPageContent}) => {
         </Row>
       </Grid>
     </>
-  );
-};
+  )
+}

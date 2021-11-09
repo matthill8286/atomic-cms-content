@@ -1,4 +1,4 @@
-import {Elements, NodeChild, RichTextBlock} from '../../types';
+import { Elements, NodeChild, RichTextBlock } from '../../types'
 
 export const getHeadline = (level = 'one', tag = '1'): RichTextBlock => {
   return {
@@ -8,8 +8,8 @@ export const getHeadline = (level = 'one', tag = '1'): RichTextBlock => {
         text: `h${tag} Headline`,
       },
     ],
-  };
-};
+  }
+}
 
 export const getParagraph = (): RichTextBlock => {
   return {
@@ -17,11 +17,11 @@ export const getParagraph = (): RichTextBlock => {
     children: [
       {
         text:
-          'At Danone we are committed to protecting your right to privacy. We aim to protect any personal data we hold, to manage your personal data in a responsible way and to be transparent in our practices. Your trust is important to us. We have therefore committed ourselves to the following basic principles',
+          'At Alternate we are committed to protecting your right to privacy. We aim to protect any personal data we hold, to manage your personal data in a responsible way and to be transparent in our practices. Your trust is important to us. We have therefore committed ourselves to the following basic principles',
       },
     ],
-  };
-};
+  }
+}
 
 export const getStrongParagraph = (): RichTextBlock => {
   return {
@@ -32,7 +32,7 @@ export const getStrongParagraph = (): RichTextBlock => {
       },
       {
         bold: true,
-        text: 'Danone',
+        text: 'Alternate',
       },
       {
         text: ' we are committed to protecting your right to privacy. ',
@@ -42,8 +42,8 @@ export const getStrongParagraph = (): RichTextBlock => {
         text: 'We aim to protect any personal',
       },
     ],
-  };
-};
+  }
+}
 
 export const getEmParagraph = () => {
   return {
@@ -59,8 +59,8 @@ export const getEmParagraph = () => {
         ],
       },
     ],
-  };
-};
+  }
+}
 
 export const getUrlParagraph = (): RichTextBlock => {
   return {
@@ -71,14 +71,14 @@ export const getUrlParagraph = (): RichTextBlock => {
         rel: 'dsrhjtykghjhrgvd',
         href: 'https://atomic.com',
         type: 'link',
-        title: 'Filtered',
+        title: 'Atomic',
         children: [],
         className: 'fart',
         openInNewTab: true,
       },
     ],
-  };
-};
+  }
+}
 
 export const getImage = (): NodeChild => {
   return {
@@ -89,8 +89,8 @@ export const getImage = (): NodeChild => {
     height: 766,
     handle: 'J25IRsKJSdCSPJPBNVmL',
     mimeType: 'image/jpeg',
-  };
-};
+  }
+}
 
 export const getListItem = (): RichTextBlock => {
   return {
@@ -111,5 +111,5 @@ export const getListItem = (): RichTextBlock => {
         ],
       },
     ],
-  };
-};
+  }
+}

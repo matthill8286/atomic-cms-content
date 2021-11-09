@@ -171,7 +171,7 @@ The Instance return data looks like so:
                         "createdAt": "2021-01-12T14:05:21.175195+00:00",
                         "footer": {
                             "entryId": "ckju308xc0d8q0b659g9479e9",
-                            "description": "© 2021 Copyright Danone Nutrica Campus",
+                            "description": "© 2021 Copyright Alternate Nutrica Campus",
                             "links": [
                                 {
                                     "actionLabel": "Privacy policy",

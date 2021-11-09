@@ -4,7 +4,11 @@ import * as React from 'react'
 import StoryRouter from 'storybook-react-router'
 import { withThemesProvider } from 'themeprovider-storybook'
 
-import { GlobalStyle, atomicTheme as atomicStyles, alternateTheme as alternateStyles } from '@matthill8286/atomic-ui'
+import {
+  GlobalStyle,
+  atomicTheme as atomicStyles,
+  alternateTheme as alternateStyles,
+} from '@matthill8286/atomic-ui'
 
 const newViewports = {
   forPreview: {
@@ -52,7 +56,7 @@ const newViewports = {
 }
 
 const atomicTheme = {
-  name: 'Filtered',
+  name: 'Atomic',
   ...atomicStyles,
 }
 

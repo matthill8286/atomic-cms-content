@@ -1,17 +1,15 @@
-import React from 'react';
-import {Cell, Grid, Row, Spacer} from '@matthill8286/atomic-ui';
-import {ErrorPage} from '@/components/Error';
-import {AppMeta, AppMetaProps} from '../../components';
-import {ContactUsContent} from './ContactUsContent';
-import {ErrorPageType, PageTemplateProps} from '../../types';
+import React from 'react'
+import { Cell, Grid, Row, Spacer } from '@matthill8286/atomic-ui'
+import { AppMeta, AppMetaProps } from '../../components'
+import { ContactUsContent } from './ContactUsContent'
+import { ErrorPageType, PageTemplateProps } from '../../types'
+import ErrorPage from '../../components/Error'
 
-export const ContactUsPage: React.FC<PageTemplateProps> = ({
-  landingPageContent,
-}) => {
-  const {slices, metaTitle, metaDescription} = landingPageContent;
+export const ContactUsPage: React.FC<PageTemplateProps> = ({ landingPageContent }) => {
+  const { slices, metaTitle, metaDescription } = landingPageContent
 
   if (!Array.isArray(slices) || !slices.length) {
-    return <ErrorPage errorType={ErrorPageType.TECHNICAL_ERROR} />;
+    return <ErrorPage errorType={ErrorPageType.TECHNICAL_ERROR} />
   }
 
   const appMetaProps: AppMetaProps = {
@@ -19,14 +17,14 @@ export const ContactUsPage: React.FC<PageTemplateProps> = ({
     description: metaDescription,
     canonical: '',
     generator: 'CONTACT_US_PAGE',
-    additionalMetas: [{name: 'robots', content: 'follow'}],
+    additionalMetas: [{ name: 'robots', content: 'follow' }],
     keywords: [],
     includeProductInTitle: true,
-  };
+  }
 
   return (
     <>
-      <AppMeta key="app-meta-contact-us-page" {...appMetaProps} />
+      <AppMeta {...appMetaProps} />
       <Grid>
         <Row>
           <Cell columns={12}>
@@ -36,5 +34,5 @@ export const ContactUsPage: React.FC<PageTemplateProps> = ({
         </Row>
       </Grid>
     </>
-  );
-};
+  )
+}

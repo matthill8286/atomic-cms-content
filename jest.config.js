@@ -13,7 +13,11 @@ module.exports = {
     '^.+\\.[t|j]sx?$': 'babel-jest',
     '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
   },
-  transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$', '<rootDir>/dist/'],
+  transformIgnorePatterns: [
+    '[/\\\\]node_modules[/\\\\]$',
+    'node_modules/(?!@matthill8286)',
+    '<rootDir>/dist/',
+  ],
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
   coverageReporters: ['text', 'html'],
   collectCoverageFrom: [
@@ -27,10 +31,8 @@ module.exports = {
   moduleNameMapper: {
     '\\.svg$': '<rootDir>/config/jest-svg-mock.js',
     '@/(.*)': '<rootDir>/src/$1',
-    '^atomic-ui$':
-      '<rootDir>/node_modules/@matthill8286/atomic-ui/dist/index.js',
-    '^@matthill8286/atomic-ui$':
-      '<rootDir>/node_modules/@matthill8286/atomic-ui/dist/index.js',
+    '^atomic-ui$': '<rootDir>/node_modules/@matthill8286/atomic-ui/dist/index.js',
+    '^@matthill8286/atomic-ui$': '<rootDir>/node_modules/@matthill8286/atomic-ui/dist/index.js',
     '^atomic-icon-library$':
       '<rootDir>/node_modules/@matthill8286/atomic-icon-library/dist/index.js',
     '^@matthill8286/atomic-icon-library$':
