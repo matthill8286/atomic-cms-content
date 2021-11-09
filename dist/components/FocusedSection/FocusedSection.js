@@ -1,3 +1,6 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/FocusedSection/FocusedSection.tsx",
+    _this = this;
+
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { Row, Cell, styled, AssetMeta, Heading, Grid } from '@matthill8286/atomic-ui';
@@ -49,27 +52,90 @@ export var FocusedSection = function FocusedSection(_ref2) {
   return React.createElement(CustomSection, {
     color: sectionColor,
     paddingTop: paddingTop,
-    paddingBottom: paddingBottom
-  }, React.createElement(Grid, null, React.createElement(Row, null, React.createElement(Cell, {
-    columns: 12
+    paddingBottom: paddingBottom,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 5
+    }
+  }, React.createElement(Grid, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 7
+    }
+  }, React.createElement(Row, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 9
+    }
+  }, React.createElement(Cell, {
+    columns: 12,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 11
+    }
   }, React.createElement(Heading, {
     scale: "level-2",
     bold: true,
     textAlign: "left",
-    margin: "xxl 0 0"
+    margin: "xxl 0 0",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 13
+    }
   }, title))), React.createElement(Row, {
-    noMargin: true
+    noMargin: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70,
+      columnNumber: 9
+    }
   }, React.createElement(Cell, {
     columns: 8,
-    colsSm: 8
-  }, React.createElement(DescriptionWrapper, null, Serializer(description === null || description === void 0 ? void 0 : description.raw, ConfigurableGraphCmsHtmlSerializer({}))), React.createElement(ProfileTileRows, {
+    colsSm: 8,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
+      columnNumber: 11
+    }
+  }, React.createElement(DescriptionWrapper, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72,
+      columnNumber: 13
+    }
+  }, Serializer(description === null || description === void 0 ? void 0 : description.raw, ConfigurableGraphCmsHtmlSerializer({}))), React.createElement(ProfileTileRows, {
     profileSections: profileSections,
     sectionColor: "clear",
     title: profileTitle,
-    label: profileBrandedLabel
+    label: profileBrandedLabel,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78,
+      columnNumber: 13
+    }
   })), React.createElement(Cell, {
     columns: 4,
-    colsSm: 8
+    colsSm: 8,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85,
+      columnNumber: 11
+    }
   }, React.createElement(AssetMeta, {
     list: [{
       label: providerLabel,
@@ -92,7 +158,13 @@ export var FocusedSection = function FocusedSection(_ref2) {
     isCreatePlaylistInteraction: false,
     isBookmarkInteraction: false,
     isShareInteraction: false,
-    tags: []
+    tags: [],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86,
+      columnNumber: 13
+    }
   })))));
 };
 //# sourceMappingURL=FocusedSection.js.map

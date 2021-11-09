@@ -1,3 +1,6 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/pages/PrivacyPage/PrivacyContent.tsx",
+    _this = this;
+
 import React from 'react';
 import { TextSection, CustomSection } from "../../components";
 import CookieConsent from "../../components/CookieConsent/CookieConsent";
@@ -5,7 +8,14 @@ export var TYPE_RICH_TEXT = 'RichTextSection';
 export var PrivacyContent = function PrivacyContent(_ref) {
   var slices = _ref.slices,
       type = _ref.type;
-  return React.createElement(CustomSection, null, slices === null || slices === void 0 ? void 0 : slices.map(function (_ref2, index) {
+  return React.createElement(CustomSection, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 5
+    }
+  }, slices === null || slices === void 0 ? void 0 : slices.map(function (_ref2, index) {
     var section = _ref2.pageComponents;
     var keyProp = "".concat(section === null || section === void 0 ? void 0 : section.__typename, "_").concat(index);
 
@@ -18,12 +28,25 @@ export var PrivacyContent = function PrivacyContent(_ref) {
           key: keyProp,
           anchorId: section === null || section === void 0 ? void 0 : section.id,
           headingsBold: true,
-          type: type
+          type: type,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 22,
+            columnNumber: 17
+          }
         });
 
       default:
         return null;
     }
-  }), React.createElement(CookieConsent, null));
+  }), React.createElement(CookieConsent, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 7
+    }
+  }));
 };
 //# sourceMappingURL=PrivacyContent.js.map

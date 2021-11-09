@@ -1,3 +1,5 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/routes/staticSlicesRoutes.tsx";
+
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -10,7 +12,14 @@ import { GenericLoadingScreenScrollToTop } from "../components/GenericLoadingScr
 var PageSlice = loadable(function () {
   return import("../components/StaticInstanceParent");
 }, {
-  fallback: React.createElement(GenericLoadingScreenScrollToTop, null)
+  fallback: React.createElement(GenericLoadingScreenScrollToTop, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6,
+      columnNumber: 13
+    }
+  })
 });
 export var StaticSlicesRoutes = {
   HOME: {

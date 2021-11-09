@@ -1,5 +1,8 @@
 var _excluded = ["landingPageContent", "PageContent", "withPageHead", "generator", "dataTestId", "errorPage"];
 
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/Page/Page.tsx",
+    _this = this;
+
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
@@ -30,7 +33,13 @@ export var Page = function Page(_ref) {
     return React.createElement(ErrorPage, {
       errorMessage: errorPage === null || errorPage === void 0 ? void 0 : errorPage.errorMessage,
       errorType: ErrorPageType.NOT_FOUND,
-      product: "Landing"
+      product: "Landing",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 7
+      }
     });
   }
 
@@ -45,13 +54,33 @@ export var Page = function Page(_ref) {
       content: 'follow'
     }]
   };
-  return React.createElement(React.Fragment, null, React.createElement(AppMeta, appMetaProps), withPageHead && React.createElement(PageHead, {
-    slices: slices
+  return React.createElement(React.Fragment, null, React.createElement(AppMeta, _extends({}, appMetaProps, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45,
+      columnNumber: 7
+    }
+  })), withPageHead && React.createElement(PageHead, {
+    slices: slices,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 24
+    }
   }), React.createElement(PageContent, _extends({
     modalLocked: modalLocked,
     modalBlock: modalBlock,
     routeContext: routeContext,
     slices: slices
-  }, props)));
+  }, props, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 7
+    }
+  })));
 };
 //# sourceMappingURL=Page.js.map

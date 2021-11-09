@@ -45,7 +45,7 @@
     "lint:css": "stylelint 'src/**/*.{js,jsx,ts,tsx}' --config stylelintrc.json",
     "lint:ts": "eslint \"src/**/*.{js,ts,tsx}\"",
     "release": "./scripts/release.sh",
-    "build-and-release": "./scripts/builld.sh",
+    "build-and-release": "yarn automate:build && yarn release",
     "storybook": "cross-env BABEL_ENV=build NODE_ENV=development start-storybook --quiet -p 9001 -c config/storybook -s ./",
     "test": "jest --env=jsdom",
     "test:coverage": "yarn test --coverage",

@@ -1,3 +1,6 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/AccordionSection/index.tsx",
+    _this = this;
+
 import * as React from 'react';
 import { useLocation } from 'react-router';
 import { Grid, Cell, Row, Offset, Accordion } from '@matthill8286/atomic-ui';
@@ -36,19 +39,57 @@ export var AccordionSection = function AccordionSection(_ref) {
     };
   });
   return React.createElement(CustomSection, {
-    color: sectionColor
-  }, React.createElement(Grid, null, React.createElement(Row, null, React.createElement(Offset, {
+    color: sectionColor,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 5
+    }
+  }, React.createElement(Grid, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 7
+    }
+  }, React.createElement(Row, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 9
+    }
+  }, React.createElement(Offset, {
     colsXs: 0,
     colsSm: 0,
-    columns: 1
+    columns: 1,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 11
+    }
   }), React.createElement(Cell, {
     colsXl: 10,
     colsLg: 10,
     colsMd: 6,
     colsSm: 8,
-    colsXs: 4
+    colsXs: 4,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 11
+    }
   }, React.createElement(StyledAccordionWrapper, {
-    textColor: textColor
+    textColor: textColor,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 13
+    }
   }, React.createElement(Accordion, {
     isLarge: isLarge,
     withIconsOnRight: withIconsOnRight,
@@ -60,7 +101,13 @@ export var AccordionSection = function AccordionSection(_ref) {
     labelPadding: "xxs 0",
     entryPadding: "0 0 sm",
     entries: mappedAccordionEntries,
-    openedIndex: openedIndex
+    openedIndex: openedIndex,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60,
+      columnNumber: 15
+    }
   }))))));
 };
 //# sourceMappingURL=index.js.map

@@ -1,3 +1,6 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/Modals/LoginModal/LoginModal.tsx",
+    _this = this;
+
 import React from 'react';
 import { CopyText, Modal, Picture, styled } from '@matthill8286/atomic-ui';
 var DescriptionWrapper = styled.div.withConfig({
@@ -47,17 +50,42 @@ export var LoginModal = function LoginModal(_ref3) {
       curved: true,
       size: 'lg',
       onClick: goToLoginPage
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 5
     }
   }, image && React.createElement(StyledPicture, {
     rounded: true,
     alt: (_image$altText = image === null || image === void 0 ? void 0 : image.altText) !== null && _image$altText !== void 0 ? _image$altText : '',
     width: "100%",
     height: "auto",
-    src: image === null || image === void 0 ? void 0 : image.url
-  }), React.createElement(DescriptionWrapper, null, React.createElement(CopyText, {
+    src: image === null || image === void 0 ? void 0 : image.url,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45,
+      columnNumber: 9
+    }
+  }), React.createElement(DescriptionWrapper, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 7
+    }
+  }, React.createElement(CopyText, {
     textAlign: "center",
     fontSize: "md",
-    margin: "0"
+    margin: "0",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 9
+    }
   }, loginDescription)));
 };
 //# sourceMappingURL=LoginModal.js.map

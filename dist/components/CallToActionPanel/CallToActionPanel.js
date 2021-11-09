@@ -1,3 +1,6 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/CallToActionPanel/CallToActionPanel.tsx",
+    _this = this;
+
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -37,15 +40,40 @@ export var CmsCallToActionPanel = function CmsCallToActionPanel(_ref) {
   return React.createElement(CustomSection, {
     color: sectionColor,
     paddingTop: 0,
-    paddingBottom: 0
-  }, React.createElement(Grid, null, React.createElement(Row, {
-    noMargin: true
+    paddingBottom: 0,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 5
+    }
+  }, React.createElement(Grid, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 7
+    }
+  }, React.createElement(Row, {
+    noMargin: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 9
+    }
   }, React.createElement(Cell, {
     colsXl: 12,
     colsLg: 12,
     colsMd: 8,
     colsSm: 8,
-    colsXs: 4
+    colsXs: 4,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 11
+    }
   }, React.createElement(CallToActionPanel, {
     image: image,
     withLQIP: withLQIP,
@@ -68,7 +96,13 @@ export var CmsCallToActionPanel = function CmsCallToActionPanel(_ref) {
 
       return null;
     },
-    alignment: rightOrientation ? orientation.right : orientation.left
+    alignment: rightOrientation ? orientation.right : orientation.left,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 13
+    }
   })))));
 };
 //# sourceMappingURL=CallToActionPanel.js.map

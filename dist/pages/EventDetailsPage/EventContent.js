@@ -1,3 +1,6 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/pages/EventDetailsPage/EventContent.tsx",
+    _this = this;
+
 import React from 'react';
 import { CustomSection, FocusedSection, StaticPlaylist } from "../../components";
 export var FOCUSED_SECTION = 'FocusedSection';
@@ -8,7 +11,13 @@ export var EventsWithAssetMeta = React.memo(function (_ref) {
       overridePlaylistClickEvent = _ref.overridePlaylistClickEvent,
       routeContext = _ref.routeContext;
   return React.createElement(CustomSection, {
-    color: sectionColor
+    color: sectionColor,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 7
+    }
   }, slices === null || slices === void 0 ? void 0 : slices.map(function (_ref2, index) {
     var _ref2$pageComponents = _ref2.pageComponents,
         description = _ref2$pageComponents.description,
@@ -38,7 +47,13 @@ export var EventsWithAssetMeta = React.memo(function (_ref) {
           profileSections: profileSections,
           sectionColor: "grey1",
           paddingTop: "sm",
-          paddingBottom: "sm"
+          paddingBottom: "sm",
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 41,
+            columnNumber: 19
+          }
         });
 
       case 'StaticPlaylistSection':
@@ -60,7 +75,13 @@ export var EventsWithAssetMeta = React.memo(function (_ref) {
           showLock: true,
           desktop: size !== null && size !== void 0 ? size : 4,
           paddingTop: "xxxl",
-          showDivider: true
+          showDivider: true,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 60,
+            columnNumber: 19
+          }
         });
 
       default:

@@ -1,3 +1,6 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/LandingPagesConnector.tsx",
+    _this = this;
+
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { ErrorPage } from "./Error";
@@ -27,18 +30,37 @@ export var LandingPagesConnector = function LandingPagesConnector(_ref) {
       error = _useQuery.error;
 
   if (loading) {
-    return React.createElement(GenericLoadingScreenScrollToTop, null);
+    return React.createElement(GenericLoadingScreenScrollToTop, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 12
+      }
+    });
   }
 
   if (error) {
     return React.createElement(ErrorPage, {
-      errorType: ErrorPageType.TECHNICAL_ERROR
+      errorType: ErrorPageType.TECHNICAL_ERROR,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49,
+        columnNumber: 12
+      }
     });
   }
 
   if (!(data !== null && data !== void 0 && data.staticPage)) {
     return React.createElement(ErrorPage, {
-      errorType: ErrorPageType.NOT_FOUND
+      errorType: ErrorPageType.NOT_FOUND,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53,
+        columnNumber: 12
+      }
     });
   }
 

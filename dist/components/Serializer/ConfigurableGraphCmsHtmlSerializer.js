@@ -1,3 +1,6 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/Serializer/ConfigurableGraphCmsHtmlSerializer.tsx",
+    _this = this;
+
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -40,7 +43,13 @@ var renderModifier = function renderModifier() {
           lineHeight: "md",
           fontSize: "sm",
           tag: "strong",
-          bold: !!children.bold || !!customProps.bold
+          bold: !!children.bold || !!customProps.bold,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 78,
+            columnNumber: 11
+          }
         }, childText);
 
       case children.italic:
@@ -48,7 +57,13 @@ var renderModifier = function renderModifier() {
           lineHeight: "md",
           fontSize: "sm",
           tag: "em",
-          bold: (_children$bold = !!(children !== null && children !== void 0 && children.bold)) !== null && _children$bold !== void 0 ? _children$bold : !!customProps.bold
+          bold: (_children$bold = !!(children !== null && children !== void 0 && children.bold)) !== null && _children$bold !== void 0 ? _children$bold : !!customProps.bold,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 89,
+            columnNumber: 11
+          }
         }, childText);
 
       case children.underline:
@@ -56,7 +71,13 @@ var renderModifier = function renderModifier() {
           lineHeight: "md",
           fontSize: "sm",
           tag: "u",
-          bold: (_children$bold2 = !!(children !== null && children !== void 0 && children.bold)) !== null && _children$bold2 !== void 0 ? _children$bold2 : !!customProps.bold
+          bold: (_children$bold2 = !!(children !== null && children !== void 0 && children.bold)) !== null && _children$bold2 !== void 0 ? _children$bold2 : !!customProps.bold,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 100,
+            columnNumber: 11
+          }
         }, childText);
 
       case children.code:
@@ -64,7 +85,13 @@ var renderModifier = function renderModifier() {
           lineHeight: "md",
           tag: "pre",
           fontSize: "sm",
-          bold: (_children$bold3 = !!(children !== null && children !== void 0 && children.bold)) !== null && _children$bold3 !== void 0 ? _children$bold3 : !!customProps.bold
+          bold: (_children$bold3 = !!(children !== null && children !== void 0 && children.bold)) !== null && _children$bold3 !== void 0 ? _children$bold3 : !!customProps.bold,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 111,
+            columnNumber: 11
+          }
         }, childText);
 
       default:
@@ -74,7 +101,13 @@ var renderModifier = function renderModifier() {
           color: customProps.color,
           fontSize: customProps.fontSize || 'sm',
           margin: customProps.margins,
-          textAlign: customProps.contentAlign
+          textAlign: customProps.contentAlign,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 122,
+            columnNumber: 11
+          }
         }, childText);
     }
   };
@@ -94,7 +127,13 @@ export var ConfigurableGraphCmsHtmlSerializer = function ConfigurableGraphCmsHtm
           margin: customProps.margins || 'lg 0',
           color: customProps.headingColor,
           bold: !!customProps.bold || !!(childNode !== null && childNode !== void 0 && childNode.bold),
-          textAlign: customProps.textAlign
+          textAlign: customProps.textAlign,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 144,
+            columnNumber: 13
+          }
         }, children);
       }), _defineProperty(_renderNode, BLOCKS.HEADING_2, function (node, children) {
         var childNode = node.children[0];
@@ -104,7 +143,13 @@ export var ConfigurableGraphCmsHtmlSerializer = function ConfigurableGraphCmsHtm
           margin: customProps.margins || 'lg 0',
           bold: !!customProps.bold || !!(childNode !== null && childNode !== void 0 && childNode.bold),
           color: customProps.headingColor,
-          textAlign: customProps.textAlign
+          textAlign: customProps.textAlign,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 159,
+            columnNumber: 13
+          }
         }, children);
       }), _defineProperty(_renderNode, BLOCKS.HEADING_3, function (node, children) {
         var childNode = node.children[0];
@@ -114,7 +159,13 @@ export var ConfigurableGraphCmsHtmlSerializer = function ConfigurableGraphCmsHtm
           margin: customProps.margins || 'md 0',
           textAlign: customProps.textAlign,
           color: customProps.headingColor,
-          bold: !!customProps.bold || !!(childNode !== null && childNode !== void 0 && childNode.bold)
+          bold: !!customProps.bold || !!(childNode !== null && childNode !== void 0 && childNode.bold),
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 174,
+            columnNumber: 13
+          }
         }, children);
       }), _defineProperty(_renderNode, BLOCKS.HEADING_4, function (node, children) {
         var childNode = node.children[0];
@@ -124,7 +175,13 @@ export var ConfigurableGraphCmsHtmlSerializer = function ConfigurableGraphCmsHtm
           margin: customProps.margins || 'md 0',
           bold: !!customProps.bold || !!(childNode !== null && childNode !== void 0 && childNode.bold),
           color: customProps.headingColor,
-          textAlign: customProps.textAlign
+          textAlign: customProps.textAlign,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 189,
+            columnNumber: 13
+          }
         }, children);
       }), _defineProperty(_renderNode, BLOCKS.HEADING_5, function (node, children) {
         var childNode = node.children[0];
@@ -134,7 +191,13 @@ export var ConfigurableGraphCmsHtmlSerializer = function ConfigurableGraphCmsHtm
           margin: customProps.margins || 'sm 0',
           bold: !!customProps.bold || !!(childNode !== null && childNode !== void 0 && childNode.bold),
           color: customProps.headingColor,
-          textAlign: customProps.textAlign
+          textAlign: customProps.textAlign,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 204,
+            columnNumber: 13
+          }
         }, children);
       }), _defineProperty(_renderNode, BLOCKS.HEADING_6, function (node, children) {
         var childNode = node.children[0];
@@ -144,7 +207,13 @@ export var ConfigurableGraphCmsHtmlSerializer = function ConfigurableGraphCmsHtm
           margin: customProps.margins || 'xs 0',
           bold: !!customProps.bold || !!(childNode !== null && childNode !== void 0 && childNode.bold),
           color: customProps.headingColor,
-          textAlign: customProps.textAlign
+          textAlign: customProps.textAlign,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 219,
+            columnNumber: 13
+          }
         }, children);
       }), _defineProperty(_renderNode, BLOCKS.PARAGRAPH, function (node, children) {
         var childNode = node.children[0];
@@ -155,21 +224,39 @@ export var ConfigurableGraphCmsHtmlSerializer = function ConfigurableGraphCmsHtm
           fontSize: customProps.fontSize,
           weight: !!(childNode !== null && childNode !== void 0 && childNode.bold) ? 'bold' : 'normal',
           margin: customProps.margins,
-          textAlign: customProps.contentAlign
+          textAlign: customProps.contentAlign,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 234,
+            columnNumber: 13
+          }
         }, children);
       }), _defineProperty(_renderNode, BLOCKS.EMBEDDED_ASSET, function (node, children) {
         return React.createElement(Picture, {
           src: node.src,
           alt: node.altText,
           width: '100%',
-          height: '100%'
+          height: '100%',
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 248,
+            columnNumber: 11
+          }
         });
       }), _defineProperty(_renderNode, BLOCKS.EMBEDDED_MEDIA, function (node, children) {
         return React.createElement(EmbeddedPlayer, {
           embedUrl: node.url,
           allowfullscreen: !!customProps.allowfullscreen,
           width: '100%',
-          height: '100%'
+          height: '100%',
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 256,
+            columnNumber: 11
+          }
         });
       }), _defineProperty(_renderNode, BLOCKS.UL_LIST, function (node, children) {
         var childNode = node.children[0];
@@ -177,7 +264,13 @@ export var ConfigurableGraphCmsHtmlSerializer = function ConfigurableGraphCmsHtm
           tag: "ul",
           weight: !!(childNode !== null && childNode !== void 0 && childNode.bold) ? 'bold' : 'normal',
           underline: !!childNode.underline,
-          lineHeight: "lg"
+          lineHeight: "lg",
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 266,
+            columnNumber: 13
+          }
         }, children);
       }), _defineProperty(_renderNode, BLOCKS.OL_LIST, function (node, children) {
         var _customProps$fontSize;
@@ -189,7 +282,13 @@ export var ConfigurableGraphCmsHtmlSerializer = function ConfigurableGraphCmsHtm
           underline: !!childNode.underline,
           lineHeight: "lg",
           fontSize: (_customProps$fontSize = customProps.fontSize) !== null && _customProps$fontSize !== void 0 ? _customProps$fontSize : 'sm',
-          color: customProps.color
+          color: customProps.color,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 279,
+            columnNumber: 13
+          }
         }, children);
       }), _defineProperty(_renderNode, BLOCKS.LIST_ITEM, function (node, children) {
         var _customProps$fontSize2;
@@ -201,7 +300,13 @@ export var ConfigurableGraphCmsHtmlSerializer = function ConfigurableGraphCmsHtm
           weight: !!(childNode !== null && childNode !== void 0 && childNode.bold) ? 'bold' : 'normal',
           underline: !!childNode.underline,
           fontSize: (_customProps$fontSize2 = customProps.fontSize) !== null && _customProps$fontSize2 !== void 0 ? _customProps$fontSize2 : 'sm',
-          color: customProps.color
+          color: customProps.color,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 294,
+            columnNumber: 13
+          }
         }, children);
       }), _defineProperty(_renderNode, INLINES.HYPERLINK, function (node, children) {
         var childNode = node.children[0];
@@ -215,24 +320,84 @@ export var ConfigurableGraphCmsHtmlSerializer = function ConfigurableGraphCmsHtm
           inline: Boolean(customProps.inline) || true,
           target: node.openInNewTab ? '_blank' : customProps.forceNewTab ? '_blank' : '_self',
           iconLeft: customProps.withIconOnLink ? React.createElement(Icon, {
-            color: "primary"
-          }, React.createElement(StyleguideArrow, null)) : undefined
+            color: "primary",
+            __self: _this,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 326,
+              columnNumber: 19
+            }
+          }, React.createElement(StyleguideArrow, {
+            __self: _this,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 327,
+              columnNumber: 21
+            }
+          })) : undefined,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 309,
+            columnNumber: 13
+          }
         }, children);
       }), _defineProperty(_renderNode, BLOCKS.TABLE, function (node, children) {
-        return React.createElement(StyledTable, null, children);
+        return React.createElement(StyledTable, {
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 337,
+            columnNumber: 11
+          }
+        }, children);
       }), _defineProperty(_renderNode, BLOCKS.TABLE_HEAD, function (node, children) {
-        return React.createElement("thead", null, children);
+        return React.createElement("thead", {
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 340,
+            columnNumber: 11
+          }
+        }, children);
       }), _defineProperty(_renderNode, BLOCKS.TABLE_BODY, function (node, children) {
-        return React.createElement("tbody", null, children);
+        return React.createElement("tbody", {
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 343,
+            columnNumber: 11
+          }
+        }, children);
       }), _defineProperty(_renderNode, BLOCKS.TABLE_ROW, function (node, children) {
-        return React.createElement("tr", null, children);
+        return React.createElement("tr", {
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 345,
+            columnNumber: 59
+          }
+        }, children);
       }), _defineProperty(_renderNode, BLOCKS.TABLE_CELL, function (node, children) {
-        return React.createElement("td", null, children);
+        return React.createElement("td", {
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 346,
+            columnNumber: 60
+          }
+        }, children);
       }), _renderNode),
       renderText: function renderText(text) {
         return text.split('\n').reduce(function (children, textSegment, index) {
           return [].concat(_toConsumableArray(children), [index > 0 && React.createElement("br", {
-            key: index
+            key: index,
+            __self: _this,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 352,
+              columnNumber: 47
+            }
           }), textSegment]);
         }, []);
       }

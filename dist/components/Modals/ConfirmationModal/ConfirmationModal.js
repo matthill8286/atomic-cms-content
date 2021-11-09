@@ -1,3 +1,6 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/Modals/ConfirmationModal/ConfirmationModal.tsx",
+    _this = this;
+
 import React from 'react';
 import { CopyText, Modal, Picture, styled } from '@matthill8286/atomic-ui';
 import { useHistory } from 'react-router-dom';
@@ -67,17 +70,42 @@ export var ConfirmationModal = function ConfirmationModal(_ref3) {
       curved: true,
       size: 'lg',
       onClick: handleCloseModal
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 5
     }
   }, image && React.createElement(StyledPicture, {
     rounded: true,
     alt: (_image$altText = image === null || image === void 0 ? void 0 : image.altText) !== null && _image$altText !== void 0 ? _image$altText : '',
     width: "100%",
     height: "auto",
-    src: image === null || image === void 0 ? void 0 : image.url
-  }), confirmationDescription && React.createElement(DescriptionWrapper, null, React.createElement(CopyText, {
+    src: image === null || image === void 0 ? void 0 : image.url,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 9
+    }
+  }), confirmationDescription && React.createElement(DescriptionWrapper, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74,
+      columnNumber: 9
+    }
+  }, React.createElement(CopyText, {
     textAlign: 'center',
     fontSize: 'md',
-    margin: 0
+    margin: 0,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75,
+      columnNumber: 11
+    }
   }, confirmationDescription)));
 };
 //# sourceMappingURL=ConfirmationModal.js.map

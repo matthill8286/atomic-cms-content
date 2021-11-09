@@ -1,3 +1,6 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/pages/AssetPage/StaticAssetPage.tsx",
+    _this = this;
+
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -37,8 +40,21 @@ var AssetPageContainer = styled.div.withConfig({
 });
 export var AssetPageWithContext = React.memo(function (_ref2) {
   var landingPageContent = _ref2.landingPageContent;
-  return React.createElement(ErrorBoundary, null, React.createElement(StaticAssetPageV2, {
-    landingPageContent: landingPageContent
+  return React.createElement(ErrorBoundary, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 5
+    }
+  }, React.createElement(StaticAssetPageV2, {
+    landingPageContent: landingPageContent,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 7
+    }
   }));
 });
 export default AssetPageWithContext;
@@ -95,12 +111,25 @@ export var StaticAssetPageV2 = function StaticAssetPageV2(_ref3) {
       assetError = _useLearningAsset.assetError;
 
   if (assetLoading && !learningAssetData) {
-    return React.createElement(GenericLoadingScreen, null);
+    return React.createElement(GenericLoadingScreen, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 98,
+        columnNumber: 12
+      }
+    });
   }
 
   if (!assetLoading && !slices.length || !assetLoading && assetError) {
     return React.createElement(ErrorPage, {
-      errorType: ErrorPageType.TECHNICAL_ERROR
+      errorType: ErrorPageType.TECHNICAL_ERROR,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 102,
+        columnNumber: 12
+      }
     });
   }
 
@@ -165,11 +194,45 @@ export var StaticAssetPageV2 = function StaticAssetPageV2(_ref3) {
     return isValidPrimative(learningAssetData === null || learningAssetData === void 0 ? void 0 : learningAssetData.embedVideoURL);
   };
 
-  return React.createElement(AssetPageContainer, null, React.createElement(AppMeta, _extends({
+  return React.createElement(AssetPageContainer, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 159,
+      columnNumber: 5
+    }
+  }, React.createElement(AppMeta, _extends({
     key: "app-meta-content-special"
-  }, appMetaProps)), React.createElement(Grid, null, React.createElement(Row, null, React.createElement(Cell, {
+  }, appMetaProps, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 160,
+      columnNumber: 7
+    }
+  })), React.createElement(Grid, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 161,
+      columnNumber: 7
+    }
+  }, React.createElement(Row, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 162,
+      columnNumber: 9
+    }
+  }, React.createElement(Cell, {
     columns: 12,
-    justify: "flex-start"
+    justify: "flex-start",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 163,
+      columnNumber: 11
+    }
   }, React.createElement(Breadcrumb, {
     margin: "lg 0 0 0",
     homeLink: basePath,
@@ -178,24 +241,55 @@ export var StaticAssetPageV2 = function StaticAssetPageV2(_ref3) {
       key: 'learning-asset',
       isRouterLink: true,
       name: learningAssetData === null || learningAssetData === void 0 ? void 0 : learningAssetData.title
-    }]
-  }))), React.createElement(Row, null, React.createElement(Cell, {
+    }],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 164,
+      columnNumber: 13
+    }
+  }))), React.createElement(Row, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 178,
+      columnNumber: 9
+    }
+  }, React.createElement(Cell, {
     columns: 8,
     colsLg: 8,
-    colsMd: 8
+    colsMd: 8,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 179,
+      columnNumber: 11
+    }
   }, React.createElement(FocusedAsset, {
     loading: false,
     description: learningAssetData === null || learningAssetData === void 0 ? void 0 : learningAssetData.description,
     src: addEmbed(),
     title: learningAssetData === null || learningAssetData === void 0 ? void 0 : learningAssetData.title,
     videoText: sliceHead === null || sliceHead === void 0 ? void 0 : sliceHead.videoLoadingError,
-    video: isVideo()
+    video: isVideo(),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 180,
+      columnNumber: 13
+    }
   })), React.createElement(Cell, {
     columns: 4,
     colsLg: 4,
     colsMd: 8,
     colsSm: 8,
-    colsXs: 4
+    colsXs: 4,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 189,
+      columnNumber: 11
+    }
   }, React.createElement(AssetMeta, {
     buttonTextLaunch: learningAssetMeta === null || learningAssetMeta === void 0 ? void 0 : learningAssetMeta.launchButtonLabel,
     launchHandler: handleLaunching,
@@ -218,7 +312,13 @@ export var StaticAssetPageV2 = function StaticAssetPageV2(_ref3) {
       label: learningAssetMeta === null || learningAssetMeta === void 0 ? void 0 : learningAssetMeta.lengthLabel,
       value: formatDuration(learningAssetData === null || learningAssetData === void 0 ? void 0 : learningAssetData.duration, learningAssetData === null || learningAssetData === void 0 ? void 0 : learningAssetData.language)
     }],
-    tags: competencies
+    tags: competencies,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 190,
+      columnNumber: 13
+    }
   })))), staticPlaylistSection && React.createElement(StaticPlaylist, {
     playlistId: sliceHead === null || sliceHead === void 0 ? void 0 : sliceHead.id,
     staticPlaylists: staticPlaylistSection === null || staticPlaylistSection === void 0 ? void 0 : staticPlaylistSection.staticPlaylists,
@@ -228,7 +328,13 @@ export var StaticAssetPageV2 = function StaticAssetPageV2(_ref3) {
       marginTop: "xl",
       title: staticPlaylistSection === null || staticPlaylistSection === void 0 ? void 0 : staticPlaylistSection.name,
       name: staticPlaylistSection === null || staticPlaylistSection === void 0 ? void 0 : (_staticPlaylistSectio = staticPlaylistSection.staticPlaylists) === null || _staticPlaylistSectio === void 0 ? void 0 : (_staticPlaylistSectio2 = _staticPlaylistSectio[0]) === null || _staticPlaylistSectio2 === void 0 ? void 0 : _staticPlaylistSectio2.playlistName,
-      key: "Header"
+      key: "Header",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 232,
+        columnNumber: 13
+      }
     }),
     paddingTop: "0",
     desktop: 4,
@@ -249,7 +355,13 @@ export var StaticAssetPageV2 = function StaticAssetPageV2(_ref3) {
       mobile: 1
     },
     loading: false,
-    key: "AssetPagePlaylist-".concat(sliceHead === null || sliceHead === void 0 ? void 0 : sliceHead.id)
+    key: "AssetPagePlaylist-".concat(sliceHead === null || sliceHead === void 0 ? void 0 : sliceHead.id),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 226,
+      columnNumber: 9
+    }
   }));
 };
 //# sourceMappingURL=StaticAssetPage.js.map

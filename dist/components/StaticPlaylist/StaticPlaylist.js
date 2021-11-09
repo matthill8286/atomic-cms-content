@@ -1,3 +1,6 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/StaticPlaylist/StaticPlaylist.tsx",
+    _this = this;
+
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -32,7 +35,13 @@ export var PlaylistHeader = function PlaylistHeader(_ref2) {
       name = _ref2.name,
       marginTop = _ref2.marginTop;
   return React.createElement(StyledWrapper, {
-    marginTop: marginTop
+    marginTop: marginTop,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 3
+    }
   }, React.createElement(CopyText, {
     limitLines: 1,
     fontSize: "sm",
@@ -40,14 +49,26 @@ export var PlaylistHeader = function PlaylistHeader(_ref2) {
     toUpperCase: true,
     weight: "bold",
     display: "inline-flex",
-    margin: "0 sm xs 0"
+    margin: "0 sm xs 0",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 5
+    }
   }, title), React.createElement(Heading, {
     color: "primary",
     scale: "level-2",
     tag: "h2",
     lineHeight: "sm",
     fontFamily: "default",
-    weight: "semibold"
+    weight: "semibold",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 5
+    }
   }, name));
 };
 export var StaticPlaylist = function StaticPlaylist(_ref3) {
@@ -118,31 +139,74 @@ export var StaticPlaylist = function StaticPlaylist(_ref3) {
     color: playlistBackground,
     paddingTop: paddingTop !== null && paddingTop !== void 0 ? paddingTop : 'md',
     paddingBottom: paddingTop !== null && paddingTop !== void 0 ? paddingTop : 'md',
-    key: playlistId
-  }, showDivider && React.createElement(Grid, null, React.createElement(Row, {
-    noMargin: true
+    key: playlistId,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116,
+      columnNumber: 5
+    }
+  }, showDivider && React.createElement(Grid, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123,
+      columnNumber: 9
+    }
+  }, React.createElement(Row, {
+    noMargin: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124,
+      columnNumber: 11
+    }
   }, React.createElement(Cell, {
     colsXl: 12,
     colsLg: 12,
     colsMd: 8,
     colsSm: 8,
-    colsXs: 4
+    colsXs: 4,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125,
+      columnNumber: 13
+    }
   }, React.createElement(Divider, {
     color: "primary",
-    height: 2
+    height: 2,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 15
+    }
   })))), React.createElement(Cell, {
     colsXl: 12,
     colsLg: 12,
     colsMd: 8,
     colsSm: 8,
-    colsXs: 4
+    colsXs: 4,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 131,
+      columnNumber: 7
+    }
   }, React.createElement(AssetCarousel, {
     NoAssetsComponent: React.createElement(React.Fragment, null),
     "data-test": "landing-page-playlist",
     title: React.createElement(PlaylistHeader, {
       marginTop: "md",
       title: title,
-      name: name
+      name: name,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 135,
+        columnNumber: 18
+      }
     }),
     loading: false,
     assets: _toConsumableArray(assetsToStatic),
@@ -175,6 +239,12 @@ export var StaticPlaylist = function StaticPlaylist(_ref3) {
       mobileBig: 1,
       mobileSmall: 1,
       tablet: 2
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 132,
+      columnNumber: 9
     }
   })));
 };

@@ -1,5 +1,8 @@
 var _excluded = ["landingPageId", "pageTheme"];
 
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/LandingPageWrapper.tsx",
+    _this = this;
+
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
@@ -38,11 +41,25 @@ export var LandingPageWrapper = function LandingPageWrapper(_ref) {
   return React.createElement(LandingPagesConnector, _extends({
     pageId: landingPageId,
     getLandingPageQuery: getLandingPageQuery
-  }, props), function (_ref2) {
+  }, props, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 5
+    }
+  }), function (_ref2) {
     var pageContent = _ref2.pageContent;
     return React.createElement(LandingPageRoutes, _extends({
       landingPageContent: pageContent
-    }, props));
+    }, props, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34,
+        columnNumber: 9
+      }
+    }));
   });
 };
 //# sourceMappingURL=LandingPageWrapper.js.map

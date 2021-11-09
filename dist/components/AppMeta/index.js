@@ -1,3 +1,6 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/AppMeta/index.tsx",
+    _this = this;
+
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -130,16 +133,43 @@ export var AppMeta = function AppMeta(_ref) {
       type: 'image/png',
       href: instance === null || instance === void 0 ? void 0 : instance.favicon.url,
       sizes: '16x16'
-    }] : []
+    }] : [],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86,
+      columnNumber: 5
+    }
   }, meta.map(function (entry, index) {
     return React.createElement("meta", _extends({
       key: index
-    }, entry));
+    }, entry, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 104,
+        columnNumber: 16
+      }
+    }));
   }), links.map(function (entry, index) {
     return React.createElement("link", _extends({
       key: index
-    }, entry));
-  }), React.createElement("title", null, title), children);
+    }, entry, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 107,
+        columnNumber: 16
+      }
+    }));
+  }), React.createElement("title", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109,
+      columnNumber: 7
+    }
+  }, title), children);
 };
 export * from "./AppMeta.interface";
 //# sourceMappingURL=index.js.map

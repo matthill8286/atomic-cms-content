@@ -1,3 +1,6 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/combinations/CallToActionWithPlaylist/CallToActionWithPlaylist.tsx",
+    _this = this;
+
 import React from 'react';
 import { useModals } from "../../app/asset/hooks";
 import { MODALS } from "../../constants";
@@ -21,7 +24,13 @@ export var CallToActionWithPlaylist = React.memo(function (_ref) {
   return React.createElement(CustomSection, {
     color: sectionColor,
     paddingTop: 0,
-    paddingBottom: 0
+    paddingBottom: 0,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 7
+    }
   }, slices === null || slices === void 0 ? void 0 : slices.map(function (_ref2, index) {
     var _ref2$pageComponents = _ref2.pageComponents,
         button = _ref2$pageComponents.button,
@@ -59,7 +68,13 @@ export var CallToActionWithPlaylist = React.memo(function (_ref) {
           asset: staticAssetTile,
           routeContext: routeContext,
           rightOrientation: rightOrientation,
-          image: image
+          image: image,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 55,
+            columnNumber: 19
+          }
         });
 
       case 'StaticPlaylistSection':
@@ -84,16 +99,34 @@ export var CallToActionWithPlaylist = React.memo(function (_ref) {
           showLock: true,
           desktop: size !== null && size !== void 0 ? size : 4,
           paddingTop: "xxxl",
-          openModal: openModal
+          openModal: openModal,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 86,
+            columnNumber: 19
+          }
         });
 
       default:
         return null;
     }
   }), openModalName === MODALS.CONFIRMATION && React.createElement(ConfirmationModalWrapper, {
-    modalBlock: modalBlock
+    modalBlock: modalBlock,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 112,
+      columnNumber: 11
+    }
   }), openModalName === MODALS.LOGIN && React.createElement(LoginModalWrapper, {
-    modalLocked: modalLocked
+    modalLocked: modalLocked,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115,
+      columnNumber: 11
+    }
   }));
 });
 //# sourceMappingURL=CallToActionWithPlaylist.js.map

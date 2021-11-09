@@ -1,3 +1,6 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/pages/PolicyPage/PolicyPage.tsx",
+    _this = this;
+
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 import React from 'react';
@@ -15,7 +18,13 @@ export var PolicyPage = function PolicyPage(_ref) {
 
   if (!Array.isArray(slices) || !slices.length) {
     return React.createElement(ErrorPage, {
-      errorType: ErrorPageType.TECHNICAL_ERROR
+      errorType: ErrorPageType.TECHNICAL_ERROR,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 12
+      }
     });
   }
 
@@ -29,17 +38,69 @@ export var PolicyPage = function PolicyPage(_ref) {
       content: 'follow'
     }]
   };
-  return React.createElement(CustomSection, null, React.createElement(AppMeta, _extends({
+  return React.createElement(CustomSection, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 5
+    }
+  }, React.createElement(AppMeta, _extends({
     key: "app-meta-policy-page"
-  }, appMetaProps)), React.createElement(Grid, null, React.createElement(Row, null, React.createElement(Cell, {
-    columns: 12
+  }, appMetaProps, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 7
+    }
+  })), React.createElement(Grid, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 7
+    }
+  }, React.createElement(Row, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 9
+    }
+  }, React.createElement(Cell, {
+    columns: 12,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 11
+    }
   }, React.createElement(Spacer, {
-    size: "md"
+    size: "md",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 13
+    }
   }), React.createElement(MultiViewModalProvider, {
-    homeViewId: "cookie-1"
+    homeViewId: "cookie-1",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 13
+    }
   }, React.createElement(PrivacyContent, {
     slices: slices,
-    type: type
+    type: type,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 15
+    }
   }))))));
 };
 //# sourceMappingURL=PolicyPage.js.map

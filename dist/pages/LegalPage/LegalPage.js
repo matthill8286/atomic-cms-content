@@ -1,3 +1,6 @@
+var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/pages/LegalPage/LegalPage.tsx",
+    _this = this;
+
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 import React from 'react';
@@ -14,7 +17,13 @@ export var LegalPage = function LegalPage(_ref) {
 
   if (!Array.isArray(slices) || !slices.length) {
     return React.createElement(ErrorPage, {
-      errorType: ErrorPageType.TECHNICAL_ERROR
+      errorType: ErrorPageType.TECHNICAL_ERROR,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12,
+        columnNumber: 12
+      }
     });
   }
 
@@ -32,12 +41,51 @@ export var LegalPage = function LegalPage(_ref) {
   };
   return React.createElement(React.Fragment, null, React.createElement(AppMeta, _extends({
     key: "app-meta-legal-page"
-  }, appMetaProps)), React.createElement(Grid, null, React.createElement(Row, null, React.createElement(Cell, {
-    columns: 12
+  }, appMetaProps, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 7
+    }
+  })), React.createElement(Grid, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 7
+    }
+  }, React.createElement(Row, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 9
+    }
+  }, React.createElement(Cell, {
+    columns: 12,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 11
+    }
   }, React.createElement(Spacer, {
-    size: "md"
+    size: "md",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 13
+    }
   }), React.createElement(LegalContent, {
-    slices: slices
+    slices: slices,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 13
+    }
   })))));
 };
 //# sourceMappingURL=LegalPage.js.map
