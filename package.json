@@ -4,7 +4,7 @@
   "description": "Shared CMS React components for CMS Pages",
   "repository": {
     "type": "git",
-    "url": "https://github.com/matthill8286/atomic-cms-content.git"
+    "url": "git@github.com:matthill8286/atomic-cms-content.git"
   },
   "license": "UNLICENCED",
   "main": "dist/index.js",
