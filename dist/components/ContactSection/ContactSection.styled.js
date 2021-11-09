@@ -1,7 +1,7 @@
 import { css, styled } from '@matthill8286/atomic-ui';
 export var StyledPaddedSection = styled.div.withConfig({
   displayName: "ContactSectionstyled__StyledPaddedSection",
-  componentId: "hn92f8-0"
+  componentId: "sc-1afm4xk-0"
 })(function (_ref) {
   var theme = _ref.theme,
       _ref$align = _ref.align,

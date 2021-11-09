@@ -6,7 +6,7 @@ import { StyledAvatar, StyledAvatarWrapper, StyledPaddedSection, StyledProfileSe
 import { ProfileTileColumn } from "../ProfileTileColumns";
 var StyledWrapper = styled.div.withConfig({
   displayName: "ProfileTileRows__StyledWrapper",
-  componentId: "sc-19rfp1d-0"
+  componentId: "sc-1yo6m6i-0"
 })(["\n  margin-top: ", ";\n"], function (_ref) {
   var _theme$spacing$base$m;
 
@@ -62,7 +62,7 @@ export var ProfileTileRow = function ProfileTileRow(_ref3) {
 };
 export var BrandedHeadingWrapper = styled.div.withConfig({
   displayName: "ProfileTileRows__BrandedHeadingWrapper",
-  componentId: "sc-19rfp1d-1"
+  componentId: "sc-1yo6m6i-1"
 })(["\n  margin: ", ";\n\n  ", " {\n    margin-bottom: ", ";\n  }\n"], function (_ref4) {
   var theme = _ref4.theme;
   return "".concat(theme.spacing.base.md, " 0 ").concat(theme.spacing.base.lg, " 0");

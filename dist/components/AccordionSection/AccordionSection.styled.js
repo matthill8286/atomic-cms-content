@@ -1,7 +1,7 @@
 import { styled, css, spacing } from '@matthill8286/atomic-ui';
 export var StyledAccordionWrapper = styled.div.withConfig({
   displayName: "AccordionSectionstyled__StyledAccordionWrapper",
-  componentId: "d04zps-0"
+  componentId: "sc-2o0z0q-0"
 })(["\n  margin-top: ", ";\n  font-family: ", ";\n  ", "\n"], spacing.base.xxl, function (_ref) {
   var theme = _ref.theme;
   return theme.font.family.default;

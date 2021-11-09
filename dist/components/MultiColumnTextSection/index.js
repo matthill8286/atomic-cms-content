@@ -5,7 +5,7 @@ import { CustomSection } from "../CustomSection";
 import { ConfigurableGraphCmsHtmlSerializer, Serializer } from "../Serializer";
 var StyledCustomSection = styled(CustomSection).withConfig({
   displayName: "MultiColumnTextSection__StyledCustomSection",
-  componentId: "sc-14wpwym-0"
+  componentId: "sc-1pnczmu-0"
 })(["\n  column-count: 2;\n  column-gap: 48px;\n  padding-top: ", ";\n\n  ", " {\n    column-count: 1;\n    padding: 0;\n  }\n"], function (_ref) {
   var theme = _ref.theme;
   return theme.spacing.base.lg;

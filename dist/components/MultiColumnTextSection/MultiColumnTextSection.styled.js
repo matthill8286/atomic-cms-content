@@ -1,7 +1,7 @@
 import { spacing, styled } from '@matthill8286/atomic-ui';
 export var StyledMultiColumnTextSection = styled.div.withConfig({
   displayName: "MultiColumnTextSectionstyled__StyledMultiColumnTextSection",
-  componentId: "sc-1m59pz3-0"
+  componentId: "dcrh0x-0"
 })(["\n  ", "\n  line-height: ", "\n"], function (_ref) {
   var active = _ref.active;
 

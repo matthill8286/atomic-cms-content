@@ -4,7 +4,7 @@ function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread n
 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
 
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
 
@@ -20,7 +20,7 @@ import { EmbeddedPlayer } from "../EmbeddedPlayer";
 import { StyleguideArrow } from '@lxp/webmobile-svg-library';
 var StyledTable = styled.table.withConfig({
   displayName: "ConfigurableGraphCmsHtmlSerializer__StyledTable",
-  componentId: "x1g76g-0"
+  componentId: "sc-1ngr5nm-0"
 })(["\n  width: 100%;\n  table-layout: auto;\n  border-collapse: collapse;\n  thead {\n    background-color: lightgray;\n  }\n  td {\n    border: 1px solid black;\n    padding: 5px;\n    text-align: left;\n    vertical-align: top;\n  }\n"]);
 
 var getChildTagName = function getChildTagName(childNode) {

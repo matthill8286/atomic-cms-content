@@ -1,7 +1,7 @@
 import { styled, Section } from '@matthill8286/atomic-ui';
 export var StyledCustomSection = styled(Section).withConfig({
   displayName: "CustomSectionstyled__StyledCustomSection",
-  componentId: "hloly1-0"
+  componentId: "fug70t-0"
 })(["\n  background-color: ", ";\n  padding-top: ", ";\n  padding-bottom: ", ";\n  overflow: ", ";\n\n  ul,\n  ol,\n  p {\n    a {\n      border-bottom: 1px solid;\n      border-color: ", ";\n      color: ", ";\n    }\n  }\n"], function (_ref) {
   var color = _ref.color,
       theme = _ref.theme;

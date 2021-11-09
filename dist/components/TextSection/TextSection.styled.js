@@ -1,7 +1,7 @@
 import { spacing, styled } from '@matthill8286/atomic-ui';
 export var StyledTextSection = styled.div.withConfig({
   displayName: "TextSectionstyled__StyledTextSection",
-  componentId: "sc-11pvoos-0"
+  componentId: "sc-1tayoma-0"
 })(["\n  ", "\n"], function (_ref) {
   var active = _ref.active;
 

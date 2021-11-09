@@ -1,4 +1,4 @@
-import { lightFilteredTheme, lightDanoneTheme, greyFilteredTheme, greyDanoneTheme, darkFilteredTheme, darkDanoneTheme } from '.';
+import { lightFilteredTheme, lightDanoneTheme, greyFilteredTheme, greyDanoneTheme, darkFilteredTheme, darkDanoneTheme } from "../../dist";
 export var getExtendedThemes = function getExtendedThemes(pageTheme) {
   switch (pageTheme) {
     case 'dark':

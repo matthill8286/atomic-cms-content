@@ -16,5 +16,5 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
-      - name: Build Components
+      - name: Install, Build and Release Components
         run: yarn automate:build

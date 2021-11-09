@@ -25,9 +25,9 @@ export declare const prepareHeroContentProps: (heroBanner: any, name?: string | 
     name: string | undefined;
 };
 export declare const formatToStaticAsset: (assets: ExtendedAsset[]) => {
-    id: any;
-    title: any;
-    disabled: any;
+    id: number;
+    title: string;
+    disabled: boolean | undefined;
     niceName: string;
     provider: {
         id: number;
@@ -35,15 +35,15 @@ export declare const formatToStaticAsset: (assets: ExtendedAsset[]) => {
     };
     type: {
         id: number;
-        name: any;
+        name: import("@matthill8286/atomic-ui").AssetType;
     };
     embeddedAsset: boolean;
-    duration: any;
-    to: any;
+    duration: string;
+    to: string | undefined;
     image: string;
-    locked: any;
+    locked: boolean | undefined;
     competency: string;
-    featureLabel: any;
-    eventDate: any;
+    featureLabel: string | undefined;
+    eventDate: string | undefined;
 }[];
 //# sourceMappingURL=index.d.ts.map

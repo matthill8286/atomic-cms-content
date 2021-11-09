@@ -6,14 +6,14 @@ import { setCookie, getCookie } from "../../../utils/localStorage";
 import { getModalContext } from "../../../store/UI/ui.selectors";
 var DescriptionWrapper = styled.div.withConfig({
   displayName: "ConfirmationModal__DescriptionWrapper",
-  componentId: "sc-1jwsxb6-0"
+  componentId: "p72bib-0"
 })(["\n  padding: ", ";\n"], function (_ref) {
   var theme = _ref.theme;
   return "".concat(theme.spacing.base.md, " ").concat(theme.spacing.base.xxl);
 });
 var StyledPicture = styled(Picture).withConfig({
   displayName: "ConfirmationModal__StyledPicture",
-  componentId: "sc-1jwsxb6-1"
+  componentId: "p72bib-1"
 })(["\n  display: flex;\n  margin: ", ";\n"], function (_ref2) {
   var theme = _ref2.theme;
   return "".concat(theme.spacing.base.md);

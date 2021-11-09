@@ -6,7 +6,7 @@ import { CustomSection } from "../CustomSection";
 import { ProfileTileRows } from "../ProfileTileRows";
 export var DescriptionWrapper = styled.div.withConfig({
   displayName: "FocusedSection__DescriptionWrapper",
-  componentId: "iinnwo-0"
+  componentId: "sc-1hpi1zv-0"
 })(["\n  margin: ", ";\n"], function (_ref) {
   var theme = _ref.theme;
   return "".concat(theme.spacing.base.md, " 0 ").concat(theme.spacing.base.lg, " 0");

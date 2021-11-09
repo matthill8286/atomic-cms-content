@@ -6,7 +6,7 @@ import { Serializer, ConfigurableGraphCmsHtmlSerializer } from "../Serializer";
 export * from "./TextSection.types";
 var StyledTypoWrapper = styled(Typo).withConfig({
   displayName: "TextSection__StyledTypoWrapper",
-  componentId: "mes0r9-0"
+  componentId: "sc-37910d-0"
 })(["\n  margin: 24px 0;\n"]);
 export var TextSection = function TextSection(_ref) {
   var richText = _ref.richText,

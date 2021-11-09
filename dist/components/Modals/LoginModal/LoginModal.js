@@ -2,14 +2,14 @@ import React from 'react';
 import { CopyText, Modal, Picture, styled } from '@matthill8286/atomic-ui';
 var DescriptionWrapper = styled.div.withConfig({
   displayName: "LoginModal__DescriptionWrapper",
-  componentId: "o4lu9o-0"
+  componentId: "sc-4srlzf-0"
 })(["\n  padding: ", ";\n"], function (_ref) {
   var theme = _ref.theme;
   return "".concat(theme.spacing.base.md, " ").concat(theme.spacing.base.xxl);
 });
 var StyledPicture = styled(Picture).withConfig({
   displayName: "LoginModal__StyledPicture",
-  componentId: "o4lu9o-1"
+  componentId: "sc-4srlzf-1"
 })(["\n  display: flex;\n  margin: ", ";\n"], function (_ref2) {
   var theme = _ref2.theme;
   return "".concat(theme.spacing.base.md);
