@@ -1,9 +1,9 @@
 
 query GenericSection($id: ID!) {
-  values: genericSection(where: {id: $id}) {
+  genericSection(where: {id: $id}) {
     id
     description
-    __typename
+    type: __typename
     image {
       id
       url
@@ -18,6 +18,7 @@ query GenericSection($id: ID!) {
       hex
     }
     multiColumnTexts(first: 6) {
+      type: __typename
       id
       columnOneTitle
       columnOneDescription

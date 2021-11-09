@@ -1,6 +1,6 @@
 query CallToActionPanel($id: ID!) {
   callToActionPanel(where: {id: $id}, stage: DRAFT) {
-    __typename
+    type: __typename
     id
     button {
       id

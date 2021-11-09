@@ -1,0 +1,12 @@
+query Header($id: ID!) {
+  header(where: {id: $id}) {
+    type: __typename
+       id
+       links {
+         ... on Link {
+           actionLabel
+           to
+         }
+       }
+  }
+}

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EventsPage renders correctly 1`] = `
+<EventsPageWrapper
+  landingPageContent={
+    Object {
+      "metaDescription": "",
+      "metaTitle": "",
+      "routeContext": "events",
+      "slice": Array [],
+    }
+  }
+  metaProps={Object {}}
+  withPageHead={false}
+/>
+`;

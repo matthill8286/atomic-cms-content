@@ -1,7 +1,7 @@
 export const multiColumnTexts = {
   data: {
     multiColumnText: {
-      __typename: 'MultiColumnText',
+      type: 'MultiColumnText',
       columnFourDescription: null,
       columnFourTitle: null,
       columnOneDescription:

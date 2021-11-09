@@ -1,9 +1,9 @@
 export const sectionResponse = {
   data: {
-    values: {
+    genericSection: {
       id: 'ckju4nvj403v10b10cxrurpph',
       description: 'This is a very short description',
-      __typename: 'GenericSection',
+      type: 'GenericSection',
       image: {
         id: 'ckheygl6w08x50908k3zmv2hn',
         url: 'https://media.graphcms.com/J25IRsKJSdCSPJPBNVmL',
@@ -20,6 +20,7 @@ export const sectionResponse = {
       multiColumnTexts: [
         {
           id: 'ckju4nkq82tu60a090oix8tsk',
+          type: 'MultiColumnText',
           columnOneTitle: 'Lorem ipsum dolor',
           columnOneDescription:
             'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent in dignissim enim. Phasellus quis ornare orci. Morbi sagittis, ante ac bibendum fringilla, urna leo molestie enim, eget porta nulla mi eu ex. Ut scelerisque tortor ut ipsum eleifend consectetur. Vivamus eu lacus orci.',

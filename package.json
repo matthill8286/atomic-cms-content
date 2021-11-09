@@ -17,8 +17,11 @@
   "dependencies": {
     "@matthill8286/atomic-icon-library": "*",
     "@matthill8286/atomic-ui": "*",
+    "@storybook/addon-essentials": "^6.3.12",
     "react": "^16.13.1",
+    "react-docgen-typescript": "^2.1.1",
     "react-dom": "^16.13.1",
+    "react-router": "^6.0.1",
     "react-router-dom": "^5.1.2",
     "styled-components": "^5.1.1"
   },
@@ -79,6 +82,7 @@
     "@storybook/addon-viewport": "^5.3.13",
     "@storybook/addons": "^5.3.13",
     "@storybook/react": "^6.1.9",
+    "@storybook/theming": "^6.3.12",
     "@svgr/webpack": "^5.1.0",
     "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^11.0.4",
@@ -151,7 +155,7 @@
     "url-loader": "^3.0.0"
   },
   "peerDependencies": {
-    "@excelwithbusiness/webmobile-sc-components": "^1.32.0",
+    "@matthill8286/atomic-ui": "^1.32.0",
     "react": "^16.13.1",
     "styled-components": "^5.1.1"
   },
