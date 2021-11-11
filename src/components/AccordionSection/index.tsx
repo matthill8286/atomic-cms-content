@@ -1,12 +1,12 @@
-import * as React from 'react';
-import {useLocation} from 'react-router';
-import {Grid, Cell, Row, Offset, Accordion} from '@matthill8286/atomic-ui';
-import {AccordionSectionProps} from './AccordionSection.types';
-import {StyledAccordionWrapper} from './AccordionSection.styled';
-import {CustomSection} from '../CustomSection';
-import {Serializer, ConfigurableGraphCmsHtmlSerializer} from '../Serializer';
+import * as React from 'react'
+import { useLocation } from 'react-router'
+import { Grid, Cell, Row, Offset, Accordion } from '@matthill8286/atomic-ui'
+import { AccordionSectionProps } from './AccordionSection.types'
+import { StyledAccordionWrapper } from './AccordionSection.styled'
+import { CustomSection } from '../CustomSection'
+import { Serializer, ConfigurableGraphCmsHtmlSerializer } from '../Serializer'
 
-export * from './AccordionSection.types';
+export * from './AccordionSection.types'
 
 export const AccordionSection: React.FC<AccordionSectionProps> = ({
   entries = [],
@@ -16,29 +16,29 @@ export const AccordionSection: React.FC<AccordionSectionProps> = ({
   withIconsOnRight,
   customAccordionEntries,
 }) => {
-  const location = useLocation();
-  const anchoredAccordion = entries.find(
-    entry => location.hash === `#${entry.anchorId}`
-  );
-  const openedIndex = anchoredAccordion && entries.indexOf(anchoredAccordion);
+  const location = useLocation()
+  const anchoredAccordion = entries.find(entry => location.hash === `#${entry.anchorId}`)
+  const openedIndex = anchoredAccordion && entries.indexOf(anchoredAccordion)
 
   const mappedAccordionEntries = entries.map(entry => {
     const accordionTitleComponent =
       entry.entryHeadline &&
       Serializer(
         entry.entryHeadline.raw,
+        // @ts-ignore
         ConfigurableGraphCmsHtmlSerializer({
           fontSize: 'md',
           color: 'grey6',
           margins: 'xxs 0',
         })
-      );
+      )
 
     return {
       details:
         entry.entryContent &&
         Serializer(
           entry.entryContent.raw,
+          // @ts-ignore
           ConfigurableGraphCmsHtmlSerializer({
             primaryColor: sectionColor,
             inline: true,
@@ -47,8 +47,8 @@ export const AccordionSection: React.FC<AccordionSectionProps> = ({
           })
         ),
       title: accordionTitleComponent,
-    };
-  });
+    }
+  })
 
   return (
     <CustomSection color={sectionColor}>
@@ -75,5 +75,5 @@ export const AccordionSection: React.FC<AccordionSectionProps> = ({
         </Row>
       </Grid>
     </CustomSection>
-  );
-};
+  )
+}

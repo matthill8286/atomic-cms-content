@@ -1,14 +1,14 @@
-import {Asset} from '@matthill8286/atomic-ui';
+import { Product } from '@matthill8286/atomic-ui'
 
-export interface ExtendedAsset extends Omit<Asset, 'image'> {
-  embeddedAsset: boolean;
-  competency: string;
-  image: {url: string};
+export interface ExtendedProduct extends Omit<Product, 'image'> {
+  embeddedProduct: boolean
+  competency: string
+  image: { url: string }
 }
 
 export const prepareEntries = pageComponents =>
   pageComponents.entries
-    .map(({title, description}) => ({
+    .map(({ title, description }) => ({
       title,
       details: description,
     }))
@@ -20,7 +20,7 @@ export const prepareEntries = pageComponents =>
             noBorderTop: true,
           }
         : e
-    );
+    )
 
 export const prepareHeroContentProps = (heroBanner, name?: string) => ({
   primary: heroBanner.primaryLabel,
@@ -42,14 +42,17 @@ export const prepareHeroContentProps = (heroBanner, name?: string) => ({
       }
     : undefined,
   name,
-});
+})
 
 const formatNiceName = (id: number, title: string) =>
-  `${id}-${title.toLowerCase().split(' ').join('-')}`;
+  `${id}-${title
+    .toLowerCase()
+    .split(' ')
+    .join('-')}`
 
-export const formatToStaticAsset = (assets: ExtendedAsset[]) => {
-  const staticAssets = [...(assets || [])];
-  return staticAssets?.map(
+export const formatToStaticProduct = (products: ExtendedProduct[]) => {
+  const staticProducts = [...(products || [])]
+  return staticProducts?.map(
     ({
       id = 0,
       title,
@@ -60,7 +63,7 @@ export const formatToStaticAsset = (assets: ExtendedAsset[]) => {
       __typename,
       duration,
       to,
-      embeddedAsset = false,
+      embeddedProduct = false,
       competency,
       eventDate,
       featureLabel,
@@ -77,7 +80,7 @@ export const formatToStaticAsset = (assets: ExtendedAsset[]) => {
         id: 0,
         name: type || __typename,
       },
-      embeddedAsset,
+      embeddedProduct,
       duration,
       to,
       image: image?.url,
@@ -86,5 +89,5 @@ export const formatToStaticAsset = (assets: ExtendedAsset[]) => {
       featureLabel,
       eventDate,
     })
-  );
-};
+  )
+}

@@ -1,17 +1,17 @@
-import * as React from 'react';
-import {Grid, Cell, Row, Offset} from '@matthill8286/atomic-ui';
-import {AccordionSection, AccordionSchemaType} from '../AccordionSection';
-import {FAQSectionProps} from './FaqSection.types';
-import {StyledFAQ} from './FaqSection.styled';
-import {CustomSection} from '../CustomSection';
-import {Serializer, ConfigurableGraphCmsHtmlSerializer} from '../Serializer';
+import * as React from 'react'
+import { Grid, Cell, Row, Offset } from '@matthill8286/atomic-ui'
+import { AccordionSection, AccordionSchemaType } from '../AccordionSection'
+import { FAQSectionProps } from './FaqSection.types'
+import { StyledFAQ } from './FaqSection.styled'
+import { CustomSection } from '../CustomSection'
+import { Serializer, ConfigurableGraphCmsHtmlSerializer } from '../Serializer'
 
-export * from './FaqSection.types';
+export * from './FaqSection.types'
 
-export const FAQSection: React.FC<FAQSectionProps> = ({entries, headline}) => {
+export const FAQSection: React.FC<FAQSectionProps> = ({ entries, headline }) => {
   return (
     <StyledFAQ>
-      {headline && (headline.length > 0 || (headline as any)) && (
+      {headline && (
         <CustomSection>
           <Grid>
             <Row noMargin>
@@ -20,6 +20,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({entries, headline}) => {
                 {Serializer(
                   // @ts-ignore
                   headline.raw,
+                  // @ts-ignore
                   ConfigurableGraphCmsHtmlSerializer({})
                 )}
               </Cell>
@@ -29,12 +30,11 @@ export const FAQSection: React.FC<FAQSectionProps> = ({entries, headline}) => {
       )}
       `
       <AccordionSection
-        // @ts-ignore
         entries={entries}
         schemaType={AccordionSchemaType.Faq}
         isLarge
         sectionColor="transparent"
       />
     </StyledFAQ>
-  );
-};
+  )
+}

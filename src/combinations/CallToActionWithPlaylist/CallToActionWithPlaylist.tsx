@@ -1,31 +1,14 @@
-import React from 'react';
-import {useModals} from '@/app/asset/hooks';
-import {MODALS} from '@/constants';
+import React from 'react'
 import {
   CmsCallToActionPanel,
-  CustomSection,
-  StaticPlaylist,
-} from '../../components';
-import {CallToActionPlaylistProps} from '#/src/staticPages/combinations';
-import {
   ConfigurableGraphCmsHtmlSerializer,
+  CustomSection,
   Serializer,
-} from '#/src/staticPages/components';
-import {ConfirmationModalWrapper} from '#/src/staticPages/components/Modals/ConfirmationModal';
-import {LoginModalWrapper} from '#/src/staticPages/components/Modals/LoginModal';
+} from '../../components'
+import { CallToActionPlaylistProps } from './CallToActionWithPlaylist.interface'
 
 export const CallToActionWithPlaylist = React.memo<CallToActionPlaylistProps>(
-  ({
-    slices,
-    dataTestId,
-    sectionColor,
-    overridePlaylistClickEvent,
-    routeContext,
-    modalLocked,
-    modalBlock,
-  }) => {
-    const {openModal, openModalName} = useModals();
-
+  ({ slices, sectionColor, routeContext }) => {
     return (
       <CustomSection color={sectionColor} paddingTop={0} paddingBottom={0}>
         {slices?.map(
@@ -35,7 +18,7 @@ export const CallToActionWithPlaylist = React.memo<CallToActionPlaylistProps>(
                 button,
                 heading,
                 image,
-                staticAssetTile,
+                staticProductTile,
                 rightOrientation,
                 staticPlaylists,
                 id,
@@ -48,7 +31,7 @@ export const CallToActionWithPlaylist = React.memo<CallToActionPlaylistProps>(
             },
             index: number
           ) => {
-            const keyProp = `${__typename}_${index}`;
+            const keyProp = `${__typename}_${index}`
             switch (__typename) {
               case 'CallToActionPanel':
                 return (
@@ -63,6 +46,7 @@ export const CallToActionWithPlaylist = React.memo<CallToActionPlaylistProps>(
                     }}
                     richTextCopy={Serializer(
                       richTextCopy?.raw,
+                      // @ts-ignore
                       ConfigurableGraphCmsHtmlSerializer({
                         textAlign: 'left',
                         contentAlign: 'left',
@@ -70,51 +54,19 @@ export const CallToActionWithPlaylist = React.memo<CallToActionPlaylistProps>(
                     )}
                     showReadMore={false}
                     showFeatured
-                    isOpenAsset
-                    asset={staticAssetTile}
+                    isOpenProduct
+                    asset={staticProductTile}
                     routeContext={routeContext}
                     rightOrientation={rightOrientation}
                     image={image}
                   />
-                );
-              case 'StaticPlaylistSection':
-                if (!staticPlaylists.length) {
-                  return null;
-                }
-
-                return (
-                  <StaticPlaylist
-                    key={keyProp}
-                    playlistId={id}
-                    dataTest={dataTestId}
-                    staticPlaylists={staticPlaylists}
-                    name={staticPlaylists?.[0].playlistName}
-                    overridePlaylistClickEvent={overridePlaylistClickEvent}
-                    routeContext={routeContext}
-                    title={name}
-                    showScrollbar={showScrollbar}
-                    modalLocked={modalLocked}
-                    modalBlock={modalBlock}
-                    playlistBackground={sectionColor ?? 'grey1'}
-                    context="StaticPlaylist"
-                    showLock
-                    desktop={size ?? 4}
-                    paddingTop="xxxl"
-                    openModal={openModal}
-                  />
-                );
+                )
               default:
-                return null;
+                return null
             }
           }
         )}
-        {openModalName === MODALS.CONFIRMATION && (
-          <ConfirmationModalWrapper modalBlock={modalBlock} />
-        )}
-        {openModalName === MODALS.LOGIN && (
-          <LoginModalWrapper modalLocked={modalLocked} />
-        )}
       </CustomSection>
-    );
+    )
   }
-);
+)

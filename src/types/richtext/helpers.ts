@@ -1,42 +1,43 @@
-import {Node, Block, Inline, Text, INLINES, BLOCKS, Mark} from '../index';
+import { INLINES, BLOCKS } from '../index'
+import { NodeChild } from './graphcms-richtext'
 
 /**
  * Checks if the node is an instance of Inline.
  */
-export function isInline(node: Node): node is Inline {
+export function isInline(node: NodeChild) {
   // @ts-expect-error
-  return Object.values(INLINES).includes(node);
+  return Object.values(INLINES).includes(node)
 }
 
 /**
  * Checks if the node is an instance of Mark.
  */
-export function isMark(node: Node): node is Mark {
-  const keysOf = Object.keys(node);
-  const valuesOf = Object.values(INLINES);
+export function isMark(node: NodeChild) {
+  const keysOf = Object.keys(node)
+  const valuesOf = Object.values(INLINES)
   // @ts-expect-error
-  const intersection = keysOf.filter(element => valuesOf.includes(element));
-  return intersection.length >= 0;
+  const intersection = keysOf.filter(element => valuesOf.includes(element))
+  return intersection.length >= 0
 }
 
 /**
  * Checks if the node is an instance of Block.
  */
-export function isBlock(node: Node): node is Block {
+export function isBlock(node: NodeChild) {
   // @ts-expect-error
-  return Object.values(BLOCKS).includes(node.type);
+  return Object.values(BLOCKS).includes(node.type)
 }
 
 /**
  * Checks if the node is an instance of Text.
  */
-export function isText(node: Node): node is Text {
-  return node.type === 'text';
+export function isText(node: NodeChild) {
+  return node.type === 'text'
 }
 
 /**
  * Checks if the node is an instance of Text.
  */
-export function hasValue(node: {text?: string}) {
-  return node.text !== undefined || typeof node.text === 'string';
+export function hasValue(node: NodeChild) {
+  return node.text !== undefined || typeof node.text === 'string'
 }

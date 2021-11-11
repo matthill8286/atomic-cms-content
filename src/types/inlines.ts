@@ -6,4 +6,4 @@ export enum INLINES {
   EMBEDDED_ENTRY = 'iframe',
 }
 
-export default INLINES;
+export default INLINES

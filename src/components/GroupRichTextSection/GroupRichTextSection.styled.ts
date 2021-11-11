@@ -1,4 +1,4 @@
-import {styled, spacing, breakpoints} from '@matthill8286/atomic-ui';
+import { styled, spacing, breakpoints } from '@matthill8286/atomic-ui'
 
 export const StyledCardRichText = styled.div`
   display: flex;
@@ -13,12 +13,12 @@ export const StyledCardRichText = styled.div`
       margin-top: ${spacing.base.md};
     }
   }
-`;
+`
 
 export const StyledCardHeadline = styled.div`
   margin-bottom: ${spacing.base.md};
-`;
+`
 
 export const StyledGroupRichText = styled.div`
   padding-top: ${spacing.base.xl};
-`;
+`

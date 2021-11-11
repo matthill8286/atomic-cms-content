@@ -238,7 +238,7 @@ export const mockRawWithBoldAndUnderline = {
   },
 }
 
-export const rawMockWithHeadingsCodeQuotesAssetIframes = {
+export const rawMockWithHeadingsCodeQuotesProductIframes = {
   raw: {
     children: [
       {

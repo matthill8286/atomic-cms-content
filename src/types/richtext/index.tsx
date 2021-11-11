@@ -3,6 +3,8 @@ import { nodeToReactComponent } from './nodeListToReactComponents'
 import { RichTextBlock, RichTextSpan } from './graphcms-richtext'
 import { BLOCKS, MARKS } from '../index'
 
+export * from './graphcms-richtext'
+
 const defaultNodeRenderers: RenderNode = {
   [BLOCKS.PARAGRAPH]: (node, children) => <p>{children}</p>,
   [BLOCKS.HEADING_1]: (node, children) => <h1>{children}</h1>,

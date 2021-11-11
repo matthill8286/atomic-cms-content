@@ -163,7 +163,7 @@ export const ConfigurableGraphCmsHtmlSerializer = (customProps: SerializerCustom
             color={customProps.color}
             tag={getChildTagName(childNode)}
             fontSize={customProps.fontSize}
-            weight={!!childNode?.bold ? 'bold' : 'normal'}
+            weight={childNode?.bold ? 'bold' : 'normal'}
             margin={customProps.margins}
             textAlign={customProps.contentAlign}>
             {children}
@@ -186,7 +186,7 @@ export const ConfigurableGraphCmsHtmlSerializer = (customProps: SerializerCustom
         return (
           <Typo
             tag="ul"
-            weight={!!childNode?.bold ? 'bold' : 'normal'}
+            weight={childNode?.bold ? 'bold' : 'normal'}
             underline={!!childNode.underline}
             lineHeight="lg">
             {children}
@@ -198,7 +198,7 @@ export const ConfigurableGraphCmsHtmlSerializer = (customProps: SerializerCustom
         return (
           <Typo
             tag="ol"
-            weight={!!childNode?.bold ? 'bold' : 'normal'}
+            weight={childNode?.bold ? 'bold' : 'normal'}
             underline={!!childNode.underline}
             lineHeight="lg"
             fontSize={customProps.fontSize ?? 'sm'}
@@ -213,7 +213,7 @@ export const ConfigurableGraphCmsHtmlSerializer = (customProps: SerializerCustom
           <Typo
             tag="li"
             lineHeight="md"
-            weight={!!childNode?.bold ? 'bold' : 'normal'}
+            weight={childNode?.bold ? 'bold' : 'normal'}
             underline={!!childNode.underline}
             fontSize={customProps.fontSize ?? 'sm'}
             color={customProps.color}>

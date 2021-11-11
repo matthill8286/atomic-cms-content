@@ -2,7 +2,7 @@ import { cleanup } from '@testing-library/react'
 import * as React from 'react'
 import { mountWithTheme } from '@matthill8286/atomic-ui'
 import { TextSection } from './index'
-import { Elements } from '../../types/richtext/graphcms-richtext'
+import { Elements } from '../../types/richtext'
 
 const mockAnchorId = 'richTextAnchorId'
 
@@ -27,7 +27,7 @@ describe('Landing:Components:TextSection', () => {
     }
 
     const textSection = mountWithTheme(
-      <TextSection richText={aliceRichText.raw} anchorId={mockAnchorId} />
+      <TextSection richText={aliceRichText} anchorId={mockAnchorId} />
     )
 
     const paragraph = textSection.find('p').last()

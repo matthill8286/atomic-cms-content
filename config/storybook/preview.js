@@ -1,12 +1,13 @@
+import { withInfo } from '@storybook/addon-info'
+import { withKnobs } from '@storybook/addon-knobs'
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
-import { create } from '@storybook/theming'
+import { themes } from '@storybook/theming'
 import * as React from 'react'
-import StoryRouter from 'storybook-react-router'
+import { MemoryRouter } from 'react-router'
 import { withThemesProvider } from 'themeprovider-storybook'
-
 import {
   GlobalStyle,
-  atomicTheme as atomicStyles,
+  saiyanTheme as atomicStyles,
   alternateTheme as alternateStyles,
 } from '@matthill8286/atomic-ui'
 
@@ -65,26 +66,29 @@ const alternateTheme = {
   ...alternateStyles,
 }
 
-const themes = [atomicTheme, alternateTheme]
+const clientSkins = [atomicTheme, alternateTheme]
 
 const withGlobal = content => (
   <React.Fragment>
     <GlobalStyle />
-    {content()}
+    <MemoryRouter initialEntries={['/']}>{content()}</MemoryRouter>
   </React.Fragment>
 )
 
 export const parameters = {
-  docs: {
-    panelPosition: 'right',
-    theme: create({ base: 'light' }),
-  },
   options: {
-    storySort: {
-      method: 'alphabetical',
-    },
+    panelPosition: 'bottom',
+    theme: themes.light,
   },
   viewport: { viewports: { ...INITIAL_VIEWPORTS, ...newViewports } },
 }
 
-export const decorators = [StoryRouter(), withThemesProvider(themes), withGlobal]
+export const decorators = [
+  withKnobs,
+  withGlobal,
+  withInfo({
+    header: false,
+    inline: true,
+  }),
+  withThemesProvider(clientSkins),
+]

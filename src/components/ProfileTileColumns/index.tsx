@@ -1,24 +1,15 @@
-import React, {FC, useMemo} from 'react';
-import {
-  Row,
-  Cell,
-  TwelveColumn,
-  Heading,
-  Card,
-} from '@matthill8286/atomic-ui';
-import {ConfigurableGraphCmsHtmlSerializer, Serializer} from '../Serializer';
-import {CustomSection} from '../CustomSection';
+import React, { FC, useMemo } from 'react'
+import { Row, Cell, TwelveColumn, Heading, Card } from '@matthill8286/atomic-ui'
+import { ConfigurableGraphCmsHtmlSerializer, Serializer } from '../Serializer'
+import { CustomSection } from '../CustomSection'
 import {
   StyledAvatar,
   StyledPaddedSection,
   StyledProfileSection,
   StyledRelative,
-} from './ProfileTileColumns.styled';
-import {
-  ProfileSectionProps,
-  ProfileSectionsProps,
-} from './ProfileTileColumns.interface';
-import {StyledAvatarWrapper} from '../ProfileTileRows/ProfileTileRows.styled';
+} from './ProfileTileColumns.styled'
+import { ProfileSectionProps, ProfileSectionsProps } from './ProfileTileColumns.interface'
+import { StyledAvatarWrapper } from '../ProfileTileRows/ProfileTileRows.styled'
 
 export const ProfileTileColumn: FC<ProfileSectionProps> = ({
   profileAvatar,
@@ -29,15 +20,12 @@ export const ProfileTileColumn: FC<ProfileSectionProps> = ({
       <StyledRelative>
         <Card elevation={1} elevationHover={0} surface="white">
           <StyledAvatarWrapper>
-            <StyledAvatar
-              alt={profileAvatar?.altText}
-              src={profileAvatar?.url}
-              rounded
-            />
+            <StyledAvatar alt={profileAvatar?.altText} src={profileAvatar?.url} rounded />
           </StyledAvatarWrapper>
           <StyledPaddedSection>
             {Serializer(
               profileInformation?.raw,
+              // @ts-ignore
               ConfigurableGraphCmsHtmlSerializer({
                 textAlign: 'center',
                 contentAlign: 'center',
@@ -47,8 +35,8 @@ export const ProfileTileColumn: FC<ProfileSectionProps> = ({
         </Card>
       </StyledRelative>
     </StyledProfileSection>
-  );
-};
+  )
+}
 
 export const ProfileTileColumns: FC<ProfileSectionsProps> = ({
   profileSections,
@@ -59,11 +47,8 @@ export const ProfileTileColumns: FC<ProfileSectionsProps> = ({
 }) => {
   const profileColumns = useMemo(
     () =>
-      profileSections?.map(({profileAvatar, profileInformation}, index) => (
-        <Cell
-          columns={(12 / profileSections.length) as TwelveColumn}
-          key={`RichText-${index}`}
-        >
+      profileSections?.map(({ profileAvatar, profileInformation }, index) => (
+        <Cell columns={(12 / profileSections.length) as TwelveColumn} key={`RichText-${index}`}>
           <ProfileTileColumn
             profileAvatar={profileAvatar}
             profileInformation={profileInformation}
@@ -71,13 +56,9 @@ export const ProfileTileColumns: FC<ProfileSectionsProps> = ({
         </Cell>
       )),
     []
-  );
+  )
   return (
-    <CustomSection
-      color={sectionColor}
-      paddingTop={paddingTop}
-      paddingBottom={paddingBottom}
-    >
+    <CustomSection color={sectionColor} paddingTop={paddingTop} paddingBottom={paddingBottom}>
       <Row noMargin>
         <Cell columns={12}>
           <Heading scale="level-2" textAlign="center" margin="xl 0">
@@ -91,5 +72,5 @@ export const ProfileTileColumns: FC<ProfileSectionsProps> = ({
         </StyledPaddedSection>
       </CustomSection>
     </CustomSection>
-  );
-};
+  )
+}

@@ -1,5 +1,5 @@
-import React from 'react';
-import {EmbeddedPlayerProps} from './EmbeddedPlayer.interface';
+import React from 'react'
+import { EmbeddedPlayerProps } from './EmbeddedPlayer.interface'
 
 export const EmbeddedPlayer: React.FC<EmbeddedPlayerProps> = ({
   title = '',
@@ -22,5 +22,5 @@ export const EmbeddedPlayer: React.FC<EmbeddedPlayerProps> = ({
       allowFullScreen={allowfullscreen}
       {...props}
     />
-  );
-};
+  )
+}

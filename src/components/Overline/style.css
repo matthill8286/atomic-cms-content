@@ -1,0 +1,76 @@
+/* 15. overline */
+.the-overline {
+  position: relative;
+  background: #ff264a;
+  width: 90px;
+  height: 9px;
+  text-align: left;
+  z-index: 10;
+  margin: -4px 0 1px 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+@media all and (min-width: 1920px) {
+  .the-overline {
+    width: 110px;
+  }
+}
+
+.the-overline-home {
+  background: #fff;
+  text-align: center;
+  margin: 1px 0 1px 0;
+}
+
+.the-overline-services {
+  margin: 1px 0;
+}
+
+.the-overline-news {
+  text-align: center;
+  margin: 1px auto;
+}
+
+.the-overline-testimonials {
+  text-align: center;
+  margin: 0 auto 1px auto;
+}
+
+.the-overline-featured {
+  margin: 1px 0;
+}
+
+.the-overline-contact {
+  text-align: center;
+  margin: 1px auto;
+}
+
+@media only screen and (max-width: 995px) {
+  .the-overline,
+  .the-overline-home,
+  .the-overline-services,
+  .the-overline-news,
+  .the-overline-testimonials,
+  .the-overline-featured,
+  .the-overline-contact {
+    width: 90px;
+    height: 7px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .the-overline,
+  .the-overline-home,
+  .the-overline-services,
+  .the-overline-news,
+  .the-overline-testimonials,
+  .the-overline-featured,
+  .the-overline-contact {
+    width: 45px;
+    height: 5px;
+  }
+}

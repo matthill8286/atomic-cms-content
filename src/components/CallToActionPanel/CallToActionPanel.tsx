@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react'
 import {
   Grid,
   Cell,
@@ -6,48 +6,39 @@ import {
   ThemeColors,
   CallToActionPanel,
   CallToActionPanelProps,
-  Asset,
-} from '@matthill8286/atomic-ui';
-import {CustomSection} from '../CustomSection';
-import {formatToStaticAsset} from '../../helpers';
-import {useHistory} from 'react-router-dom';
+} from '@matthill8286/atomic-ui'
+import { CustomSection } from '../CustomSection'
+import { ConfigurableGraphCmsHtmlSerializer, Serializer } from '../Serializer'
+import { Elements, RichTextRawDocument } from '../../types/richtext'
 
-export type SelectableOrientation = 'left' | 'right';
+export type SelectableOrientation = 'left' | 'right'
 
-const orientation: {[key in SelectableOrientation]: SelectableOrientation} = {
+const orientation: { [key in SelectableOrientation]: SelectableOrientation } = {
   right: 'right',
   left: 'left',
-};
+}
 
-export interface PublicCallToActionPanelProps
-  extends Omit<CallToActionPanelProps, 'alignment'> {
-  sectionColor?: ThemeColors;
-  rightOrientation?: boolean;
-  routeContext?: string;
-  shoeFeatured?: boolean;
-  isOpenAsset?: boolean;
-  richTextCopy?: string | React.ReactNode;
+export interface PublicCallToActionPanelProps extends Omit<CallToActionPanelProps, 'alignment'> {
+  sectionColor?: ThemeColors
+  rightOrientation?: boolean
+  routeContext?: string
+  shoeFeatured?: boolean
+  isOpenProduct?: boolean
+  richTextCopy?: RichTextRawDocument | null
 }
 
 export const CmsCallToActionPanel: FC<PublicCallToActionPanelProps> = ({
   element,
   children,
   image,
-  svg,
   withLQIP = false,
   showReadMore,
   showMore,
   showFeatured,
-  asset,
-  isOpenAsset,
   rightOrientation,
-  onAssetClick,
   sectionColor,
-  routeContext,
   richTextCopy,
 }): JSX.Element => {
-  const formatAsset = asset ? formatToStaticAsset([{...asset}]) : null;
-  const history = useHistory();
   return (
     <CustomSection color={sectionColor} paddingTop={0} paddingBottom={0}>
       <Grid>
@@ -59,28 +50,14 @@ export const CmsCallToActionPanel: FC<PublicCallToActionPanelProps> = ({
               showReadMore={showReadMore}
               showMore={showMore}
               showFeatured={showFeatured}
-              isOpenAsset={isOpenAsset}
               element={element}
               richTextCopy={richTextCopy}
-              asset={formatAsset?.[0] ?? null}
-              onAssetClick={() => {
-                if (asset?.to) {
-                  history.push({
-                    pathname: asset?.to,
-                    // @ts-ignore
-                    state: {embeddedAsset: asset.embeddedAsset},
-                  });
-                }
-
-                return null;
-              }}
-              alignment={
-                rightOrientation ? orientation.right : orientation.left
-              }
+              alignment={rightOrientation ? orientation.right : orientation.left}
             />
+            {children}
           </Cell>
         </Row>
       </Grid>
     </CustomSection>
-  );
-};
+  )
+}

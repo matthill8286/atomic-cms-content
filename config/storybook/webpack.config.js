@@ -47,7 +47,7 @@ module.exports = ({ config, mode }) => {
     }
   )
 
-  config.resolve.extensions.push('.ts', '.tsx', '.jsx', '.css', '.svg', '.md')
+  config.resolve.extensions.push('.ts', '.tsx', '.css', '.svg', '.md')
   config.resolve.alias['@'] = path.join(__dirname, '../../src')
   config.plugins.push(new ForkTsCheckerPlugin())
 

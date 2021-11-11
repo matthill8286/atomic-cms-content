@@ -1,1 +1,1 @@
-export * from './EmbeddedPlayer';
+export * from './EmbeddedPlayer'

@@ -1,1 +1,1 @@
-export * from './CallToActionPanel';
+export * from './CallToActionPanel'

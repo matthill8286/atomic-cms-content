@@ -1,8 +1,8 @@
-import {css, styled} from '@matthill8286/atomic-ui';
-import {CustomSection} from '../CustomSection';
+import { css, styled } from '@matthill8286/atomic-ui'
+import { CustomSection } from '../CustomSection'
 
 export const StyledPaddedEmbed = styled.div(
-  ({theme}) =>
+  ({ theme }) =>
     css`
       padding: ${theme.spacing.base.md};
       position: absolute;
@@ -13,10 +13,10 @@ export const StyledPaddedEmbed = styled.div(
       width: 100%;
       height: 100%;
     `
-);
+)
 
 export const StyledPaddedEmbedSection = styled(CustomSection)(
-  ({theme}) =>
+  ({ theme }) =>
     css`
       padding: ${theme.spacing.base.md};
       position: relative;
@@ -25,4 +25,4 @@ export const StyledPaddedEmbedSection = styled(CustomSection)(
       padding-top: 56.25%;
       margin-bottom: calc(${theme.spacing.base.xl}* 2);
     `
-);
+)

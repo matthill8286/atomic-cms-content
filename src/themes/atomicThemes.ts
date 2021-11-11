@@ -1,4 +1,4 @@
-import { atomicTheme } from '@matthill8286/atomic-ui'
+import { saiyanTheme as atomicTheme } from '@matthill8286/atomic-ui'
 import { ExtendedThemeType } from './types'
 
 export const lightAtomicTheme: ExtendedThemeType = {

@@ -46,24 +46,25 @@ export type Link = {
   width?: string
 }
 
-export type Raw = {
+export type RichTextRawDocument = {
   raw: RichTextBlock
 }
 
 export type Document = {
-  document?: Raw
-  message?: Raw
+  document?: RichTextRawDocument
+  message?: RichTextRawDocument
 }
 
 export type NodeChild = {
-  text?: string
+  text?: string | null
+  children?: NodeChild[] | RichTextBlock[] | RichTextSpan[]
+  type?: Elements | string
   bold?: boolean
   italic?: boolean
   id?: string
   rel?: string
   href?: string
   src?: string
-  type?: string
   title?: string
   width?: number
   height?: number
@@ -71,7 +72,6 @@ export type NodeChild = {
   mimeType?: string
   className?: string
   openInNewTab?: boolean
-  children?: RichTextBlock[] | RichTextSpan[]
 }
 
 export type RichTextSpan = {
@@ -80,7 +80,7 @@ export type RichTextSpan = {
 }
 
 export type RichTextBlock = {
-  type: Elements | string
+  type?: Elements | string
   children?: NodeChild[]
 }
 

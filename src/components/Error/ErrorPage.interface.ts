@@ -1,7 +1,7 @@
 export interface ErrorPageProps {
-  errorType?: ErrorPageType | string
+  errorType?: ErrorPageType | any
+  errorMessage?: { message: string }
   product?: 'Atomic' | 'Landing'
-  errorMessage?: string | null | undefined
 }
 
 export enum ErrorPageType {

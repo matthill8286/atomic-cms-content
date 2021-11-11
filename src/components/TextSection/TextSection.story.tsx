@@ -1,10 +1,10 @@
 import React from 'react'
 import { TextSection, TextSectionProps } from './index'
 import { Meta, Story } from '@storybook/react'
-import { Elements } from '../../types/richtext/graphcms-richtext'
+import { Elements } from '../../types/richtext'
 
 export default {
-  title: 'CMS Design System/Text Section',
+  title: 'Design System/Text Section',
   component: TextSection,
 } as Meta
 
@@ -26,9 +26,25 @@ TextSectionStory.args = {
             },
           ],
         },
+        {
+          type: Elements.heading3,
+          children: [
+            {
+              text: 'A heading mid component.',
+              italic: true,
+            },
+          ],
+        },
       ],
     },
   },
+  active: false,
+  sectionColor: 'clear',
+  headingColor: 'primary',
+  headingsBold: true,
+  textColor: 'grey5',
+  paddingTop: 'lg',
+  paddingBottom: 'lg',
 }
 
 TextSectionStory.argTypes = {}

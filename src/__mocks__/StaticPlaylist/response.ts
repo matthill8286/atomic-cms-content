@@ -7,7 +7,7 @@ export const staticPlaylist = {
       size: 3,
       assetTiles: [
         {
-          type: 'StaticAssetTile',
+          type: 'StaticProductTile',
           instanceId: 'ckju37mcw1qzy0948xbegl36r',
           title: 'Quisque non ornare tellus vivamus pharetra elementum metus in scelerisque',
           assetType: 'Article',
@@ -22,7 +22,7 @@ export const staticPlaylist = {
           },
         },
         {
-          type: 'StaticAssetTile',
+          type: 'StaticProductTile',
           instanceId: 'ckju3955404p50a58a904s5tu',
           title: 'Suspendisse mauris est, commodo non justo in, posuere rutrum nulla',
           assetType: 'Article',
@@ -37,7 +37,7 @@ export const staticPlaylist = {
           },
         },
         {
-          type: 'StaticAssetTile',
+          type: 'StaticProductTile',
           instanceId: 'ckju3abkw0hy00b65l4n0qryo',
           title: 'Mauris vitae odio mollis, tempus mauris eu, varius tortor',
           assetType: 'Article',

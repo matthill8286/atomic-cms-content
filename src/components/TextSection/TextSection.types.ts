@@ -6,14 +6,13 @@ export type TextSectionProps = {
   anchorId?: string | null
   sectionColor?: ExtendedThemeColorType
   textColor?: ExtendedThemeColorType
-  primaryColor?: ExtendedThemeColorType
   headingsBold?: boolean
   headingColor?: ExtendedThemeColorType
   branded?: boolean
   title?: string
   paddingTop?: string
   paddingBottom?: string
-  type?: string
+  withHeading?: boolean
 }
 
 export type FootnotesSectionType = {

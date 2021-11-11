@@ -1,17 +1,17 @@
-import {ThemeColors} from '@matthill8286/atomic-ui';
-import {RichTextBlock} from '../../types';
+import { ThemeColors } from '@matthill8286/atomic-ui'
+import { RichTextRawDocument } from '../../types/richtext'
 
 export type Column = {
-  columnTitle?: string;
-  columnDescription?: string;
-};
+  columnTitle?: string
+  columnDescription?: string
+}
 
 export type MultiColumnTextSectionSectionProps = {
-  columns?: Array<Column>;
-  richTextColumns: RichTextBlock[];
-  sectionColor?: ThemeColors;
-  active?: boolean;
-  anchorId?: string | null;
-  textColor: ThemeColors | string;
-  primaryColor?: ThemeColors;
-};
+  columns?: Column[]
+  richTextColumns: RichTextRawDocument
+  sectionColor?: ThemeColors
+  active?: boolean
+  anchorId?: string | null
+  textColor: ThemeColors | string
+  primaryColor?: ThemeColors
+}

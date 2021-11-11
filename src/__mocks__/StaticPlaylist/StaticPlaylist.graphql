@@ -4,7 +4,7 @@ query StaticPlaylist($id: ID!) {
     id
     name
     size
-    assetTiles: staticAssetTiles(first: 500) {
+    assetTiles: staticProductTiles(first: 500) {
       type: __typename
       instanceId: id
       title

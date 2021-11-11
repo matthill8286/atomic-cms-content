@@ -1,4 +1,4 @@
-import React, {FC, useMemo} from 'react';
+import React, { FC, useMemo } from 'react'
 import {
   Row,
   Cell,
@@ -8,9 +8,9 @@ import {
   Heading,
   MediaStyleSwitch,
   media,
-} from '@matthill8286/atomic-ui';
-import {ConfigurableGraphCmsHtmlSerializer, Serializer} from '../Serializer';
-import {CustomSection} from '../CustomSection';
+} from '@matthill8286/atomic-ui'
+import { ConfigurableGraphCmsHtmlSerializer, Serializer } from '../Serializer'
+import { CustomSection } from '../CustomSection'
 import {
   StyledAvatar,
   StyledAvatarWrapper,
@@ -18,18 +18,18 @@ import {
   StyledProfileSection,
   StyledCard,
   StyledProfileDetailsColumn,
-} from './ProfileTileRows.styled';
+} from './ProfileTileRows.styled'
 import {
   ProfileSectionProps,
   ProfileSectionsProps,
-} from '../ProfileTileColumns/ProfileTileColumns.interface';
-import {ProfileTileColumn, ProfileTileColumns} from '../ProfileTileColumns';
+} from '../ProfileTileColumns/ProfileTileColumns.interface'
+import { ProfileTileColumn, ProfileTileColumns } from '../ProfileTileColumns'
 
-const StyledWrapper = styled.div<{marginTop: string}>`
-  margin-top: ${({theme, marginTop}) => theme.spacing.base[marginTop] ?? 0};
-`;
+const StyledWrapper = styled.div<{ marginTop: string }>`
+  margin-top: ${({ theme, marginTop }) => theme.spacing.base[marginTop] ?? 0};
+`
 
-export const SpeakerHeader = ({title, name, marginTop}) => (
+export const SpeakerHeader = ({ title, name, marginTop }) => (
   <StyledWrapper marginTop={marginTop}>
     <CopyText
       limitLines={1}
@@ -38,8 +38,7 @@ export const SpeakerHeader = ({title, name, marginTop}) => (
       toUpperCase
       weight="bold"
       display="inline-flex"
-      margin="0 sm xs 0"
-    >
+      margin="0 sm xs 0">
       {title}
     </CopyText>
     <Heading
@@ -48,37 +47,24 @@ export const SpeakerHeader = ({title, name, marginTop}) => (
       tag="h2"
       lineHeight="sm"
       fontFamily="default"
-      weight="bold"
-    >
+      weight="bold">
       {name}
     </Heading>
   </StyledWrapper>
-);
+)
 
-export const ProfileTileRow: FC<ProfileSectionProps> = ({
-  profileAvatar,
-  profileInformation,
-}) => {
+export const ProfileTileRow: FC<ProfileSectionProps> = ({ profileAvatar, profileInformation }) => {
   return (
     <StyledProfileSection>
-      <StyledCard
-        elevation={0}
-        elevationHover={0}
-        noBorder={'none'}
-        display="flex"
-        surface="clear"
-      >
+      <StyledCard elevation={0} elevationHover={0} noBorder={'none'} display="flex" surface="clear">
         <StyledAvatarWrapper>
-          <StyledAvatar
-            alt={profileAvatar?.altText}
-            src={profileAvatar?.url}
-            rounded
-          />
+          <StyledAvatar alt={profileAvatar?.altText} src={profileAvatar?.url} rounded />
         </StyledAvatarWrapper>
         <StyledProfileDetailsColumn>
           <StyledPaddedSection>
             {Serializer(
               profileInformation?.raw,
+              // @ts-ignore
               ConfigurableGraphCmsHtmlSerializer({
                 textAlign: 'left',
                 inline: true,
@@ -93,17 +79,16 @@ export const ProfileTileRow: FC<ProfileSectionProps> = ({
         </StyledProfileDetailsColumn>
       </StyledCard>
     </StyledProfileSection>
-  );
-};
+  )
+}
 
 export const BrandedHeadingWrapper = styled.div`
-  margin: ${({theme}) =>
-    `${theme.spacing.base.md} 0 ${theme.spacing.base.lg} 0`};
+  margin: ${({ theme }) => `${theme.spacing.base.md} 0 ${theme.spacing.base.lg} 0`};
 
   ${media.maxSm} {
-    margin-bottom: ${({theme}) => theme.spacing.base.xxxl};
+    margin-bottom: ${({ theme }) => theme.spacing.base.xxxl};
   }
-`;
+`
 
 export const ProfileTileRows: FC<ProfileSectionsProps> = ({
   profileSections,
@@ -115,19 +100,16 @@ export const ProfileTileRows: FC<ProfileSectionsProps> = ({
 }) => {
   const profiles = useMemo(
     () =>
-      profileSections?.map(({profileAvatar, profileInformation}, index) => (
+      profileSections?.map(({ profileAvatar, profileInformation }, index) => (
         <Cell columns={12 as TwelveColumn} key={`RichText-${index}`}>
-          <ProfileTileRow
-            profileAvatar={profileAvatar}
-            profileInformation={profileInformation}
-          />
+          <ProfileTileRow profileAvatar={profileAvatar} profileInformation={profileInformation} />
         </Cell>
       )),
     [profileSections]
-  );
+  )
   const mobileProfiles = useMemo(
     () =>
-      profileSections?.map(({profileAvatar, profileInformation}, index) => (
+      profileSections?.map(({ profileAvatar, profileInformation }, index) => (
         <Cell columns={12 as TwelveColumn} key={`RichText-${index}`}>
           <ProfileTileColumn
             profileAvatar={profileAvatar}
@@ -136,37 +118,25 @@ export const ProfileTileRows: FC<ProfileSectionsProps> = ({
         </Cell>
       )),
     [profileSections]
-  );
+  )
 
   const mobileViewWithDefault = (
     <>
-      <MediaStyleSwitch
-        query={media.maxSm}
-        activeDisplay="block"
-        inactiveDisplay="none"
-      >
+      <MediaStyleSwitch query={media.maxSm} activeDisplay="block" inactiveDisplay="none">
         {mobileProfiles}
       </MediaStyleSwitch>
-      <MediaStyleSwitch
-        query="desktop"
-        activeDisplay="block"
-        inactiveDisplay="none"
-      >
+      <MediaStyleSwitch query="desktop" activeDisplay="block" inactiveDisplay="none">
         {profiles}
       </MediaStyleSwitch>
     </>
-  );
+  )
 
   return (
-    <CustomSection
-      color={sectionColor}
-      paddingTop={paddingTop}
-      paddingBottom={paddingBottom}
-    >
+    <CustomSection color={sectionColor} paddingTop={paddingTop} paddingBottom={paddingBottom}>
       <BrandedHeadingWrapper>
         <SpeakerHeader title={title} name={label} marginTop={null} />
       </BrandedHeadingWrapper>
       {mobileViewWithDefault}
     </CustomSection>
-  );
-};
+  )
+}

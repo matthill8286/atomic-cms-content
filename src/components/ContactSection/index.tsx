@@ -1,19 +1,11 @@
-import React, {FC} from 'react';
-import {
-  Row,
-  Cell,
-  TwelveColumn,
-  Picture,
-  Heading,
-  Offset,
-  Grid,
-} from '@matthill8286/atomic-ui';
-import {ConfigurableGraphCmsHtmlSerializer, Serializer} from '../Serializer';
+import React, { FC } from 'react'
+import { Row, Cell, TwelveColumn, Picture, Heading, Offset, Grid } from '@matthill8286/atomic-ui'
+import { ConfigurableGraphCmsHtmlSerializer, Serializer } from '../Serializer'
 
-import {CustomSection} from '../CustomSection';
-import {StyledPaddedSection} from './ContactSection.styled';
-import {ContactSectionProps} from './ContactSection.types';
-import {StyledTextSection} from '../TextSection/TextSection.styled';
+import { CustomSection } from '../CustomSection'
+import { StyledPaddedSection } from './ContactSection.styled'
+import { ContactSectionProps } from './ContactSection.types'
+import { StyledTextSection } from '../TextSection/TextSection.styled'
 
 export const ContactSection: FC<ContactSectionProps> = ({
   contactImage,
@@ -24,11 +16,7 @@ export const ContactSection: FC<ContactSectionProps> = ({
   paddingBottom,
 }) => {
   return (
-    <CustomSection
-      color={sectionColor}
-      paddingTop={paddingTop}
-      paddingBottom={paddingBottom}
-    >
+    <CustomSection color={sectionColor} paddingTop={paddingTop} paddingBottom={paddingBottom}>
       <Grid>
         <Row noMargin>
           <Offset colsXl={1} colsLg={1} colsMd={0} colsSm={0} colsXs={0} />
@@ -42,29 +30,18 @@ export const ContactSection: FC<ContactSectionProps> = ({
                     color="black"
                     margin="md 0"
                     padding="lg 0"
-                    textAlign="center"
-                  >
+                    textAlign="center">
                     {contactHeading}
                   </Heading>
                 </Cell>
               </Row>
             )}
             <Row noMargin>
-              <Cell
-                columns={6 as TwelveColumn}
-                colsLg={6}
-                colsMd={4}
-                colsSm={8}
-                colsXs={4}
-              >
-                <StyledPaddedSection
-                  headingColor="black"
-                  align="flex-start"
-                  justify="center"
-                  withPadding="false"
-                >
+              <Cell columns={6 as TwelveColumn} colsLg={6} colsMd={4} colsSm={8} colsXs={4}>
+                <StyledPaddedSection color="black" align="flex-start" justify="center">
                   {Serializer(
                     richTextContactSection.raw,
+                    // @ts-ignore
                     ConfigurableGraphCmsHtmlSerializer({
                       color: 'black',
                       margins: '0 0 xs 0',
@@ -74,13 +51,7 @@ export const ContactSection: FC<ContactSectionProps> = ({
                   )}
                 </StyledPaddedSection>
               </Cell>
-              <Cell
-                columns={6 as TwelveColumn}
-                colsLg={6}
-                colsMd={4}
-                colsSm={8}
-                colsXs={4}
-              >
+              <Cell columns={6 as TwelveColumn} colsLg={6} colsMd={4} colsSm={8} colsXs={4}>
                 <StyledPaddedSection align="center" justify="center">
                   {contactImage?.url && (
                     <Picture
@@ -97,5 +68,5 @@ export const ContactSection: FC<ContactSectionProps> = ({
         </Row>
       </Grid>
     </CustomSection>
-  );
-};
+  )
+}

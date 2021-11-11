@@ -41,12 +41,12 @@ export const Page: React.FC<PageTemplateProps> = ({
 
   return (
     <>
-      {/*// @ts-ignore*/}
+      {/* // @ts-ignore*/}
       <AppMeta {...appMetaProps} />
 
       {/* Add static header */}
 
-      {/*// @ts-ignore */}
+      {/* // @ts-ignore */}
       <PageContent
         modalLocked={modalLocked}
         modalBlock={modalBlock}

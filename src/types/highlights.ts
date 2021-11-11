@@ -8,4 +8,4 @@ export enum HIGHLIGHTS {
 /**
  * Map of all GraphCms marks.
  */
-export default HIGHLIGHTS;
+export default HIGHLIGHTS

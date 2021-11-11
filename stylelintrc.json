@@ -1,0 +1,16 @@
+{
+  "processors": ["stylelint-processor-styled-components"],
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-styled-components"
+  ],
+  "rules": {
+    "declaration-empty-line-before": null,
+    "custom-property-empty-line-before": null,
+    "no-descending-specificity": null,
+    "at-rule-no-unknown": [true, {"ignoreAtRules": ["define-mixin", "mixin"]}],
+    "selector-pseudo-element-colon-notation": null,
+    "function-name-case": null,
+    "font-family-no-missing-generic-family-keyword": null
+  }
+}

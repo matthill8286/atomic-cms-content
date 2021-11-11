@@ -1,8 +1,8 @@
-import { Asset, ThemeColors } from '@matthill8286/atomic-ui'
+import { Product, ThemeColors } from '@matthill8286/atomic-ui'
 
 export interface CallToActionPlaylistProps {
   slices: any[]
-  setAssetInformation: (information: Partial<Asset>) => void
+  setProductInformation: (information: Partial<Product>) => void
   dataTestId?: string
   sectionColor?: ThemeColors
   overridePlaylistClickEvent?: boolean

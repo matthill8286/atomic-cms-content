@@ -1,12 +1,13 @@
-import {RichTextBlock} from '../../types';
+import { RichTextRawDocument } from '../../types/richtext'
+import { AccordionSectionFieldType } from '../AccordionSection'
 
 export type FaqEntryType = {
-  question: RichTextBlock[];
-  answer: RichTextBlock[];
-  anchorId: string | null;
-}[];
+  entryHeadline: RichTextRawDocument | null
+  entryContent: RichTextRawDocument | null
+  anchorId: string | null
+}
 
 export type FAQSectionProps = {
-  entries: FaqEntryType[];
-  headline?: RichTextBlock[];
-};
+  entries: AccordionSectionFieldType[]
+  headline?: RichTextRawDocument
+}

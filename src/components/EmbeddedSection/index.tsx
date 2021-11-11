@@ -1,12 +1,9 @@
-import React, {FC} from 'react';
-import {Grid, Row, Cell, Heading} from '@matthill8286/atomic-ui';
-import {ConfigurableGraphCmsHtmlSerializer, Serializer} from '../Serializer';
-import {CustomSection} from '../CustomSection';
-import {
-  StyledPaddedEmbedSection,
-  StyledPaddedEmbed,
-} from './EmbeddedSection.styled';
-import {EmbeddedSectionProps} from './EmbeddedSection.types';
+import React, { FC } from 'react'
+import { Grid, Row, Cell, Heading } from '@matthill8286/atomic-ui'
+import { ConfigurableGraphCmsHtmlSerializer, Serializer } from '../Serializer'
+import { CustomSection } from '../CustomSection'
+import { StyledPaddedEmbedSection, StyledPaddedEmbed } from './EmbeddedSection.styled'
+import { EmbeddedSectionProps } from './EmbeddedSection.types'
 
 export const EmbeddedSection: FC<EmbeddedSectionProps> = ({
   embeddedSection,
@@ -30,6 +27,7 @@ export const EmbeddedSection: FC<EmbeddedSectionProps> = ({
                 {embeddedSection &&
                   Serializer(
                     embeddedSection.raw,
+                    // @ts-ignore
                     ConfigurableGraphCmsHtmlSerializer({
                       textAlign: 'center',
                     })
@@ -40,5 +38,5 @@ export const EmbeddedSection: FC<EmbeddedSectionProps> = ({
         </Row>
       </Grid>
     </CustomSection>
-  );
-};
+  )
+}

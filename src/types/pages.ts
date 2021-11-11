@@ -5,6 +5,8 @@ import { AppMetaProps } from '../components'
 export type PageConfigType = {
   landingPageContent: any
   metaProps: any
+  PageContent: any
+  withPageHead: boolean
   slices?: PageContent<any>
 }
 

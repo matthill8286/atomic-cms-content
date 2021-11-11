@@ -1,18 +1,10 @@
-import * as React from 'react';
-import {
-  Grid,
-  Cell,
-  Row,
-  Link,
-  Icon,
-  IconRightArrow,
-  Offset,
-} from '@matthill8286/atomic-ui';
+import * as React from 'react'
+import { Grid, Cell, Row, Link, Icon, Offset } from '@matthill8286/atomic-ui'
+import { LinkSectionProps } from './LinkSection.types'
+import { CustomSection } from '../CustomSection'
+import { IconRightArrow } from '@matthill8286/atomic-icon-library'
 
-import {LinkSectionProps} from './LinkSection.types';
-import {CustomSection} from '../CustomSection';
-
-export * from './LinkSection.types';
+export * from './LinkSection.types'
 
 export const LinkSection: React.FC<LinkSectionProps> = ({
   link,
@@ -41,13 +33,12 @@ export const LinkSection: React.FC<LinkSectionProps> = ({
               target={link?.target || '_self'}
               href={link?.url || ''}
               underline
-              decorationColor={decorationColor}
-            >
+              decorationColor={decorationColor}>
               {label}
             </Link>
           </Cell>
         </Row>
       </Grid>
     </CustomSection>
-  );
-};
+  )
+}

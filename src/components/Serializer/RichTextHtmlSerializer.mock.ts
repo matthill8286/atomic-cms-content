@@ -1,4 +1,4 @@
-import { Elements, NodeChild, RichTextBlock } from '../../types'
+import { Elements, NodeChild, RichTextBlock } from '../../types/richtext'
 
 export const getHeadline = (level = 'one', tag = '1'): RichTextBlock => {
   return {

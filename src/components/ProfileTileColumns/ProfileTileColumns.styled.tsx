@@ -1,17 +1,17 @@
-import {css, media, Picture, styled} from '@matthill8286/atomic-ui';
-import {CustomSection} from '../CustomSection';
+import { css, media, Picture, styled } from '@matthill8286/atomic-ui'
+import { CustomSection } from '../CustomSection'
 
 export const StyledPaddedSection = styled.div(
-  ({theme}) =>
+  ({ theme }) =>
     css`
-      padding: ${theme.spacing.base.xl} ${theme.spacing.base.md}
-        ${theme.spacing.base.xxl} ${theme.spacing.base.xl};
+      padding: ${theme.spacing.base.xl} ${theme.spacing.base.md} ${theme.spacing.base.xxl}
+        ${theme.spacing.base.xl};
 
       > p {
         margin-bottom: ${theme.spacing.base.xs};
       }
     `
-);
+)
 
 export const StyledAvatar = styled(Picture)`
   position: absolute;
@@ -22,17 +22,17 @@ export const StyledAvatar = styled(Picture)`
   display: flex;
   justify-content: center;
   align-content: center;
-`;
+`
 
 export const StyledRelative = styled.div`
   position: relative;
-`;
+`
 
 export const StyledProfileSection = styled(CustomSection)(
-  ({theme}) =>
+  ({ theme }) =>
     css`
       ${media.maxSm} {
         margin-bottom: ${theme.spacing.base.xxl};
       }
     `
-);
+)

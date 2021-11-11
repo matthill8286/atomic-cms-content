@@ -1,0 +1,166 @@
+{
+  "root": true,
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "simple-import-sort",
+    "import",
+    "jest",
+    "react-hooks",
+    "jsx-a11y",
+    "styled-components-a11y"
+  ],
+  "env": {
+    "jest": true,
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": ["./tsconfig.json"]
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended", // fixes typescript incompatible rules from eslint:recommended
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:import/typescript",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:styled-components-a11y/recommended",
+  ],
+  "settings": {
+    "react": {
+      "createClass": "createReactClass", // Regex for Component Factory to use,
+      "pragma": "React", // Pragma to use, default to "React"
+      "version": "detect" // React version. "detect" automatically picks the version you have installed.
+    },
+    "propWrapperFunctions": [
+      // The names of any function used to wrap propTypes, e.g. `forbidExtraProps`. If this isn't set, any propTypes wrapped in a function will be skipped.
+      "forbidExtraProps",
+      {
+        "property": "freeze",
+        "object": "Object"
+      },
+      {
+        "property": "myFavoriteWrapper"
+      }
+    ],
+    "linkComponents": [
+      // Components used as alternatives to <a> for linking, eg. <Link to={ url } />
+      "Hyperlink",
+      {
+        "name": "Link",
+        "linkAttribute": "to"
+      }
+    ]
+  },
+  "rules": {
+    "react/jsx-boolean-value": 1,
+    "no-unneeded-ternary": 1,
+    "no-unused-expressions": [1, {"allowShortCircuit": true}],
+    "import/no-duplicates": 1,
+    "import/export": 1,
+    "spaced-comment": 1,
+    "react/self-closing-comp": 1,
+    "eqeqeq": 1,
+    "no-lone-blocks":1,
+    "no-useless-computed-key": 1,
+    "no-useless-constructor": 1,
+    "yoda": 1,
+    "react/no-unused-prop-types": 1,
+    "no-useless-return": 1,
+    "one-var": 0,
+    "prefer-promise-reject-errors": 1,
+    "no-undef-init": 1,
+    "no-template-curly-in-string": 0,
+    "jest/no-identical-title": 1,
+    "react/jsx-no-bind": 0,
+    "react/jsx-indent": 0,
+    "import/first": 1,
+    "jest/no-focused-tests": 1,
+    "jest/valid-expect": 1,
+    "no-multi-str": 1,
+    "no-return-await": 1,
+    "no-return-assign": 1,
+    "no-redeclare": 1,
+    "indent": 0, //turn off for typescript indent
+    "@typescript-eslint/indent": 0,
+    "@typescript-eslint/member-delimiter-style": 0,
+    "no-case-declarations": 1,
+    "no-empty": 1,
+    "no-console": 1,
+    "no-duplicate-case": 1,
+    "prefer-const": 1,
+    "no-var": 2,
+    "no-inner-declarations": 1,
+    "camelcase": [1, {"ignoreImports": true}],
+    "require-yield": 1,
+    "no-undef": 1,
+    "no-dupe-keys": 1,
+    "sort-imports": 0, // must be disabled for simple-import-sort to work
+    "import-order": 0, // must be disabled for simple-import-sort to work
+    "import/no-useless-path-segments": ["off", {
+      "noUselessIndex": true
+    }],
+    "import/no-default-export": 1,
+    "no-restricted-imports": ["error", {
+      "patterns": ["@mms/webmobile-sc-components/*", "@mms/webmobile-lib-svg", "@mms/webmobile-config/*"]
+    }],
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-non-null-assertion": 1,
+    "@typescript-eslint/no-unused-vars": [1, {"varsIgnorePattern": "_"}],
+    "@typescript-eslint/explicit-member-accessibility": 0,
+    "@typescript-eslint/no-parameter-properties": 1,
+    "@typescript-eslint/no-inferrable-types": 1,
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/array-type": 1,
+    "@typescript-eslint/no-object-literal-type-assertion": 0,
+    "@typescript-eslint/consistent-type-assertions": 1,
+    "@typescript-eslint/no-explicit-any": 1,
+    "@typescript-eslint/ban-types": 1,
+    "@typescript-eslint/no-var-requires": 1,
+    "@typescript-eslint/no-namespace": 1,
+    "@typescript-eslint/no-empty-interface": 1,
+    "@typescript-eslint/no-unused-expressions": [1, {"allowShortCircuit": true}],
+    "@typescript-eslint/triple-slash-reference": 1,
+    "@typescript-eslint/prefer-namespace-keyword": 1,
+    "@typescript-eslint/no-empty-function": 0,
+    "@typescript-eslint/prefer-as-const": 1,
+    "react/no-unescaped-entities": 1,
+    "react/prop-types": 0,
+    "react/display-name": 0,
+    "react/jsx-no-target-blank": 1,
+    "react/jsx-no-undef": 1,
+    "prettier/prettier": 1,
+    "react-hooks/rules-of-hooks": "error",
+    // set severity of react-hooks/exhaustive-deps rule to "warn" until all violations are fixed
+    "react-hooks/exhaustive-deps": "warn",
+    // TODO: The following a11y rules are set to "warn" to not imped other developers -> put back to "error" once all violations are fixed.
+    "jsx-a11y/anchor-is-valid": [ "warn", {
+      "components": [ "Link" ],
+      "specialLink": [ "onClick", "to" ]
+    }],
+    "import/no-extraneous-dependencies": "error",
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/mouse-events-have-key-events": "warn",
+    "jsx-a11y/no-static-element-interactions": "warn",
+    "jsx-a11y/no-noninteractive-element-interactions": "warn",
+    "jsx-a11y/alt-text": "warn",
+    "jsx-a11y/label-has-for": "warn",
+    "styled-components-a11y/alt-text": "warn",
+    "styled-components-a11y/no-onchange": "warn",
+    "styled-components-a11y/anchor-is-valid": "warn",
+    "styled-components-a11y/click-events-have-key-events": "warn",
+    "styled-components-a11y/no-static-element-interactions": "warn"
+  }
+}

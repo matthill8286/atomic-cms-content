@@ -1,11 +1,11 @@
 export interface EmbeddedPlayerProps {
-  title?: string;
-  width?: string;
-  height?: string;
-  embedUrl: string;
-  allowfullscreen?: boolean;
-  features?: EmbeddedFeatureTypes[];
-  frameBorder?: string;
+  title?: string
+  width?: string
+  height?: string
+  embedUrl: string
+  allowfullscreen?: boolean
+  features?: EmbeddedFeatureTypes[]
+  frameBorder?: string
 }
 
 type EmbeddedFeatureTypes =
@@ -26,4 +26,4 @@ type EmbeddedFeatureTypes =
   | 'list'
   | 'loop'
   | 'start'
-  | 'showinfo';
+  | 'showinfo'
