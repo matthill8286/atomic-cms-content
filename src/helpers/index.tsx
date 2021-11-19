@@ -50,7 +50,7 @@ const formatNiceName = (id: number, title: string) =>
     .split(' ')
     .join('-')}`
 
-export const formatToStaticProduct = (products: ExtendedProduct[]) => {
+export const formatToStaticProduct = (products: ExtendedProduct[]): unknown[] => {
   const staticProducts = [...(products || [])]
   return staticProducts?.map(
     ({

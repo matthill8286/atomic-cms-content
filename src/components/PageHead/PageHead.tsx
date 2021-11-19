@@ -1,5 +1,5 @@
 import React from 'react'
-import { TopTeaser } from '@matthill8286/atomic-ui'
+import { Teaser } from '@matthill8286/atomic-ui'
 import { prepareHeroContentProps } from '../../helpers'
 
 /**
@@ -15,14 +15,11 @@ export const PageHead = ({ slices }: { slices: any[] }) => {
             const heroProps = pageComponents && prepareHeroContentProps(pageComponents)
             return (
               heroProps && (
-                <TopTeaser
+                <Teaser
                   key={keyProp}
                   color={!heroProps?.heroImages ? 'primary' : 'white'}
-                  heroImages={heroProps?.heroImages}
-                  images={heroProps?.images}
-                  height={{ mobile: 300, tablet: 350, desktop: 400 }}
-                  content={{ ...heroProps }}
-                  link={{ href: '', to: '' }}
+                  image={heroProps?.heroImages.xl}
+                  headline={heroProps.name}
                 />
               )
             )

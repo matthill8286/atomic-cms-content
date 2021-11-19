@@ -1,7 +1,4 @@
-var _excluded = ["landingPageContent", "PageContent", "withPageHead", "generator", "dataTestId", "errorPage"];
-
-var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/Page/Page.tsx",
-    _this = this;
+var _excluded = ["landingPageContent", "PageContent", "generator", "dataTestId", "errorPage"];
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -10,13 +7,13 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 import React from 'react';
-import { ErrorPage } from "../Error";
-import { ErrorPageType } from "../../types";
-import { AppMeta, PageHead } from "../../components";
+import { ErrorPageType } from '../../types';
+import { AppMeta } from '../AppMeta';
+import ErrorPage from '../Error';
+import { AppFooter, AppHeaderComponent as AppHeader } from '@matthill8286/atomic-ui';
 export var Page = function Page(_ref) {
   var landingPageContent = _ref.landingPageContent,
       PageContent = _ref.PageContent,
-      withPageHead = _ref.withPageHead,
       generator = _ref.generator,
       dataTestId = _ref.dataTestId,
       errorPage = _ref.errorPage,
@@ -33,18 +30,11 @@ export var Page = function Page(_ref) {
     return React.createElement(ErrorPage, {
       errorMessage: errorPage === null || errorPage === void 0 ? void 0 : errorPage.errorMessage,
       errorType: ErrorPageType.NOT_FOUND,
-      product: "Landing",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 26,
-        columnNumber: 7
-      }
+      product: "Landing"
     });
   }
 
   var appMetaProps = {
-    key: "".concat(metaTitle, "--").concat(generator),
     title: metaTitle,
     description: metaDescription,
     canonical: window.location.href,
@@ -54,33 +44,15 @@ export var Page = function Page(_ref) {
       content: 'follow'
     }]
   };
-  return React.createElement(React.Fragment, null, React.createElement(AppMeta, _extends({}, appMetaProps, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45,
-      columnNumber: 7
-    }
-  })), withPageHead && React.createElement(PageHead, {
-    slices: slices,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 24
-    }
-  }), React.createElement(PageContent, _extends({
+  return React.createElement(React.Fragment, null, React.createElement(AppMeta, appMetaProps), React.createElement(AppHeader, null), React.createElement(PageContent, _extends({
     modalLocked: modalLocked,
     modalBlock: modalBlock,
     routeContext: routeContext,
-    slices: slices
-  }, props, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48,
-      columnNumber: 7
-    }
-  })));
+    slices: slices,
+    "data-test": dataTestId
+  }, props)), React.createElement(AppFooter, {
+    logoUrl: "",
+    links: []
+  }));
 };
 //# sourceMappingURL=Page.js.map

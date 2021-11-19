@@ -1,4 +1,4 @@
-import { INLINES, BLOCKS } from "../index";
+import { INLINES, BLOCKS } from '../index';
 export function isInline(node) {
   return Object.values(INLINES).includes(node);
 }

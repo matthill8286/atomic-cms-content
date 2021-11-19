@@ -1,22 +1,22 @@
-import { lightFilteredTheme, lightDanoneTheme, greyFilteredTheme, greyDanoneTheme, darkFilteredTheme, darkDanoneTheme } from "../../dist";
+import { lightAtomicTheme, lightAlternateTheme, greyAtomicTheme, greyAlternateTheme, darkAtomicTheme, darkAlternateTheme } from '.';
 export var getExtendedThemes = function getExtendedThemes(pageTheme) {
   switch (pageTheme) {
     case 'dark':
       return {
-        extendedFilteredTheme: darkFilteredTheme,
-        extendedDanoneTheme: darkDanoneTheme
+        extendedAtomicTheme: darkAtomicTheme,
+        extendedAlternateTheme: darkAlternateTheme
       };
 
     case 'grey':
       return {
-        extendedFilteredTheme: greyFilteredTheme,
-        extendedDanoneTheme: greyDanoneTheme
+        extendedAtomicTheme: greyAtomicTheme,
+        extendedAlternateTheme: greyAlternateTheme
       };
 
     default:
       return {
-        extendedFilteredTheme: lightFilteredTheme,
-        extendedDanoneTheme: lightDanoneTheme
+        extendedAtomicTheme: lightAtomicTheme,
+        extendedAlternateTheme: lightAlternateTheme
       };
   }
 };

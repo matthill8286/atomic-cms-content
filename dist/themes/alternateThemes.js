@@ -4,11 +4,11 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-import { danoneTheme } from '@matthill8286/atomic-ui';
-export var lightDanoneTheme = _objectSpread(_objectSpread({}, danoneTheme), {}, {
-  color: _objectSpread(_objectSpread({}, danoneTheme.color), {}, {
+import { alternateTheme } from '@matthill8286/atomic-ui';
+export var lightAlternateTheme = _objectSpread(_objectSpread({}, alternateTheme), {}, {
+  color: _objectSpread(_objectSpread({}, alternateTheme.color), {}, {
     transparent: 'transparent',
-    contrastColor: danoneTheme.color.black
+    contrastColor: alternateTheme.color.black
   }),
   extended: {
     pageHead: {
@@ -25,11 +25,11 @@ export var lightDanoneTheme = _objectSpread(_objectSpread({}, danoneTheme), {}, 
     }
   }
 });
-export var greyDanoneTheme = _objectSpread(_objectSpread({}, danoneTheme), {}, {
-  color: _objectSpread(_objectSpread({}, danoneTheme.color), {}, {
+export var greyAlternateTheme = _objectSpread(_objectSpread({}, alternateTheme), {}, {
+  color: _objectSpread(_objectSpread({}, alternateTheme.color), {}, {
     grey4: '#3a3836',
     transparent: 'transparent',
-    textColor: danoneTheme.color.white,
+    textColor: alternateTheme.color.white,
     backgroundColor: '#3a3836',
     surfaceColor: '#3a3836',
     contrastColor: '#454647'
@@ -49,12 +49,12 @@ export var greyDanoneTheme = _objectSpread(_objectSpread({}, danoneTheme), {}, {
     }
   }
 });
-export var darkDanoneTheme = _objectSpread(_objectSpread({}, danoneTheme), {}, {
-  color: _objectSpread(_objectSpread({}, danoneTheme.color), {}, {
+export var darkAlternateTheme = _objectSpread(_objectSpread({}, alternateTheme), {}, {
+  color: _objectSpread(_objectSpread({}, alternateTheme.color), {}, {
     transparent: 'transparent',
-    textColor: danoneTheme.color.white,
-    backgroundColor: danoneTheme.color.black,
-    surfaceColor: danoneTheme.color.black,
+    textColor: alternateTheme.color.white,
+    backgroundColor: alternateTheme.color.black,
+    surfaceColor: alternateTheme.color.black,
     contrastColor: '#454647'
   }),
   extended: {

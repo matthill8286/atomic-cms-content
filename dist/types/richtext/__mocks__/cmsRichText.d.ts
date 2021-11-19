@@ -49,7 +49,7 @@ export namespace mockRawWithBoldAndUnderline {
         export { children_1 as children };
     }
 }
-export namespace rawMockWithHeadingsCodeQuotesAssetIframes {
+export namespace rawMockWithHeadingsCodeQuotesProductIframes {
     export namespace raw_1 {
         const children_2: ({
             type: string;

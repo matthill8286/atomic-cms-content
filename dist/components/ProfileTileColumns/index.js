@@ -1,64 +1,21 @@
-var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/ProfileTileColumns/index.tsx",
-    _this = this;
-
 import React, { useMemo } from 'react';
 import { Row, Cell, Heading, Card } from '@matthill8286/atomic-ui';
-import { ConfigurableGraphCmsHtmlSerializer, Serializer } from "../Serializer";
-import { CustomSection } from "../CustomSection";
-import { StyledAvatar, StyledPaddedSection, StyledProfileSection, StyledRelative } from "./ProfileTileColumns.styled";
-import { StyledAvatarWrapper } from "../ProfileTileRows/ProfileTileRows.styled";
+import { ConfigurableGraphCmsHtmlSerializer, Serializer } from '../Serializer';
+import { CustomSection } from '../CustomSection';
+import { StyledAvatar, StyledPaddedSection, StyledProfileSection, StyledRelative } from './ProfileTileColumns.styled';
+import { StyledAvatarWrapper } from '../ProfileTileRows/ProfileTileRows.styled';
 export var ProfileTileColumn = function ProfileTileColumn(_ref) {
   var profileAvatar = _ref.profileAvatar,
       profileInformation = _ref.profileInformation;
-  return React.createElement(StyledProfileSection, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 5
-    }
-  }, React.createElement(StyledRelative, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 7
-    }
-  }, React.createElement(Card, {
+  return React.createElement(StyledProfileSection, null, React.createElement(StyledRelative, null, React.createElement(Card, {
     elevation: 1,
     elevationHover: 0,
-    surface: "white",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 9
-    }
-  }, React.createElement(StyledAvatarWrapper, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 11
-    }
-  }, React.createElement(StyledAvatar, {
+    surface: "white"
+  }, React.createElement(StyledAvatarWrapper, null, React.createElement(StyledAvatar, {
     alt: profileAvatar === null || profileAvatar === void 0 ? void 0 : profileAvatar.altText,
     src: profileAvatar === null || profileAvatar === void 0 ? void 0 : profileAvatar.url,
-    rounded: true,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 13
-    }
-  })), React.createElement(StyledPaddedSection, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 11
-    }
-  }, Serializer(profileInformation === null || profileInformation === void 0 ? void 0 : profileInformation.raw, ConfigurableGraphCmsHtmlSerializer({
+    rounded: true
+  })), React.createElement(StyledPaddedSection, null, Serializer(profileInformation === null || profileInformation === void 0 ? void 0 : profileInformation.raw, ConfigurableGraphCmsHtmlSerializer({
     textAlign: 'center',
     contentAlign: 'center'
   }))))));
@@ -75,84 +32,29 @@ export var ProfileTileColumns = function ProfileTileColumns(_ref2) {
           profileInformation = _ref3.profileInformation;
       return React.createElement(Cell, {
         columns: 12 / profileSections.length,
-        key: "RichText-".concat(index),
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 63,
-          columnNumber: 9
-        }
+        key: "RichText-".concat(index)
       }, React.createElement(ProfileTileColumn, {
         profileAvatar: profileAvatar,
-        profileInformation: profileInformation,
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 67,
-          columnNumber: 11
-        }
+        profileInformation: profileInformation
       }));
     });
   }, []);
   return React.createElement(CustomSection, {
     color: sectionColor,
     paddingTop: paddingTop,
-    paddingBottom: paddingBottom,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76,
-      columnNumber: 5
-    }
+    paddingBottom: paddingBottom
   }, React.createElement(Row, {
-    noMargin: true,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 81,
-      columnNumber: 7
-    }
+    noMargin: true
   }, React.createElement(Cell, {
-    columns: 12,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 9
-    }
+    columns: 12
   }, React.createElement(Heading, {
     scale: "level-2",
     textAlign: "center",
-    margin: "xl 0",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 83,
-      columnNumber: 11
-    }
+    margin: "xl 0"
   }, title))), React.createElement(CustomSection, {
-    paddingTop: "sm",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 88,
-      columnNumber: 7
-    }
-  }, React.createElement(StyledPaddedSection, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89,
-      columnNumber: 9
-    }
-  }, React.createElement(Row, {
-    noMargin: true,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 90,
-      columnNumber: 11
-    }
+    paddingTop: "sm"
+  }, React.createElement(StyledPaddedSection, null, React.createElement(Row, {
+    noMargin: true
   }, profileColumns))));
 };
 //# sourceMappingURL=index.js.map

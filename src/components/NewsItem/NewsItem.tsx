@@ -16,7 +16,7 @@ export interface INewsItem {
 
 export const NewsItem = memo(
   ({ image, title, description, date, newsText, buttonLabel, buttonLink }: INewsItem) => (
-    <div className="news-item">
+    <div className="news-item quiet">
       <figure className="news-content">
         <NewsImageStyled alt="News Img" src={image} />
         <figcaption>
@@ -32,7 +32,7 @@ export const NewsItem = memo(
 
           <Spacer size="xl" />
 
-          <CopyText fontSize="xxxxxl" className="post-all-heading">
+          <CopyText tag="p" fontSize="xxxxxl" className="post-all-heading">
             {description}
           </CopyText>
 
@@ -42,7 +42,7 @@ export const NewsItem = memo(
 
           <Spacer size="xxl" />
 
-          <CopyText tag="div" textAlign="center" lineHeight="md">
+          <CopyText tag="p" textAlign="center" lineHeight="md">
             {newsText}
           </CopyText>
 

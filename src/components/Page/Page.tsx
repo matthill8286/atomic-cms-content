@@ -1,12 +1,12 @@
 import React from 'react'
 import { ErrorPageType, PageTemplateProps } from '../../types'
-import { AppMeta, PageHead, AppMetaProps } from '../../components'
+import { AppMeta, AppMetaProps } from '../AppMeta'
 import ErrorPage from '../Error'
+import { AppFooter, AppHeaderComponent as AppHeader } from '@matthill8286/atomic-ui'
 
 export const Page: React.FC<PageTemplateProps> = ({
   landingPageContent,
   PageContent,
-  withPageHead,
   generator,
   dataTestId,
   errorPage,
@@ -41,21 +41,23 @@ export const Page: React.FC<PageTemplateProps> = ({
 
   return (
     <>
-      {/* // @ts-ignore*/}
       <AppMeta {...appMetaProps} />
 
       {/* Add static header */}
+      <AppHeader />
 
-      {/* // @ts-ignore */}
+      {/* @ts-ignore */}
       <PageContent
         modalLocked={modalLocked}
         modalBlock={modalBlock}
         routeContext={routeContext}
         slices={slices}
+        data-test={dataTestId}
         {...props}
       />
 
       {/*  Add static footer */}
+      <AppFooter logoUrl="" links={[]} />
     </>
   )
 }

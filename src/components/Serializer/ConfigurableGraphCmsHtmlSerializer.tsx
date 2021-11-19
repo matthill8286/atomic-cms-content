@@ -19,7 +19,7 @@ import {
 import { BLOCKS, INLINES } from '../../types'
 import { CommonNode, documentToReactComponents } from '../../types/richtext'
 import { EmbeddedPlayer } from '../EmbeddedPlayer'
-import { StyleguideArrow } from '@matthill8286/atomic-icon-library'
+import { OtherArrow } from '@matthill8286/atomic-icon-library'
 
 interface SerializerCustomProps {
   bold?: boolean
@@ -72,18 +72,18 @@ export const ConfigurableGraphCmsHtmlSerializer = (customProps: SerializerCustom
   const serialize = {
     renderNode: {
       [BLOCKS.HEADING_1]: (node: any, children: any) => {
-        const childNode = node.children[0]
-        return (
+        return node.children.map((child, idx) => (
           <Heading
             tag="h1"
+            key={`child.text-${idx}`}
             scale="level-1"
             margin={customProps.margins || 'lg 0'}
             color={customProps.headingColor}
-            bold={!!customProps.bold || !!childNode?.bold}
+            bold={!!customProps.bold || !!child?.bold}
             textAlign={customProps.textAlign}>
             {children}
           </Heading>
-        )
+        ))
       },
       [BLOCKS.HEADING_2]: (node: any, children: any) => {
         const childNode = node.children[0]
@@ -156,19 +156,23 @@ export const ConfigurableGraphCmsHtmlSerializer = (customProps: SerializerCustom
         )
       },
       [BLOCKS.PARAGRAPH]: (node: any, children: any) => {
-        const childNode = node.children[0]
-        return (
-          <CopyText
-            lineHeight="md"
-            color={customProps.color}
-            tag={getChildTagName(childNode)}
-            fontSize={customProps.fontSize}
-            weight={childNode?.bold ? 'bold' : 'normal'}
-            margin={customProps.margins}
-            textAlign={customProps.contentAlign}>
-            {children}
-          </CopyText>
-        )
+        const childNode = node.children.map((child, idx) => {
+          console.log('child', { child })
+          return (
+            <CopyText
+              key={`child.paragraph-${idx}`}
+              lineHeight="md"
+              color={customProps.color}
+              tag={getChildTagName(child)}
+              fontSize={customProps.fontSize}
+              weight={childNode?.bold ? 'bold' : 'normal'}
+              margin={customProps.margins}
+              textAlign={customProps.contentAlign}>
+              {children}
+            </CopyText>
+          )
+        })
+        return childNode
       },
       [BLOCKS.EMBEDDED_ASSET]: (node: any, children: any) => (
         <Picture src={node.src} alt={node.altText} width={'100%'} height={'100%'} />
@@ -236,7 +240,7 @@ export const ConfigurableGraphCmsHtmlSerializer = (customProps: SerializerCustom
             iconLeft={
               customProps.withIconOnLink ? (
                 <Icon color="primary">
-                  <StyleguideArrow />
+                  <OtherArrow />
                 </Icon>
               ) : (
                 undefined

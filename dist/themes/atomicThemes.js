@@ -4,8 +4,8 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-import { atomicTheme } from '@matthill8286/atomic-ui';
-export var lightFilteredTheme = _objectSpread(_objectSpread({}, atomicTheme), {}, {
+import { saiyanTheme as atomicTheme } from '@matthill8286/atomic-ui';
+export var lightAtomicTheme = _objectSpread(_objectSpread({}, atomicTheme), {}, {
   color: _objectSpread(_objectSpread({}, atomicTheme.color), {}, {
     transparent: 'transparent',
     contrastColor: atomicTheme.color.black
@@ -26,7 +26,7 @@ export var lightFilteredTheme = _objectSpread(_objectSpread({}, atomicTheme), {}
     }
   }
 });
-export var greyFilteredTheme = _objectSpread(_objectSpread({}, atomicTheme), {}, {
+export var greyAtomicTheme = _objectSpread(_objectSpread({}, atomicTheme), {}, {
   color: _objectSpread(_objectSpread({}, atomicTheme.color), {}, {
     transparent: 'transparent',
     textColor: atomicTheme.color.white,
@@ -50,7 +50,7 @@ export var greyFilteredTheme = _objectSpread(_objectSpread({}, atomicTheme), {},
     }
   }
 });
-export var darkFilteredTheme = _objectSpread(_objectSpread({}, atomicTheme), {}, {
+export var darkAtomicTheme = _objectSpread(_objectSpread({}, atomicTheme), {}, {
   color: _objectSpread(_objectSpread({}, atomicTheme.color), {}, {
     transparent: 'transparent',
     textColor: atomicTheme.color.white,

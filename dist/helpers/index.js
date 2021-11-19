@@ -55,10 +55,10 @@ var formatNiceName = function formatNiceName(id, title) {
   return "".concat(id, "-").concat(title.toLowerCase().split(' ').join('-'));
 };
 
-export var formatToStaticAsset = function formatToStaticAsset(assets) {
-  var staticAssets = _toConsumableArray(assets || []);
+export var formatToStaticProduct = function formatToStaticProduct(products) {
+  var staticProducts = _toConsumableArray(products || []);
 
-  return staticAssets === null || staticAssets === void 0 ? void 0 : staticAssets.map(function (_ref2) {
+  return staticProducts === null || staticProducts === void 0 ? void 0 : staticProducts.map(function (_ref2) {
     var _ref2$id = _ref2.id,
         id = _ref2$id === void 0 ? 0 : _ref2$id,
         title = _ref2.title,
@@ -69,8 +69,8 @@ export var formatToStaticAsset = function formatToStaticAsset(assets) {
         __typename = _ref2.__typename,
         duration = _ref2.duration,
         to = _ref2.to,
-        _ref2$embeddedAsset = _ref2.embeddedAsset,
-        embeddedAsset = _ref2$embeddedAsset === void 0 ? false : _ref2$embeddedAsset,
+        _ref2$embeddedProduct = _ref2.embeddedProduct,
+        embeddedProduct = _ref2$embeddedProduct === void 0 ? false : _ref2$embeddedProduct,
         competency = _ref2.competency,
         eventDate = _ref2.eventDate,
         featureLabel = _ref2.featureLabel;
@@ -87,7 +87,7 @@ export var formatToStaticAsset = function formatToStaticAsset(assets) {
         id: 0,
         name: type || __typename
       },
-      embeddedAsset: embeddedAsset,
+      embeddedProduct: embeddedProduct,
       duration: duration,
       to: to,
       image: image === null || image === void 0 ? void 0 : image.url,

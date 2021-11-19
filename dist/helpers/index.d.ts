@@ -1,13 +1,13 @@
-import { Asset } from '@matthill8286/atomic-ui';
-export interface ExtendedAsset extends Omit<Asset, 'image'> {
-    embeddedAsset: boolean;
+import { Product } from '@matthill8286/atomic-ui';
+export interface ExtendedProduct extends Omit<Product, 'image'> {
+    embeddedProduct: boolean;
     competency: string;
     image: {
         url: string;
     };
 }
 export declare const prepareEntries: (pageComponents: any) => any;
-export declare const prepareHeroContentProps: (heroBanner: any, name?: string | undefined) => {
+export declare const prepareHeroContentProps: (heroBanner: any, name?: string) => {
     primary: any;
     secondary: any;
     images: {
@@ -15,19 +15,19 @@ export declare const prepareHeroContentProps: (heroBanner: any, name?: string | 
         lg: any;
         md: any;
         sm: any;
-    } | undefined;
+    };
     heroImages: {
         xl: any;
         lg: any;
         md: any;
         sm: any;
-    } | undefined;
-    name: string | undefined;
+    };
+    name: string;
 };
-export declare const formatToStaticAsset: (assets: ExtendedAsset[]) => {
+export declare const formatToStaticProduct: (products: ExtendedProduct[]) => {
     id: number;
     title: string;
-    disabled: boolean | undefined;
+    disabled: boolean;
     niceName: string;
     provider: {
         id: number;
@@ -35,15 +35,15 @@ export declare const formatToStaticAsset: (assets: ExtendedAsset[]) => {
     };
     type: {
         id: number;
-        name: import("@matthill8286/atomic-ui").AssetType;
+        name: string | import("@matthill8286/atomic-ui").ProductType;
     };
-    embeddedAsset: boolean;
+    embeddedProduct: boolean;
     duration: string;
-    to: string | undefined;
+    to: string;
     image: string;
-    locked: boolean | undefined;
+    locked: boolean;
     competency: string;
-    featureLabel: string | undefined;
-    eventDate: string | undefined;
+    featureLabel: string;
+    eventDate: string;
 }[];
 //# sourceMappingURL=index.d.ts.map

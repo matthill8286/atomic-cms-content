@@ -1,1 +1,1 @@
-{"version":3,"file":"GroupRichTextSection.styled.d.ts","sourceRoot":"","sources":["../../../src/components/GroupRichTextSection/GroupRichTextSection.styled.ts"],"names":[],"mappings":"AAEA,eAAO,MAAM,kBAAkB,KAa9B,CAAC;AAEF,eAAO,MAAM,kBAAkB,KAE9B,CAAC;AAEF,eAAO,MAAM,mBAAmB,KAE/B,CAAC"}
+{"version":3,"file":"GroupRichTextSection.styled.d.ts","sourceRoot":"","sources":["../../../src/components/GroupRichTextSection/GroupRichTextSection.styled.ts"],"names":[],"mappings":"AAEA,eAAO,MAAM,kBAAkB,oEAa9B,CAAA;AAED,eAAO,MAAM,kBAAkB,oEAE9B,CAAA;AAED,eAAO,MAAM,mBAAmB,oEAE/B,CAAA"}

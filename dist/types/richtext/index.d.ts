@@ -1,10 +1,13 @@
-import { ReactNode } from 'react';
-import { Block, Inline, Text } from '../index';
+import React, { ReactNode } from 'react';
 import { RichTextBlock, RichTextSpan } from './graphcms-richtext';
-export declare function defaultInlineUpdated(type: string, node: any): ReactNode;
-export declare type CommonNode = Text | Block | Inline | RichTextBlock | RichTextSpan;
+export * from './graphcms-richtext';
+export declare function defaultInlineUpdated(type: string, node: {
+    key: string | number | undefined;
+    type: React.ReactNode;
+}): ReactNode;
+export declare type CommonNode = Text | RichTextBlock | RichTextSpan;
 export interface NodeRenderer {
-    (node: Block | Inline, children: ReactNode): ReactNode;
+    (node: any, children: ReactNode): ReactNode;
 }
 export interface RenderNode {
     [k: string]: NodeRenderer;

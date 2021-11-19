@@ -2,13 +2,13 @@ import { styled, spacing, breakpoints } from '@matthill8286/atomic-ui';
 export var StyledCardRichText = styled.div.withConfig({
   displayName: "GroupRichTextSectionstyled__StyledCardRichText",
   componentId: "o6xgks-0"
-})(["\n  display: flex;\n  flex-direction: row;\n  p {\n    margin: 0;\n  }\n\n  @media (max-width: ", "px) {\n    flex-direction: column;\n    section {\n      margin-top: ", ";\n    }\n  }\n"], breakpoints.lg, spacing.base.md);
+})(["display:flex;flex-direction:row;p{margin:0;}@media (max-width:", "px){flex-direction:column;section{margin-top:", ";}}"], breakpoints.lg, spacing.base.md);
 export var StyledCardHeadline = styled.div.withConfig({
   displayName: "GroupRichTextSectionstyled__StyledCardHeadline",
   componentId: "o6xgks-1"
-})(["\n  margin-bottom: ", ";\n"], spacing.base.md);
+})(["margin-bottom:", ";"], spacing.base.md);
 export var StyledGroupRichText = styled.div.withConfig({
   displayName: "GroupRichTextSectionstyled__StyledGroupRichText",
   componentId: "o6xgks-2"
-})(["\n  padding-top: ", ";\n"], spacing.base.xl);
+})(["padding-top:", ";"], spacing.base.xl);
 //# sourceMappingURL=GroupRichTextSection.styled.js.map

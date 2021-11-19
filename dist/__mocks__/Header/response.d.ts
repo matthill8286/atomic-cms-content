@@ -6,10 +6,10 @@ export declare const header: {
             links: ({
                 actionLabel: string;
                 to: string;
-                href: null;
+                href: any;
             } | {
                 actionLabel: string;
-                to: null;
+                to: any;
                 href: string;
             })[];
             searchBar: {
@@ -20,8 +20,8 @@ export declare const header: {
                 enabled: boolean;
                 placeholder: string;
             };
-            menus: never[];
-            languages: never[];
+            menus: any[];
+            languages: any[];
         };
     };
 };

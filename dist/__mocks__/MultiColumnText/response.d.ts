@@ -2,8 +2,8 @@ export declare const multiColumnTexts: {
     data: {
         multiColumnText: {
             type: string;
-            columnFourDescription: null;
-            columnFourTitle: null;
+            columnFourDescription: any;
+            columnFourTitle: any;
             columnOneDescription: string;
             columnOneTitle: string;
             columnThreeDescription: string;

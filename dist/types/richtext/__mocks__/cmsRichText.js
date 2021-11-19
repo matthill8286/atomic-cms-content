@@ -2,7 +2,7 @@ export var rawMockBulletedListWithChildren = {
   children: [{
     type: 'paragraph',
     children: [{
-      text: 'At Danone we are committed to protecting your right to privacy. We aim to protect any personal data we hold, to manage your personal data in a responsible way and to be transparent in our practices. Your trust is important to us. We have therefore committed ourselves to the following basic principles'
+      text: 'At Alternate we are committed to protecting your right to privacy. We aim to protect any personal data we hold, to manage your personal data in a responsible way and to be transparent in our practices. Your trust is important to us. We have therefore committed ourselves to the following basic principles'
     }]
   }, {
     type: 'paragraph',
@@ -70,7 +70,7 @@ export var mockRawWithBoldAndUnderline = {
         text: 'At '
       }, {
         bold: true,
-        text: 'Danone'
+        text: 'Alternate'
       }, {
         text: ' we are committed to protecting your right to privacy. '
       }, {
@@ -141,7 +141,7 @@ export var mockRawWithBoldAndUnderline = {
     }]
   }
 };
-export var rawMockWithHeadingsCodeQuotesAssetIframes = {
+export var rawMockWithHeadingsCodeQuotesProductIframes = {
   raw: {
     children: [{
       type: 'heading-one',
@@ -205,7 +205,7 @@ export var rawMockWithHeadingsCodeQuotesAssetIframes = {
         id: 'atomic-link',
         href: 'https://atomic.com',
         type: 'link',
-        title: 'Filtered',
+        title: 'Atomic',
         children: [{
           text: 'atomic.com'
         }],
@@ -222,7 +222,7 @@ export var rawMockWithHeadingsCodeQuotesAssetIframes = {
         id: 'atomic-link',
         href: 'https://atomic.com',
         type: 'link',
-        title: 'Filtered',
+        title: 'Atomic',
         children: [{
           text: ''
         }],
@@ -239,7 +239,7 @@ export var rawMockWithHeadingsCodeQuotesAssetIframes = {
         id: 'atomic-link',
         href: 'https://atomic.com',
         type: 'link',
-        title: 'Filtered',
+        title: 'Atomic',
         children: [{
           text: ''
         }],
@@ -299,7 +299,7 @@ export var fullResponse = {
       children: [{
         type: 'paragraph',
         children: [{
-          text: 'At Danone we are committed to protecting your right to privacy. We aim to protect any personal data we hold, to manage your personal data in a responsible way and to be transparent in our practices. Your trust is important to us. We have therefore committed ourselves to the following basic principle'
+          text: 'At Alternate we are committed to protecting your right to privacy. We aim to protect any personal data we hold, to manage your personal data in a responsible way and to be transparent in our practices. Your trust is important to us. We have therefore committed ourselves to the following basic principle'
         }]
       }, {
         type: 'paragraph',

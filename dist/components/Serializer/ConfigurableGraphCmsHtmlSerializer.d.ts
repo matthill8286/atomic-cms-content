@@ -20,6 +20,13 @@ interface SerializerCustomProps {
     forceNewTab?: boolean;
     allowfullscreen?: boolean;
 }
+/**
+ * @description Partially applied function that applies rich text modifiers
+ * @param customProps {Object}
+ * @param node {Object}
+ * @param childText {String}
+ * @memberOf ConfigurableGraphCmsHtmlSerializer
+ */
 export declare const ConfigurableGraphCmsHtmlSerializer: (customProps?: SerializerCustomProps) => (render: CommonNode) => React.ReactNode;
 export {};
 //# sourceMappingURL=ConfigurableGraphCmsHtmlSerializer.d.ts.map

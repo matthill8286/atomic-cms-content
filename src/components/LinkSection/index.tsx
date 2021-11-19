@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Grid, Cell, Row, Link, Icon, Offset } from '@matthill8286/atomic-ui'
 import { LinkSectionProps } from './LinkSection.types'
 import { CustomSection } from '../CustomSection'
-import { IconRightArrow } from '@matthill8286/atomic-icon-library'
+import { OtherRightArrow } from '@matthill8286/atomic-icon-library'
 
 export * from './LinkSection.types'
 
@@ -24,7 +24,7 @@ export const LinkSection: React.FC<LinkSectionProps> = ({
             <Link
               iconLeft={
                 <Icon color="primary">
-                  <IconRightArrow />
+                  <OtherRightArrow />
                 </Icon>
               }
               onClick={onClick}

@@ -1,11 +1,12 @@
-import { RichTextBlock } from '../../types';
+import { RichTextRawDocument } from '../../types/richtext';
+import { AccordionSectionFieldType } from '../AccordionSection';
 export declare type FaqEntryType = {
-    question: RichTextBlock[];
-    answer: RichTextBlock[];
+    entryHeadline: RichTextRawDocument | null;
+    entryContent: RichTextRawDocument | null;
     anchorId: string | null;
-}[];
+};
 export declare type FAQSectionProps = {
-    entries: FaqEntryType[];
-    headline?: RichTextBlock[];
+    entries: AccordionSectionFieldType[];
+    headline?: RichTextRawDocument;
 };
 //# sourceMappingURL=FaqSection.types.d.ts.map

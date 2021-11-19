@@ -3,7 +3,8 @@ import { CopyText, Link, Heading, Lists, Picture, Icon } from '@matthill8286/ato
 import { BLOCKS, MARKS } from '../../types'
 import { isInline } from '../../types/richtext/helpers'
 import INLINES from '../../types/inlines'
-import { IconRightArrow } from '@matthill8286/atomic-icon-library'
+import { OtherRightArrow } from '@matthill8286/atomic-icon-library'
+import { documentToReactComponents } from '../../types/richtext'
 
 export const GraphCmsHtmlSerializer = (render: Document) => {
   const serialize = {
@@ -79,7 +80,7 @@ export const GraphCmsHtmlSerializer = (render: Document) => {
             title={node.title}
             iconLeft={
               <Icon color="primary">
-                <IconRightArrow />
+                <OtherRightArrow />
               </Icon>
             }
             underline
@@ -97,6 +98,7 @@ export const GraphCmsHtmlSerializer = (render: Document) => {
     },
   }
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   return documentToReactComponents(render, serialize)
 }

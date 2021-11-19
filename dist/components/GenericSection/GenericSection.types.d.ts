@@ -1,4 +1,4 @@
-import { Document } from '../../types/richtext/graphcms-richtext';
+import { Document } from '../../types/richtext';
 export interface GenericSectionProps {
     featureImage?: string;
     richTextSections?: Document[];

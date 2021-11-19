@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../../src/__mocks__/Footer/index.tsx"],"names":[],"mappings":"AAAA","sourcesContent":["export * from './response'\n"],"file":"index.js"}
+{"version":3,"sources":["../../../src/__mocks__/Footer/index.tsx"],"names":[],"mappings":"AAAA,cAAc,YAAd","sourcesContent":["export * from './response'\n"],"file":"index.js"}

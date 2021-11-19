@@ -1,4 +1,4 @@
-import { Raw } from '../../types/richtext/graphcms-richtext';
+import { RichTextRawDocument } from '../../types/richtext/graphcms-richtext';
 export declare type Image = {
     url?: string;
     altText?: string;
@@ -6,7 +6,7 @@ export declare type Image = {
 export interface ContactSectionProps {
     contactImage: Image;
     contactHeading?: string;
-    richTextContactSection: Raw;
+    richTextContactSection: RichTextRawDocument;
     sectionColor?: string;
     paddingTop?: string;
     paddingBottom?: string;

@@ -1,7 +1,7 @@
 import { ThemeColors } from '@matthill8286/atomic-ui';
-import { Raw } from '../../types/richtext/graphcms-richtext';
+import { RichTextRawDocument } from '../../types/richtext';
 export interface EmbeddedSectionProps {
-    embeddedSection: Raw;
+    embeddedSection: RichTextRawDocument;
     sectionColor?: ThemeColors;
     title?: string;
     sectionHeight?: string;

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { CopyText, Heading, Link, Picture, mountWithTheme } from '@matthill8286/atomic-ui';
-import { getHeadline, getParagraph, getStrongParagraph, getEmParagraph, getUrlParagraph, getImage } from "./RichTextHtmlSerializer.mock";
-import { ConfigurableGraphCmsHtmlSerializer } from "./ConfigurableGraphCmsHtmlSerializer";
-import { Serializer } from "./HtmlSerializer";
+import { getHeadline, getParagraph, getStrongParagraph, getEmParagraph, getUrlParagraph, getImage } from './RichTextHtmlSerializer.mock';
+import { ConfigurableGraphCmsHtmlSerializer } from './ConfigurableGraphCmsHtmlSerializer';
+import { Serializer } from './HtmlSerializer';
 
 var renderWrapper = function renderWrapper() {
   var richTextList = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];

@@ -1,10 +1,7 @@
-var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/ImageTextSection/ImageTextSection.test.tsx",
-    _this = this;
-
 import * as React from 'react';
 import { cleanup } from '@testing-library/react';
 import { CopyText, Heading, LazyLoadImage, mountWithTheme, ImageAndText } from '@matthill8286/atomic-ui';
-import { ImageTextSection } from "./index";
+import { ImageTextSection } from './index';
 xdescribe('Landing:Components:ImageTextSection', function () {
   afterEach(cleanup);
   var props = {
@@ -47,26 +44,14 @@ xdescribe('Landing:Components:ImageTextSection', function () {
   };
   it('renders section with image', function () {
     var imageAndTextSection = mountWithTheme(React.createElement(ImageTextSection, {
-      imageAndTextFields: [props],
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 57,
-        columnNumber: 7
-      }
+      imageAndTextFields: [props]
     }));
     var image = imageAndTextSection.find(LazyLoadImage).first();
     expect(image.props().src).toBe(props.image.url);
   });
   it('renders section with header and paragraph', function () {
     var imageAndTextSection = mountWithTheme(React.createElement(ImageTextSection, {
-      imageAndTextFields: [props],
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 65,
-        columnNumber: 7
-      }
+      imageAndTextFields: [props]
     }));
     var header = imageAndTextSection.find(Heading).first();
     var paragraph = imageAndTextSection.find(CopyText).first();
@@ -75,13 +60,7 @@ xdescribe('Landing:Components:ImageTextSection', function () {
   });
   it('renders section without image', function () {
     var imageAndTextSection = mountWithTheme(React.createElement(ImageTextSection, {
-      imageAndTextFields: [imageTextWithoutImage],
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 75,
-        columnNumber: 7
-      }
+      imageAndTextFields: [imageTextWithoutImage]
     }));
     expect(imageAndTextSection.find(ImageAndText)).toHaveLength(0);
   });

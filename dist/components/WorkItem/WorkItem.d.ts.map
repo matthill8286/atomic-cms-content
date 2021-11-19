@@ -1,0 +1,1 @@
+{"version":3,"file":"WorkItem.d.ts","sourceRoot":"","sources":["../../../src/components/WorkItem/WorkItem.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAe,MAAM,OAAO,CAAA;AAEnC,OAAO,EAAE,aAAa,EAAE,MAAM,sBAAsB,CAAA;AAEpD,eAAO,MAAM,QAAQ,EAAE,KAAK,CAAC,mBAAmB,CAAC,CAAC,EAChD,KAAK,EACL,KAAK,EACL,WAAW,EACX,QAAQ,EACR,WAAW,EACX,UAAU,GACX,EAAE,aAAa,KAAK,GAAG,CAAC,OAAO,CA0B/B,CAAA"}

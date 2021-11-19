@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { NamedExoticComponent } from 'react';
-import { ErrorPage, StaticPage } from '@lxp/webmobile-cms-graphql';
 import { AppMetaProps } from '../components';
 export declare type PageConfigType = {
-    landingPageContent: StaticPage;
+    landingPageContent: any;
     metaProps: any;
+    PageContent: any;
+    withPageHead: boolean;
     slices?: PageContent<any>;
 };
 export declare type PageComponents = {
@@ -16,11 +17,11 @@ export interface PageTemplateProps {
     metaProps?: AppMetaProps;
     key?: string;
     overridePlaylistClickEvent?: boolean;
-    PageContent: PageContent<any>;
+    PageContent: PageContent<HTMLDivElement>;
     withPageHead: boolean;
     generator?: string;
     landingPageContent: any;
     dataTestId?: string;
-    errorPage?: ErrorPage;
+    errorPage?: any;
 }
 //# sourceMappingURL=pages.d.ts.map

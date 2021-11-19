@@ -1,1 +1,1 @@
-{"version":3,"file":"TextSection.styled.d.ts","sourceRoot":"","sources":["../../../src/components/TextSection/TextSection.styled.tsx"],"names":[],"mappings":"AAEA,eAAO,MAAM,iBAAiB,KAO7B,CAAC"}
+{"version":3,"file":"TextSection.styled.d.ts","sourceRoot":"","sources":["../../../src/components/TextSection/TextSection.styled.tsx"],"names":[],"mappings":"AAEA,eAAO,MAAM,iBAAiB;aAAyB,OAAO;SAO7D,CAAA"}

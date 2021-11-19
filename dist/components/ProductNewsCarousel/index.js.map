@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/components/ProductNewsCarousel/index.ts"],"names":[],"mappings":"AAAA,cAAc,uBAAd;AACA,cAAc,iCAAd","sourcesContent":["export * from './ProductNewsCarousel'\nexport * from './ProductNewsCarousel.interface'\n"],"file":"index.js"}

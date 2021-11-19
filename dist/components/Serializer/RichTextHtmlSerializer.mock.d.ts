@@ -1,4 +1,4 @@
-import { Elements, NodeChild, RichTextBlock } from '../../types';
+import { Elements, NodeChild, RichTextBlock } from '../../types/richtext';
 export declare const getHeadline: (level?: string, tag?: string) => RichTextBlock;
 export declare const getParagraph: () => RichTextBlock;
 export declare const getStrongParagraph: () => RichTextBlock;

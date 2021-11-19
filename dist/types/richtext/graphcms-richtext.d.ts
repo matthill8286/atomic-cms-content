@@ -1,4 +1,8 @@
 import * as React from 'react';
+export declare enum INLINES {
+    HYPERLINK = "link",
+    EMBEDDED_ENTRY = "iframe"
+}
 export declare enum Elements {
     heading1 = "heading-one",
     heading2 = "heading-two",
@@ -37,22 +41,23 @@ export declare type Link = {
     size?: string;
     width?: string;
 };
-export declare type Raw = {
+export declare type RichTextRawDocument = {
     raw: RichTextBlock;
 };
 export declare type Document = {
-    document?: Raw;
-    message?: Raw;
+    document?: RichTextRawDocument;
+    message?: RichTextRawDocument;
 };
 export declare type NodeChild = {
-    text?: string;
+    text?: string | null;
+    children?: NodeChild[] | RichTextBlock[] | RichTextSpan[];
+    type?: Elements | string;
     bold?: boolean;
     italic?: boolean;
     id?: string;
     rel?: string;
     href?: string;
     src?: string;
-    type?: string;
     title?: string;
     width?: number;
     height?: number;
@@ -60,14 +65,13 @@ export declare type NodeChild = {
     mimeType?: string;
     className?: string;
     openInNewTab?: boolean;
-    children?: RichTextBlock[] | RichTextSpan[];
 };
 export declare type RichTextSpan = {
     type?: Elements.strong | Elements.hyperlink | Elements.em | Elements.label;
     children?: NodeChild[];
 };
 export declare type RichTextBlock = {
-    type: Elements | string;
+    type?: Elements | string;
     children?: NodeChild[];
 };
 export declare type HTMLSerializer<T> = (type: Elements, element: any, text: string, children: T[], key: string) => T | null;

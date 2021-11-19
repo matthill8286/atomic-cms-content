@@ -1,1 +1,1 @@
-{"version":3,"file":"MultiColumnTextSection.styled.d.ts","sourceRoot":"","sources":["../../../src/components/MultiColumnTextSection/MultiColumnTextSection.styled.tsx"],"names":[],"mappings":"AAEA,eAAO,MAAM,4BAA4B,KAQxC,CAAC"}
+{"version":3,"file":"MultiColumnTextSection.styled.d.ts","sourceRoot":"","sources":["../../../src/components/MultiColumnTextSection/MultiColumnTextSection.styled.tsx"],"names":[],"mappings":"AAEA,eAAO,MAAM,4BAA4B;aAAyB,OAAO;SAQxE,CAAA"}

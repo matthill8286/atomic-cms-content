@@ -1,5 +1,5 @@
 import { ExtendedThemeType } from './types';
-export declare const lightDanoneTheme: ExtendedThemeType;
-export declare const greyDanoneTheme: ExtendedThemeType;
-export declare const darkDanoneTheme: ExtendedThemeType;
+export declare const lightAlternateTheme: ExtendedThemeType;
+export declare const greyAlternateTheme: ExtendedThemeType;
+export declare const darkAlternateTheme: ExtendedThemeType;
 //# sourceMappingURL=alternateThemes.d.ts.map

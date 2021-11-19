@@ -6,6 +6,6 @@ export declare const SpeakerHeader: ({ title, name, marginTop }: {
     marginTop: any;
 }) => JSX.Element;
 export declare const ProfileTileRow: FC<ProfileSectionProps>;
-export declare const BrandedHeadingWrapper: any;
+export declare const BrandedHeadingWrapper: import("styled-components").StyledComponent<"div", any, {}, never>;
 export declare const ProfileTileRows: FC<ProfileSectionsProps>;
 //# sourceMappingURL=index.d.ts.map

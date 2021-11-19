@@ -1,13 +1,10 @@
-var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/AccordionSection/index.tsx",
-    _this = this;
-
 import * as React from 'react';
 import { useLocation } from 'react-router';
 import { Grid, Cell, Row, Offset, Accordion } from '@matthill8286/atomic-ui';
-import { StyledAccordionWrapper } from "./AccordionSection.styled";
-import { CustomSection } from "../CustomSection";
-import { Serializer, ConfigurableGraphCmsHtmlSerializer } from "../Serializer";
-export * from "./AccordionSection.types";
+import { StyledAccordionWrapper } from './AccordionSection.styled';
+import { CustomSection } from '../CustomSection';
+import { Serializer, ConfigurableGraphCmsHtmlSerializer } from '../Serializer';
+export * from './AccordionSection.types';
 export var AccordionSection = function AccordionSection(_ref) {
   var _ref$entries = _ref.entries,
       entries = _ref$entries === void 0 ? [] : _ref$entries,
@@ -39,57 +36,19 @@ export var AccordionSection = function AccordionSection(_ref) {
     };
   });
   return React.createElement(CustomSection, {
-    color: sectionColor,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54,
-      columnNumber: 5
-    }
-  }, React.createElement(Grid, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55,
-      columnNumber: 7
-    }
-  }, React.createElement(Row, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56,
-      columnNumber: 9
-    }
-  }, React.createElement(Offset, {
+    color: sectionColor
+  }, React.createElement(Grid, null, React.createElement(Row, null, React.createElement(Offset, {
     colsXs: 0,
     colsSm: 0,
-    columns: 1,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57,
-      columnNumber: 11
-    }
+    columns: 1
   }), React.createElement(Cell, {
     colsXl: 10,
     colsLg: 10,
     colsMd: 6,
     colsSm: 8,
-    colsXs: 4,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58,
-      columnNumber: 11
-    }
+    colsXs: 4
   }, React.createElement(StyledAccordionWrapper, {
-    textColor: textColor,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 13
-    }
+    textColor: textColor
   }, React.createElement(Accordion, {
     isLarge: isLarge,
     withIconsOnRight: withIconsOnRight,
@@ -101,13 +60,7 @@ export var AccordionSection = function AccordionSection(_ref) {
     labelPadding: "xxs 0",
     entryPadding: "0 0 sm",
     entries: mappedAccordionEntries,
-    openedIndex: openedIndex,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 15
-    }
+    openedIndex: openedIndex
   }))))));
 };
 //# sourceMappingURL=index.js.map

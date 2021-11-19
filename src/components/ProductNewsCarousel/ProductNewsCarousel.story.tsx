@@ -2,19 +2,18 @@ import { action } from '@storybook/addon-actions'
 import { boolean, number, select, text } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
-import { CopyText, Heading } from '@/components/Atoms/Typography'
-import { Cell, Grid, Row } from '@/components/Helper/Grid'
-import { Product } from '@/types'
 import {
+  CopyText,
+  Heading,
+  Cell,
+  Grid,
+  Row,
   mockPlaylistCollections,
   newProductMocks,
-} from '@/components/Organisms/ProductTile/elements/mockProduct'
-import {
   ProductSponsoring,
-  ProductStrategy,
-  ProductTileLayout,
-} from '@/components/Organisms/ProductTile'
-import { ProductCarousel } from './ScrollProductCarousel'
+  Product,
+} from '@matthill8286/atomic-ui'
+import { ProductNewsCarousel } from './ProductNewsCarousel'
 
 const mockProducts = {
   asset1: newProductMocks[0],
@@ -39,21 +38,9 @@ const showSponsoring = boolean('Show Sponsoring', false)
 
 const knobs = () => ({
   loading: boolean('Loading', false),
-  slidesPerPageSettings: {
-    desktop: number('Desktop', 3),
-    tablet: number('tablet', 2),
-    mobileBig: number('Large mobile', 2),
-    mobileSmall: number('Small mobile', 2),
-  },
   showArrows: boolean('Arrows', true),
-  playlistOrientation: select(
-    'Playlist Orientation',
-    ['portrait', 'landscape', undefined],
-    'portrait'
-  ),
   NoProductsComponent: <p>No Products here</p>,
   tileMargin: select('Tile Margin', ['xs', 'sm', 'md'], 'sm'),
-  playlistView: select('Playlist Type', ['list', 'collection'], 'list'),
   title: boolean('With Title', false) ? customTitle() : undefined,
   tileWidth: number('TileWidth', 360),
   sponsoringDetails: {
@@ -63,8 +50,7 @@ const knobs = () => ({
     title: text('Title', 'Sponsored Content Title'),
     infoText: text('Info Text', 'Some more information about this sponsored content'),
   },
-  onProductClick: () => action('asset'),
-  onLockClick: action('lock'),
+  onProductClick: () => action('news product'),
   onSlideChange: action('slide changed'),
   renderAddToBookmarkButton: () => <div>Bookmark</div>,
   showNoProducts: boolean('With No Products', false),
@@ -90,11 +76,11 @@ const customTitle = () => (
   </>
 )
 
-storiesOf('Design System/Organisms/ProductCarousel', module)
+storiesOf('Design System/Organisms/ProductNewsCarousel', module)
   .add('Default', () => {
     if (fixedWidth()) {
       return (
-        <ProductCarousel
+        <ProductNewsCarousel
           {...knobs()}
           showBadges
           title={customTitle()}
@@ -111,9 +97,10 @@ storiesOf('Design System/Organisms/ProductCarousel', module)
     }
 
     return (
-      <ProductCarousel
+      <ProductNewsCarousel
         {...knobs()}
         showBadges
+        withScrollbar={false}
         title={customTitle()}
         context="homepage"
         products={!knobs().showNoProducts ? usableProducts : []}
@@ -127,23 +114,16 @@ storiesOf('Design System/Organisms/ProductCarousel', module)
   })
   .add('Playlist collection', () => {
     return (
-      <ProductCarousel
+      <ProductNewsCarousel
         {...knobs()}
         showBookmark={false}
         fixedArrowPosition={false}
         context="webmobile-cms-landing-pages"
-        playlistView="collection"
         title={
           <Heading bold scale="level-2">
             Your Collection
           </Heading>
         }
-        slidesPerPageSettings={{
-          desktop: 4,
-          mobileBig: 1,
-          mobileSmall: 1,
-          tablet: 2,
-        }}
         sponsoringDetails={{
           isSponsored: true,
           showUppercase: true,
@@ -163,12 +143,10 @@ storiesOf('Design System/Organisms/ProductCarousel', module)
       <Grid>
         <Row>
           <Cell columns={12}>
-            <ProductCarousel
+            <ProductNewsCarousel
               NoProductsComponent={<>No Products Found</>}
               loading={false}
-              slidesPerPageSettings={{ desktop: 3, tablet: 2, mobileBig: 1, mobileSmall: 1 }}
               tileWidth={380}
-              strategyType={ProductStrategy.structured}
               context="search"
               title={
                 <Heading bold scale="level-2">
@@ -199,7 +177,7 @@ storiesOf('Design System/Organisms/ProductCarousel', module)
       <Grid>
         <Row>
           <Cell columns={12}>
-            <ProductCarousel
+            <ProductNewsCarousel
               {...knobs()}
               NoProductsComponent={<>No Products Found</>}
               loading={false}
@@ -215,12 +193,6 @@ storiesOf('Design System/Organisms/ProductCarousel', module)
                 label: 'Recommendations',
                 title: 'Notification Title',
                 infoText: 'Some random content so we can showcase sponsored asset content',
-              }}
-              slidesPerPageSettings={{
-                desktop: 4,
-                mobileBig: 1,
-                mobileSmall: 1,
-                tablet: 2,
               }}
               products={[mockProducts.asset1, mockProducts.asset2, mockProducts.asset3]}
               onProductClick={action('asset')}
@@ -238,7 +210,7 @@ storiesOf('Design System/Organisms/ProductCarousel', module)
       <Grid>
         <Row>
           <Cell columns={12}>
-            <ProductCarousel
+            <ProductNewsCarousel
               {...knobs()}
               NoProductsComponent={<>No Products Found</>}
               loading={false}
@@ -248,20 +220,12 @@ storiesOf('Design System/Organisms/ProductCarousel', module)
                   Your Bookmarks
                 </Heading>
               }
-              playlistView="list"
-              playlistLayout={ProductTileLayout.listItem}
               sponsoringDetails={{
                 isSponsored: true,
                 showUppercase: true,
                 label: 'Recommendations',
                 title: 'Notification Title',
                 infoText: 'Some random content so we can showcase sponsored asset content',
-              }}
-              slidesPerPageSettings={{
-                desktop: 2,
-                mobileBig: 1,
-                mobileSmall: 1,
-                tablet: 2,
               }}
               withScrollbar
               products={[

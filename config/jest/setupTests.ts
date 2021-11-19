@@ -9,6 +9,7 @@ Enzyme.configure({ adapter: new EnzymeAdapter() })
  * `matchMedia not present, legacy browsers require a polyfill`
  */
 if (typeof window !== 'undefined') {
+  // @ts-ignore
   window.matchMedia =
     window.matchMedia ||
     function() {
@@ -19,6 +20,7 @@ if (typeof window !== 'undefined') {
       }
     }
 
+  // @ts-ignore
   window.requestAnimationFrame =
     window.requestAnimationFrame ||
     function(callback) {

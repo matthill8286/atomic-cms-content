@@ -6,7 +6,7 @@ export var staticPlaylist = {
       name: 'First 1000 days ',
       size: 3,
       assetTiles: [{
-        type: 'StaticAssetTile',
+        type: 'StaticProductTile',
         instanceId: 'ckju37mcw1qzy0948xbegl36r',
         title: 'Quisque non ornare tellus vivamus pharetra elementum metus in scelerisque',
         assetType: 'Article',
@@ -20,7 +20,7 @@ export var staticPlaylist = {
           url: 'https://media.graphcms.com/7JZcejcRkizOJDQZ2Mqt'
         }
       }, {
-        type: 'StaticAssetTile',
+        type: 'StaticProductTile',
         instanceId: 'ckju3955404p50a58a904s5tu',
         title: 'Suspendisse mauris est, commodo non justo in, posuere rutrum nulla',
         assetType: 'Article',
@@ -34,7 +34,7 @@ export var staticPlaylist = {
           url: 'https://media.graphcms.com/J25IRsKJSdCSPJPBNVmL'
         }
       }, {
-        type: 'StaticAssetTile',
+        type: 'StaticProductTile',
         instanceId: 'ckju3abkw0hy00b65l4n0qryo',
         title: 'Mauris vitae odio mollis, tempus mauris eu, varius tortor',
         assetType: 'Article',

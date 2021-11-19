@@ -1,18 +1,17 @@
 import { ExtendedThemeColorType } from '../../themes';
 export declare type TextSectionProps = {
-    richText: any[];
+    richText: any;
     active?: boolean;
     anchorId?: string | null;
     sectionColor?: ExtendedThemeColorType;
     textColor?: ExtendedThemeColorType;
-    primaryColor?: ExtendedThemeColorType;
     headingsBold?: boolean;
     headingColor?: ExtendedThemeColorType;
     branded?: boolean;
     title?: string;
     paddingTop?: string;
     paddingBottom?: string;
-    type?: string;
+    withHeading?: boolean;
 };
 export declare type FootnotesSectionType = {
     type: string | null;

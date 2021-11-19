@@ -4,6 +4,6 @@ export var StyledPaddedSection = styled.div.withConfig({
   componentId: "opeof3-0"
 })(function (_ref) {
   var theme = _ref.theme;
-  return css(["\n      padding: ", ";\n    "], theme.spacing.base.md);
+  return css(["padding:", ";"], theme.spacing.base.md);
 });
 //# sourceMappingURL=GenericSection.styled.js.map

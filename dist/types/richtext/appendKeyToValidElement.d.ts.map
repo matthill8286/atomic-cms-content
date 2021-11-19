@@ -1,1 +1,1 @@
-{"version":3,"file":"appendKeyToValidElement.d.ts","sourceRoot":"","sources":["../../../src/types/richtext/appendKeyToValidElement.ts"],"names":[],"mappings":"AAAA,OAAO,EAA+B,SAAS,EAAC,MAAM,OAAO,CAAC;AAE9D,wBAAgB,uBAAuB,CACrC,OAAO,EAAE,SAAS,EAClB,GAAG,EAAE,MAAM,GACV,SAAS,CAKX"}
+{"version":3,"file":"appendKeyToValidElement.d.ts","sourceRoot":"","sources":["../../../src/types/richtext/appendKeyToValidElement.ts"],"names":[],"mappings":"AAAA,OAAO,EAAgC,SAAS,EAAE,MAAM,OAAO,CAAA;AAE/D,wBAAgB,uBAAuB,CAAC,OAAO,EAAE,SAAS,EAAE,GAAG,EAAE,MAAM,GAAG,SAAS,CAKlF"}

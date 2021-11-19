@@ -3,7 +3,7 @@ export var footer = {
     footer: {
       id: 'ckk9x3rdkfn9r0a13mivcuze7',
       type: 'Footer',
-      description: '© 2021 Copyright Danone Nutrica Campus',
+      description: '© 2021 Copyright Alternate Nutrica Campus',
       links: [{
         actionLabel: 'Privacy Policy',
         to: '/privacy',

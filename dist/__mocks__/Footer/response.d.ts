@@ -7,7 +7,7 @@ export declare const footer: {
             links: {
                 actionLabel: string;
                 to: string;
-                href: null;
+                href: any;
             }[];
         };
     };

@@ -1,4 +1,4 @@
-import { Elements } from "../../types";
+import { Elements } from '../../types/richtext';
 export var getHeadline = function getHeadline() {
   var level = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'one';
   var tag = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '1';
@@ -13,7 +13,7 @@ export var getParagraph = function getParagraph() {
   return {
     type: Elements.paragraph,
     children: [{
-      text: 'At Danone we are committed to protecting your right to privacy. We aim to protect any personal data we hold, to manage your personal data in a responsible way and to be transparent in our practices. Your trust is important to us. We have therefore committed ourselves to the following basic principles'
+      text: 'At Alternate we are committed to protecting your right to privacy. We aim to protect any personal data we hold, to manage your personal data in a responsible way and to be transparent in our practices. Your trust is important to us. We have therefore committed ourselves to the following basic principles'
     }]
   };
 };
@@ -24,7 +24,7 @@ export var getStrongParagraph = function getStrongParagraph() {
       text: 'At '
     }, {
       bold: true,
-      text: 'Danone'
+      text: 'Alternate'
     }, {
       text: ' we are committed to protecting your right to privacy. '
     }, {
@@ -53,7 +53,7 @@ export var getUrlParagraph = function getUrlParagraph() {
       rel: 'dsrhjtykghjhrgvd',
       href: 'https://atomic.com',
       type: 'link',
-      title: 'Filtered',
+      title: 'Atomic',
       children: [],
       className: 'fart',
       openInNewTab: true

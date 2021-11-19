@@ -1,4 +1,3 @@
-import { FC } from 'react';
-import { GenericSectionProps } from './GenericSection.types';
-export declare const GenericSection: FC<GenericSectionProps>;
+export * from './GenericSection.styled';
+export * from './GenericSection.types';
 //# sourceMappingURL=index.d.ts.map

@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { ThemeColors } from '@matthill8286/atomic-ui';
 import { ExtendedThemeColorType } from '../../themes';
-import { Raw } from '../../types/richtext/graphcms-richtext';
+import { RichTextRawDocument } from '../../types/richtext';
 export declare enum AccordionSchemaType {
     None = "none",
     Faq = "FAQPage"
 }
 export declare type AccordionSectionFieldType = {
-    entryHeadline: Raw | null;
-    entryContent: Raw | null;
+    entryHeadline: RichTextRawDocument | null;
+    entryContent: RichTextRawDocument | null;
     anchorId?: string | null;
 };
 export interface AccordionEntryObject {
@@ -24,13 +24,8 @@ export declare type AccordionSectionProps = {
     withIconsOnRight?: boolean;
     isLarge?: boolean;
 };
-export declare type AccordionSectionHeadline = {
-    type: string;
-    children: [{
-        text: string;
-    }];
-};
+export declare type AccordionSectionHeadline = RichTextRawDocument;
 export declare type StyledAccordionWrapperProps = {
-    textColor?: ExtendedThemeColorType;
+    textColor?: ThemeColors;
 };
 //# sourceMappingURL=AccordionSection.types.d.ts.map

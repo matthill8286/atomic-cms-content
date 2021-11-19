@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../../src/components/Page/index.ts"],"names":[],"mappings":"AAAA;AACA","sourcesContent":["export * from './Page';\nexport * from './Page.interface';\n"],"file":"index.js"}
+{"version":3,"sources":["../../../src/components/Page/index.ts"],"names":[],"mappings":"AAAA,cAAc,QAAd;AACA,cAAc,kBAAd","sourcesContent":["export * from './Page'\nexport * from './Page.interface'\n"],"file":"index.js"}

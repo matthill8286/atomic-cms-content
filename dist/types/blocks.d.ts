@@ -2,7 +2,6 @@
  * Map of all GraphCms block types. Blocks contain inline or block nodes.
  */
 export declare enum BLOCKS {
-    DOCUMENT = "document",
     PARAGRAPH = "paragraph",
     HEADING_1 = "heading-one",
     HEADING_2 = "heading-two",
@@ -13,7 +12,6 @@ export declare enum BLOCKS {
     OL_LIST = "numbered-list",
     UL_LIST = "bulleted-list",
     LIST_ITEM = "list-item",
-    LIST_ITEM_CHILD = "list-item-child",
     HR = "hr",
     QUOTE = "blockquote",
     EMBEDDED_ASSET = "image",

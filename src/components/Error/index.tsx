@@ -1,10 +1,5 @@
 import React, { FC, useEffect } from 'react'
 import { Button, Heading, Grid, Cell, Row } from '@matthill8286/atomic-ui'
-import {
-  Illustration05,
-  IllustrationDataMaintenance,
-  IllustrationJavascript,
-} from '@matthill8286/atomic-icon-library'
 import { useLocation } from 'react-router-dom'
 import {
   StyledErrorPageContainer,
@@ -72,9 +67,9 @@ export const ErrorPage: FC<ErrorPageProps> = ({
   }
 
   const svgImage: ErrorMap = {
-    [ErrorPageType.NOT_FOUND]: <IllustrationJavascript />,
-    [ErrorPageType.TECHNICAL_ERROR]: <IllustrationDataMaintenance />,
-    [ErrorPageType.OFFLINE_ERROR]: <Illustration05 />,
+    [ErrorPageType.NOT_FOUND]: null,
+    [ErrorPageType.TECHNICAL_ERROR]: null,
+    [ErrorPageType.OFFLINE_ERROR]: null,
   }
 
   const isTechnicalError = errorType === ErrorPageType.TECHNICAL_ERROR

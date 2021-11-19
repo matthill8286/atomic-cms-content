@@ -1,6 +1,3 @@
-var _jsxFileName = "/Users/matthewhill/Projects/atomic-cms-content/src/components/AppMeta/index.tsx",
-    _this = this;
-
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -21,18 +18,19 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-import React, { useContext } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
-import { GraphCmsInstanceContext } from "../../context/instance";
+export * from './AppMeta.interface';
 var MAX_LENGTH_OG_DESCRIPTION = 127;
 export var AppMeta = function AppMeta(_ref) {
   var _ref$title = _ref.title,
-      title = _ref$title === void 0 ? '' : _ref$title,
+      title = _ref$title === void 0 ? 'homepage' : _ref$title,
       _ref$description = _ref.description,
       description = _ref$description === void 0 ? '' : _ref$description,
       _ref$generator = _ref.generator,
       generator = _ref$generator === void 0 ? 'webmobile-landing-pages' : _ref$generator,
-      keywords = _ref.keywords,
+      _ref$keywords = _ref.keywords,
+      keywords = _ref$keywords === void 0 ? [] : _ref$keywords,
       _ref$canonical = _ref.canonical,
       canonical = _ref$canonical === void 0 ? '' : _ref$canonical,
       _ref$imageUrl = _ref.imageUrl,
@@ -52,10 +50,6 @@ export var AppMeta = function AppMeta(_ref) {
       _ref$productName = _ref.productName,
       productName = _ref$productName === void 0 ? '' : _ref$productName,
       children = _ref.children;
-
-  var _useContext = useContext(GraphCmsInstanceContext),
-      instance = _useContext.instance;
-
   var additionalMeta = additionalMetas.map(function (meta, index) {
     return _objectSpread({
       key: index.toString()
@@ -74,13 +68,13 @@ export var AppMeta = function AppMeta(_ref) {
     content: description || ''
   }, {
     name: 'keywords',
-    content: _toConsumableArray(keywords || [])
+    content: keywords
   }, {
     name: 'generator',
     content: generator
   }, {
     property: 'og:title',
-    content: title || ''
+    content: title
   }, {
     property: 'og:description',
     content: (description || '').slice(0, MAX_LENGTH_OG_DESCRIPTION).trim()
@@ -116,60 +110,21 @@ export var AppMeta = function AppMeta(_ref) {
       rel: 'preconnect dns-prefetch',
       href: link
     };
-  })), _toConsumableArray(instance !== null && instance !== void 0 && instance.favicon ? [{
-    rel: 'icon',
-    href: instance === null || instance === void 0 ? void 0 : instance.favicon.url,
-    type: 'image/png',
-    sizes: '16x16'
-  }] : []));
+  })));
   return React.createElement(Helmet, {
     titleTemplate: titleTemplate,
     defaultTitle: title,
     htmlAttributes: {
       lang: 'en-GB'
-    },
-    link: instance !== null && instance !== void 0 && instance.favicon ? [{
-      rel: 'icon',
-      type: 'image/png',
-      href: instance === null || instance === void 0 ? void 0 : instance.favicon.url,
-      sizes: '16x16'
-    }] : [],
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86,
-      columnNumber: 5
     }
   }, meta.map(function (entry, index) {
     return React.createElement("meta", _extends({
       key: index
-    }, entry, {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 104,
-        columnNumber: 16
-      }
-    }));
+    }, entry));
   }), links.map(function (entry, index) {
     return React.createElement("link", _extends({
       key: index
-    }, entry, {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 107,
-        columnNumber: 16
-      }
-    }));
-  }), React.createElement("title", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 109,
-      columnNumber: 7
-    }
-  }, title), children);
+    }, entry));
+  }), React.createElement("title", null, title), children);
 };
-export * from "./AppMeta.interface";
 //# sourceMappingURL=index.js.map

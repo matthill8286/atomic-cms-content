@@ -1,7 +1,6 @@
 export var BLOCKS;
 
 (function (BLOCKS) {
-  BLOCKS["DOCUMENT"] = "document";
   BLOCKS["PARAGRAPH"] = "paragraph";
   BLOCKS["HEADING_1"] = "heading-one";
   BLOCKS["HEADING_2"] = "heading-two";
@@ -12,7 +11,6 @@ export var BLOCKS;
   BLOCKS["OL_LIST"] = "numbered-list";
   BLOCKS["UL_LIST"] = "bulleted-list";
   BLOCKS["LIST_ITEM"] = "list-item";
-  BLOCKS["LIST_ITEM_CHILD"] = "list-item-child";
   BLOCKS["HR"] = "hr";
   BLOCKS["QUOTE"] = "blockquote";
   BLOCKS["EMBEDDED_ASSET"] = "image";

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { NamedExoticComponent } from 'react';
-import { ErrorPage } from '@lxp/webmobile-cms-graphql';
 import { AppMetaProps } from '../AppMeta';
 export declare type PageConfigType = {
     landingPageContent: any;
@@ -19,6 +18,6 @@ export interface PageTemplateProps {
     generator?: string;
     landingPageContent: any;
     overridePlaylistClickEvent: boolean;
-    errorPage?: ErrorPage;
+    errorPage?: any;
 }
 //# sourceMappingURL=Page.interface.d.ts.map

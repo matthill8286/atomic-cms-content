@@ -3,18 +3,16 @@ import { useInView } from 'react-intersection-observer'
 import {
   ScrollSnapSlider,
   useWindowDimensions,
-  SlidesPerPageSettings,
-  breakpoints,
   ProductSponsoring,
   ProductTileProps,
   Product,
 } from '@matthill8286/atomic-ui'
 import { ProductNewsCarouselProps } from './ProductNewsCarousel.interface'
 import { CarouselWrapper, TileFragment, TileWrapper } from './ProductNewsCarousel.styled'
+import { NewsItem } from '../NewsItem'
 
 export const ProductNewsCarousel: React.FC<ProductNewsCarouselProps> = ({
   loading = true,
-  lazyLoad = true,
   promoted,
   promotedIndex = 0,
   products = [],
@@ -127,13 +125,24 @@ export const ProductNewsCarousel: React.FC<ProductNewsCarouselProps> = ({
     const productsWithSponsor = assetTileProduct?.sponsored
     const loading = tileSettings.loading || isDummyTile
 
+    const newsArgs = {
+      title: 'Carbon',
+      description: 'Vorsteiner Spoiler',
+      image: 'https://picsum.photos/350/200',
+      buttonLink: '#',
+      buttonLabel: 'Read More',
+      newsText:
+        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      date: '21/11/21',
+    }
+
     return (
       <Wrapper
         hideDummy={isDummyTile && hideDummies && !scrolled}
         aria-rowindex={index}
         key={`ProductTile-${index}`}
         withLabels={productsWithSponsor}>
-        <p>Testing</p>
+        <NewsItem {...newsArgs} />
       </Wrapper>
     )
   }

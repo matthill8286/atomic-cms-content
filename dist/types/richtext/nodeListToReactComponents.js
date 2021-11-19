@@ -1,6 +1,6 @@
 import React from 'react';
-import { appendKeyToValidElement } from "./appendKeyToValidElement";
-import { hasValue } from "./helpers";
+import { appendKeyToValidElement } from './appendKeyToValidElement';
+import { hasValue } from './helpers';
 export function nodeListToReactComponents(nodes, options) {
   return nodes.map(function (node, index) {
     return appendKeyToValidElement(nodeToReactComponent(node, options), index);
@@ -8,7 +8,6 @@ export function nodeListToReactComponents(nodes, options) {
 }
 export function nodeToReactComponent(node, options) {
   var renderNode = options.renderNode,
-      renderModifier = options.renderModifier,
       renderText = options.renderText;
 
   if (hasValue(node)) {
@@ -16,7 +15,7 @@ export function nodeToReactComponent(node, options) {
   } else {
     var children = nodeListToReactComponents(node.children, options);
 
-    if (!node.type || !renderNode[node.type]) {
+    if (!node.type || !(renderNode !== null && renderNode !== void 0 && renderNode[node.type])) {
       return React.createElement(React.Fragment, null, children);
     }
 

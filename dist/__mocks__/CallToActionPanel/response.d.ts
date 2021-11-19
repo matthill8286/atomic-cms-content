@@ -7,7 +7,7 @@ export declare const callToActionPanelMock: {
                 id: string;
                 text: string;
                 link: string;
-                type: null;
+                type: any;
             };
             description: string;
             heading: string;

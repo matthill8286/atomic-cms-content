@@ -1,2 +1,2 @@
-export * from "./PageHead";
+export * from './PageHead';
 //# sourceMappingURL=index.js.map

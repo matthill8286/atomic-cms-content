@@ -2,14 +2,13 @@ export interface AdditionalMeta {
     name?: string;
     content?: string | string[];
     property?: string;
-    [key: string]: string | string[] | undefined;
 }
 export interface AppMetaProps {
-    title?: string | null;
-    key?: string | null;
+    title?: string;
+    metaKey?: string | number;
     description?: string | null;
     generator?: string;
-    keywords?: string | string[] | undefined;
+    keywords?: string[] | undefined;
     canonical?: string;
     imageUrl?: string;
     prev?: string;

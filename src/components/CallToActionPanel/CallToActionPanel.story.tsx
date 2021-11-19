@@ -12,8 +12,7 @@ export default {
 } as Meta
 
 const Template: Story<PublicCallToActionPanelProps> = (args: PublicCallToActionPanelProps) => (
-  // @ts-ignore
-  <CallToActionPanel {...args} />
+  <CallToActionPanel alignment="left" {...args} />
 )
 
 export const SingleCallToActionPanel = Template.bind({})

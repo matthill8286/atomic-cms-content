@@ -26,14 +26,14 @@ export declare const sectionResponse: {
                 columnTwoDescription: string;
                 columnThreeTitle: string;
                 columnThreeDescription: string;
-                columnFourTitle: null;
-                columnFourDescription: null;
+                columnFourTitle: any;
+                columnFourDescription: any;
                 numberOfColumns: number;
             }[];
             topTitle: string;
             midTitle: string;
             updatedAt: string;
-            videoUrl: null;
+            videoUrl: any;
         };
     };
 };

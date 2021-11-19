@@ -1,2 +1,2 @@
-export * from "./CallToActionPanel";
+export * from './CallToActionPanel';
 //# sourceMappingURL=index.js.map

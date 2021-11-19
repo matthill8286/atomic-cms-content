@@ -1,5 +1,5 @@
-import { RichTextBlock } from '../../types';
-export declare type Raw = {
+import { RichTextBlock } from '../../types/richtext';
+export declare type RichTextRawDocument = {
     raw: RichTextBlock;
 };
 declare type ImageUrl = {
@@ -8,7 +8,7 @@ declare type ImageUrl = {
 };
 export interface ProfileSectionProps {
     profileAvatar?: ImageUrl;
-    profileInformation?: Raw;
+    profileInformation?: RichTextRawDocument;
 }
 export interface ProfileSectionsProps {
     profileSections?: ProfileSectionProps[];

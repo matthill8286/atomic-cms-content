@@ -1,2 +1,2 @@
-export * from "./response";
+export * from './response';
 //# sourceMappingURL=index.js.map
