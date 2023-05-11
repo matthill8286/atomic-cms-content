@@ -1,6 +1,6 @@
 {
   "name": "@matthill8286/atomic-cms-content",
-  "version": "0.0.12",
+  "version": "0.1.0",
   "description": "Shared CMS React components for CMS Pages",
   "repository": {
     "type": "git",
