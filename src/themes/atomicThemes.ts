@@ -1,12 +1,12 @@
-import { atomicTheme } from '@matthill8286/atomic-ui'
+import { saiyanTheme } from '@matthill8286/atomic-ui'
 import { ExtendedThemeType } from './types'
 
-export const lightAtomicTheme: ExtendedThemeType = {
-  ...atomicTheme,
+export const lightsaiyanTheme: ExtendedThemeType = {
+  ...saiyanTheme,
   color: {
-    ...atomicTheme.color,
+    ...saiyanTheme.color,
     transparent: 'transparent',
-    contrastColor: atomicTheme.color.black,
+    contrastColor: saiyanTheme.color.black,
   },
   extended: {
     pageHead: {
@@ -25,14 +25,14 @@ export const lightAtomicTheme: ExtendedThemeType = {
   },
 }
 
-export const greyAtomicTheme: ExtendedThemeType = {
-  ...atomicTheme,
+export const greysaiyanTheme: ExtendedThemeType = {
+  ...saiyanTheme,
   color: {
-    ...atomicTheme.color,
+    ...saiyanTheme.color,
     transparent: 'transparent',
-    textColor: atomicTheme.color.white,
-    backgroundColor: atomicTheme.color.grey5,
-    surfaceColor: atomicTheme.color.grey5,
+    textColor: saiyanTheme.color.white,
+    backgroundColor: saiyanTheme.color.grey5,
+    surfaceColor: saiyanTheme.color.grey5,
     contrastColor: '#454647',
   },
   extended: {
@@ -43,7 +43,7 @@ export const greyAtomicTheme: ExtendedThemeType = {
     content: {
       textColor: 'white',
       backgroundColor: 'grey5',
-      borderColor: atomicTheme.color.grey5,
+      borderColor: saiyanTheme.color.grey5,
     },
     endOfPage: {
       textColor: 'black',
@@ -52,14 +52,14 @@ export const greyAtomicTheme: ExtendedThemeType = {
   },
 }
 
-export const darkAtomicTheme: ExtendedThemeType = {
-  ...atomicTheme,
+export const darksaiyanTheme: ExtendedThemeType = {
+  ...saiyanTheme,
   color: {
-    ...atomicTheme.color,
+    ...saiyanTheme.color,
     transparent: 'transparent',
-    textColor: atomicTheme.color.white,
-    backgroundColor: atomicTheme.color.black,
-    surfaceColor: atomicTheme.color.black,
+    textColor: saiyanTheme.color.white,
+    backgroundColor: saiyanTheme.color.black,
+    surfaceColor: saiyanTheme.color.black,
     contrastColor: '#454647',
   },
   extended: {
@@ -70,7 +70,7 @@ export const darkAtomicTheme: ExtendedThemeType = {
     content: {
       textColor: 'white',
       backgroundColor: 'black',
-      borderColor: atomicTheme.color.black,
+      borderColor: saiyanTheme.color.black,
     },
     endOfPage: {
       textColor: 'black',

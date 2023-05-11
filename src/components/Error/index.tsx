@@ -6,11 +6,6 @@ import {
   Cell,
   Row
 } from '@matthill8286/atomic-ui';
-import {
-  Illustration05,
-  IllustrationDataMaintenance,
-  IllustrationJavascript,
-} from "@matthill8286/atomic-icon-library"
 import {useLocation} from 'react-router-dom';
 import {
   StyledErrorPageContainer,
@@ -77,10 +72,11 @@ export const ErrorPage: FC<ErrorPageProps> = ({
     [ErrorPageType.OFFLINE_ERROR]: 'Offline Reload',
   };
 
+  // FIXME: update images
   const svgImage: ErrorMap = {
-    [ErrorPageType.NOT_FOUND]: <IllustrationJavascript />,
-    [ErrorPageType.TECHNICAL_ERROR]: <IllustrationDataMaintenance />,
-    [ErrorPageType.OFFLINE_ERROR]: <Illustration05 />,
+    [ErrorPageType.NOT_FOUND]: undefined,
+    [ErrorPageType.TECHNICAL_ERROR]: undefined,
+    [ErrorPageType.OFFLINE_ERROR]: undefined,
   };
 
   const isTechnicalError = errorType === ErrorPageType.TECHNICAL_ERROR;
@@ -129,10 +125,11 @@ export const ErrorPage: FC<ErrorPageProps> = ({
             >
               {svgImage[errorType]}
             </StyledErrorImage>
-            {errorMessage?.message ? (
+            {errorMessage ? (
               <StyledErrorHeadingWrapper data-test={testLabels.text}>
                 {Serializer(
-                  errorMessage?.message,
+                  errorMessage,
+                  // @ts-ignore
                   ConfigurableGraphCmsHtmlSerializer({})
                 )}
               </StyledErrorHeadingWrapper>

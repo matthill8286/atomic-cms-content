@@ -6,7 +6,7 @@ export type ExtendedThemeColor = Color & {
 };
 
 export type ExtendedThemeColorType = keyof ExtendedThemeColor;
-
+ 
 export type ExtendedThemeType = Partial<Theme> & {
   color: ExtendedThemeColor;
   extended: {

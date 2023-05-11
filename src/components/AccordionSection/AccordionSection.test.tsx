@@ -7,7 +7,7 @@ import {
   Heading,
 } from '@matthill8286/atomic-ui';
 import router from 'react-router';
-import {AccordionSection} from './index';
+import {AccordionSection} from './index'; 
 import {
   AccordionSectionProps,
   AccordionSchemaType,

@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {ThemeColors} from '@matthill8286/atomic-ui';
 import {ExtendedThemeColorType} from '../../themes';
-import {RichTextBlock} from '../../types';
 import {Raw} from '../../types/richtext/graphcms-richtext';
 
 export enum AccordionSchemaType {

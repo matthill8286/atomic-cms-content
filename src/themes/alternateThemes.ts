@@ -1,12 +1,12 @@
-import { danoneTheme } from '@matthill8286/atomic-ui'
+import { alternateTheme } from '@matthill8286/atomic-ui'
 import { ExtendedThemeType } from './types'
 
 export const lightAlternateTheme: ExtendedThemeType = {
-  ...danoneTheme,
+  ...alternateTheme,
   color: {
-    ...danoneTheme.color,
+    ...alternateTheme.color,
     transparent: 'transparent',
-    contrastColor: danoneTheme.color.black,
+    contrastColor: alternateTheme.color.black,
   },
   extended: {
     pageHead: {
@@ -25,12 +25,12 @@ export const lightAlternateTheme: ExtendedThemeType = {
 }
 
 export const greyAlternateTheme: ExtendedThemeType = {
-  ...danoneTheme,
+  ...alternateTheme,
   color: {
-    ...danoneTheme.color,
+    ...alternateTheme.color,
     grey4: '#3a3836',
     transparent: 'transparent',
-    textColor: danoneTheme.color.white,
+    textColor: alternateTheme.color.white,
     backgroundColor: '#3a3836',
     surfaceColor: '#3a3836',
     contrastColor: '#454647',
@@ -52,13 +52,13 @@ export const greyAlternateTheme: ExtendedThemeType = {
 }
 
 export const darkAlternateTheme: ExtendedThemeType = {
-  ...danoneTheme,
+  ...alternateTheme,
   color: {
-    ...danoneTheme.color,
+    ...alternateTheme.color,
     transparent: 'transparent',
-    textColor: danoneTheme.color.white,
-    backgroundColor: danoneTheme.color.black,
-    surfaceColor: danoneTheme.color.black,
+    textColor: alternateTheme.color.white,
+    backgroundColor: alternateTheme.color.black,
+    surfaceColor: alternateTheme.color.black,
     contrastColor: '#454647',
   },
   extended: {
